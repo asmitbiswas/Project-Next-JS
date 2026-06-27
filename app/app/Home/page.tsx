@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Link from "next/link";
+
 export default function Home() {
   return (
     <div className="SideBar">
@@ -7,7 +7,7 @@ export default function Home() {
         Home
       </p>
       <p>
-        <Link href="/React">React</Link>
+        React
       </p>
         <p>
           Css
