@@ -16,26 +16,25 @@ export default function RootLayout({
     <html lang="en">
       {children}
       <body>
-        <p>
-          Home
-        </p>
-        <p>
-          <Link href="/React">React</Link>
-        </p>
-        <p>
-          Css
-        </p>
-        <p>
-          Javascript
-        </p>
-        <p>
-          Typescript
-        </p>
-        <p>
-          About
-        </p>
-
-      </body></html>
+        <nav className="SideBar">
+         <p>
+          <a href="#">Home</a>
+         </p>
+         <p>
+          <a href="#">React</a>
+         </p>
+         <p>
+         <a href="#">Css</a>
+         </p>
+         <p>
+          <a href="#">Typescript</a>
+         </p>
+         <p>
+          <a href="#">About</a>
+         </p>
+        </nav>
+      </body>
+      </html>
 
 
   );

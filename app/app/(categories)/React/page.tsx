@@ -1,7 +1,7 @@
 import  Style  from "React.module.css"
 export default function React() {
     return (
-        <div>
+        <div className="Container">
             <h1 className="A">What is React?</h1>
             <p className="Ao">
                 React is a JavaScript library for building user interfaces. It allows developers to create reusable UI components and efficiently update the DOM when data changes. React follows a component-based architecture, where each component manages its own state and can be composed together to build complex UIs. It uses a virtual DOM to optimize rendering performance and provides a declarative syntax for defining UI elements. React is widely used in web development and has a large ecosystem of libraries and tools that enhance its capabilities.

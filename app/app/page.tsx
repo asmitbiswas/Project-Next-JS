@@ -2,25 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 export default function Home() {
   return (
-    <div className="SideBar">
-      <p>
-        Home
-      </p>
-      <p>
-        <Link href="/React">React</Link>
-      </p>
-        <p>
-          Css
-        </p>
-        <p>
-          Javascript
-        </p>
-        <p>
-          Typescript
-        </p>
-        <p>
-          About
-        </p>
-        </div>
+    <div>
+      
+    </div>
   );
 }
