@@ -16,25 +16,19 @@ export default function RootLayout({
     <html lang="en">
       {children}
       <body>
-        <nav className="SideBar">
-         <p>
-          <a href="#">Home</a>
-         </p>
-         <p>
-          <a href="#">React</a>
-         </p>
-         <p>
-         <a href="#">Css</a>
-         </p>
-         <p>
-          <a href="#">Typescript</a>
-         </p>
-         <p>
-          <a href="#">About</a>
-         </p>
-        </nav>
-      </body>
-      </html>
+        
+          
+          <p>
+            <Link href={"/React"}>React</Link></p>
+          <p>
+            <Link href={"/Next.js"}>Next.js</Link></p>
+          </p>
+          <p></p>
+          <p></p>
+          <p></p>
+        
+     
+    </html>
 
 
   );
