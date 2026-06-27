@@ -1,16 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "DevVault",
@@ -23,11 +13,30 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
-    >
-      <body className="min-h-full flex flex-col">{children}</body>
-    </html>
+    <html lang="en">
+      {children}
+      <body>
+        <p>
+          Home
+        </p>
+        <p>
+          <Link href="/React">React</Link>
+        </p>
+        <p>
+          Css
+        </p>
+        <p>
+          Javascript
+        </p>
+        <p>
+          Typescript
+        </p>
+        <p>
+          About
+        </p>
+
+      </body></html>
+
+
   );
 }

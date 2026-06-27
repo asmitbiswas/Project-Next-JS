@@ -1,3 +1,4 @@
+import  Style  from "React.module.css"
 export default function React() {
     return (
         <div>
