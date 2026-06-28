@@ -17,6 +17,7 @@ export default function RootLayout({
     <html lang="en">
       {children}
       <body>
+        <h1>DevVault</h1>
         <p>
           <nav>
             <Link href="/app">Home</Link>
