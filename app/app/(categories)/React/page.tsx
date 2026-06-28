@@ -1,24 +1,24 @@
-import  Style  from "./React.module.css"
+import  styles  from "./React.module.css"
 export default function React() {
     return (
-        <div className={Style.Container}>
-            <h1 className={Style.A}>What is React?</h1>
-            <p className={Style.Ao}>
+        <div className={styles.Container}>
+            <h1 className={styles.A}>What is React?</h1>
+            <p className={styles.Ao}>
                 React is a JavaScript library for building user interfaces. It allows developers to create reusable UI components and efficiently update the DOM when data changes. React follows a component-based architecture, where each component manages its own state and can be composed together to build complex UIs. It uses a virtual DOM to optimize rendering performance and provides a declarative syntax for defining UI elements. React is widely used in web development and has a large ecosystem of libraries and tools that enhance its capabilities.
             </p>
-            <h1 className={Style.B}>React components</h1>
-            <p className={Style.Bo}>
+            <h1 className={styles.B}>React components</h1>
+            <p className={styles.Bo}>
                 1.Your browser still reads a standard HTML file first. But instead of writing hundreds of lines of layout here, you just leave a single, empty div tag for React to attach itself to.
             </p>
-            <p className={Style.C}>
+            <p className={styles.C}>
                 2.React handles standard web interactions almost exactly like regular HTML, but with a slight twist in the spelling (camelCase).
 
                 In plain HTML, you use onclick="...". In React, you use onClick={ }
 
                 Instead of passing a string of code, you pass a JavaScript function.
             </p>
-            <h1 className={Style.D}>React Hooks</h1>
-            <p className={Style.E}>
+            <h1 className={styles.D}>React Hooks</h1>
+            <p className={styles.E}>
                 Item 4: Hooks
                 Title: Hooks
 
@@ -28,7 +28,7 @@ export default function React() {
 
                 Tip: You can easily spot a hook in the wild because their names always start with the word "use"—like useState or useEffect.
             </p>
-            <p className={Style.F}>
+            <p className={styles.F}>
                 Item 5: The useState Hook
                 Title: useState
 
@@ -38,7 +38,7 @@ export default function React() {
 
                 Tip: When you use the updater function to change the memory, React instantly rewrites the HTML on the screen so the user sees the update happen live.
             </p>
-            <p>
+            <p className={styles.G}>
                 Item 6: The useEffect Hook
                 Title: useEffect
 
