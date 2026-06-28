@@ -17,32 +17,7 @@ export default function RootLayout({
     <html lang="en">
       {children}
       <body>
-        <h1>DevVault</h1>
-        <p>
-          <nav>
-            <Link href="/app">Home</Link>
-          </nav>
-        </p>
-        <p>
-          <nav>
-            <Link href="/React">React</Link>
-          </nav>
-        </p>
-        <p>
-          <nav>
-            <Link href="/Next.js">Next.js</Link>
-          </nav>
-        </p>
-        <p>
-          <nav>
-            <Link href="/JavaScript">JavaScript</Link>
-          </nav>
-        </p>
-        <p>
-          <nav>
-            <Link href="/TypeScript">TypeScript</Link>
-          </nav>
-        </p>
+        <h1 className="ABC">DevVault</h1>
       </body>
     </html>
 

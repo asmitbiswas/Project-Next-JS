@@ -1,68 +1,33 @@
 .sidebar {
-    width: 260px;
-    height: 100vh;
-    background: #0f172a;
-    color: #fff;
-    padding: 24px;
-    position: sticky;
-    top: 0;
-    border-right: 1px solid #1e293b;
-    overflow-y: auto;
+  width: 220px;
+  height: 100vh;
+  background: #010810;
+  border-right: 1px solid #ffffff;
+  padding: 20px;
 }
 
 .sidebar h1 {
-    font-size: 1.8rem;
-    margin-bottom: 25px;
-    color: #60a5fa;
-}
-
-.sidebar h3 {
-    font-size: 0.85rem;
-    text-transform: uppercase;
-    color: #94a3b8;
-    margin: 25px 0 10px;
-    letter-spacing: 1px;
+  font-size: 24px;
+  margin-bottom: 20px;
 }
 
 .sidebar nav {
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
 .sidebar a {
-    color: #cbd5e1;
-    text-decoration: none;
-    padding: 10px 14px;
-    border-radius: 8px;
-    transition: all 0.2s ease;
-    font-size: 15px;
+  text-decoration: none;
+  color: #ffffff;
+  padding: 10px 12px;
+  border-radius: 6px;
+  transition: background 0.2s;
 }
 
 .sidebar a:hover {
-    background: #1e293b;
-    color: white;
-    transform: translateX(5px);
+  background: #c2c2c2;
 }
-
-.sidebar a.active {
-    background: #2563eb;
-    color: white;
-    font-weight: 600;
+input{
+    border-radius: 6px 12px;
 }
-
-.search {
-    width: 100%;
-    padding: 10px 14px;
-    margin-bottom: 20px;
-    border: none;
-    border-radius: 8px;
-    background: #1e293b;
-    color: white;
-    outline: none;
-}
-
-.search::placeholder {
-    color: #94a3b8;
-}
-
