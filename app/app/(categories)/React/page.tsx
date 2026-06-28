@@ -1,32 +1,34 @@
-import  Style  from "React.module.css"
+import  Style  from "./React.module.css"
 export default function React() {
     return (
-        <div className="Container">
-            <h1 className="A">What is React?</h1>
-            <p className="Ao">
+        <div className={Style.Container}>
+            <h1 className={Style.A}>What is React?</h1>
+            <p className={Style.Ao}>
                 React is a JavaScript library for building user interfaces. It allows developers to create reusable UI components and efficiently update the DOM when data changes. React follows a component-based architecture, where each component manages its own state and can be composed together to build complex UIs. It uses a virtual DOM to optimize rendering performance and provides a declarative syntax for defining UI elements. React is widely used in web development and has a large ecosystem of libraries and tools that enhance its capabilities.
             </p>
-            <h1 className="B">React components</h1>
-            <p className="Bo">
+            <h1 className={Style.B}>React components</h1>
+            <p className={Style.Bo}>
                 1.Your browser still reads a standard HTML file first. But instead of writing hundreds of lines of layout here, you just leave a single, empty div tag for React to attach itself to.
             </p>
-            <p>
+            <p className={Style.C}>
                 2.React handles standard web interactions almost exactly like regular HTML, but with a slight twist in the spelling (camelCase).
 
                 In plain HTML, you use onclick="...". In React, you use onClick={ }
 
                 Instead of passing a string of code, you pass a JavaScript function.
             </p>
-            <h1>React Hooks</h1>
-            <p>Item 4: Hooks
+            <h1 className={Style.D}>React Hooks</h1>
+            <p className={Style.E}>
+                Item 4: Hooks
                 Title: Hooks
 
                 Tagline: The specialized tools inside your components.
 
                 Content: In modern React, "Hooks" are just special built-in JavaScript functions that let you "hook into" React’s internal systems. Before hooks existed, components were pretty dumb—they couldn't hold memory or handle complex logic without a massive amount of messy boilerplate code. Hooks changed everything by giving regular functions the power to manage data, talk to databases, and track user actions using clean, single-line commands.
 
-                Tip: You can easily spot a hook in the wild because their names always start with the word "use"—like useState or useEffect.</p>
-            <p>
+                Tip: You can easily spot a hook in the wild because their names always start with the word "use"—like useState or useEffect.
+            </p>
+            <p className={Style.F}>
                 Item 5: The useState Hook
                 Title: useState
 
