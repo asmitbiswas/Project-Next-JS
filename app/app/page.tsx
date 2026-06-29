@@ -2,14 +2,21 @@
 import Image from "next/image";
 import Link from "next/link";
 import Sidebar from "./components/page";
-
+import { Poiret_One } from "next/font/google";
+const a = Poiret_One({
+  weight: "400",
+  subsets: ["latin"],
+  display: "swap",
+});
 
 export default function Home() {
   return (
     <div className="div" style={{display:"flex"}}>
+      
       <Sidebar />
+       <h1 style={{color:"black",}}>DevVault</h1>
       <p className="content">
-        <h1>DevVault</h1>
+       
         Welcome to DevVault 🚀
 Your central hub for building and debugging the full stack. This space is designed to hold your quick-reference guides, code snippets, and architectural breakdowns.
 
