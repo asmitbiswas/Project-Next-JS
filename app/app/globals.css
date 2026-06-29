@@ -17,3 +17,9 @@ h1 {
 .ABC{
   border: 6px 6px solid #ffffff;
 }
+.content{
+  gap: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

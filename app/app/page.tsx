@@ -6,9 +6,9 @@ import Sidebar from "./components/page";
 
 export default function Home() {
   return (
-    <div>
+    <div style={{display:"flex"}}>
       <Sidebar />
-      <p>
+      <p className="content">
         Welcome to DevVault 🚀
 Your central hub for building and debugging the full stack. This space is designed to hold your quick-reference guides, code snippets, and architectural breakdowns.
 
