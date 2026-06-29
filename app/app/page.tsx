@@ -9,6 +9,7 @@ export default function Home() {
     <div style={{display:"flex"}}>
       <Sidebar />
       <p className="content">
+        <h1>DevVault</h1>
         Welcome to DevVault 🚀
 Your central hub for building and debugging the full stack. This space is designed to hold your quick-reference guides, code snippets, and architectural breakdowns.
 
