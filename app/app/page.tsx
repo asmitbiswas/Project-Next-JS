@@ -6,42 +6,34 @@ import Sidebar from "./components/page";
 
 export default function Home() {
   return (
-    <div style={{display:"flex"}}>
+    <div className="div" style={{display:"flex"}}>
       <Sidebar />
       <p className="content">
-     <h1>Welcome to DevVault</h1>
-<p>Your central hub for building, debugging, and documenting the full stack. This workspace is built for quick-reference guides, operational checklists, and system architectural patterns.</p>
+        <h1>DevVault</h1>
+        Welcome to DevVault 🚀
+Your central hub for building and debugging the full stack. This space is designed to hold your quick-reference guides, code snippets, and architectural breakdowns.
 
-<h2>System Architecture Modules</h2>
-<h3>Frontend Ecosystem</h3>
-<p>Core UI building blocks, state synchronization, type safety, and framework architectures.</p>
+System Architecture Overview
+The platform divides full-stack development into three distinct layers. Select a module from the sidebar to begin populating this workspace:
 
-<strong>React:</strong> Component lifecycles, local state mechanics, and optimized hook patterns.
+Frontend Ecosystem: Core UI building blocks, state synchronization, type safety, and server-side rendering frameworks (React, Next.js, TypeScript).
 
-<strong>Next.js:</strong> Server-side rendering paradigms, dynamic routing configurations, and data fetching strategies.
+Backend Services: Server environments, routing architectures, middleware configuration, and REST/GraphQL API design (Node.js, Express).
 
-<strong>TypeScript:</strong> Static typing boundaries, interface declarations, and strict type safety setups.
+Data Layer: Schema design, indexing strategies, non-relational document storage, and relational query optimization (MongoDB, PostgreSQL).
 
-<h3>Backend Services</h3>
-<p>Server environments, scalable routing systems, custom middleware pipelines, and API design.</p>
+Workspace Configuration
+To begin integrating documentation into the main content panel, ensure your routing layer maps the sidebar navigation keys directly to their corresponding markdown or data components.
 
-<strong>Node.js:</strong> Event-driven architecture, file system operations, and asynchronous runtime execution.
-
-<strong>Express:</strong> REST API endpoints, routing patterns, controller layers, and error-handling middleware.
-
-<h3>Database Systems</h3>
-<p>Data modeling structures, indexing mechanics, and storage optimization.</p>
-
-<strong>MongoDB:</strong> Document schemas, aggregation pipelines, and non-relational storage clusters.
-
-<strong>PostgreSQL:</strong> Relational data normalization, complex SQL joins, indexing, and transactional integrity.
-
-<h2>Deployment Checklist</h2>
-Ensure all environment variables are securely loaded via production configurations.
-
-Verify structural CORS policies match your specific frontend client domains.
-
-Execute production build optimization steps to minimize code payload sizes.
+{/* JavaScript
+// Example component routing logic
+const renderContent = (activeTab) => {
+  switch(activeTab) {
+    case 'react': return <ReactDocs />;
+    case 'nodejs': return <NodeDocs />;
+    default: return <HomeDashboard />;
+  }
+}; */}
       </p>
     </div>
   );
