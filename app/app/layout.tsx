@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import Link from "next/link";
 import "./globals.css";
+import Sidebar from "./components/page";
 
 export const metadata: Metadata = {
   title: "DevVault",
@@ -17,6 +18,7 @@ export default function RootLayout({
     <html lang="en">
       {children}
       <body>
+        <Sidebar />
         <h1 className="ABC">DevVault</h1>
       </body>
     </html>
