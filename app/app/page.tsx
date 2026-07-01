@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Sidebar from "./components/page";
 import { Poiret_One } from "next/font/google";
+import styles from "./styles.css";
 const a = Poiret_One({
   weight: "400",
   subsets: ["latin"],
@@ -11,37 +12,47 @@ const a = Poiret_One({
 
 export default function Home() {
   return (
-    <div className="div" style={{display:"flex"}}>
+    <div className="div" style={{display:"flex", background:"black", color:"white"}}>
       
       <Sidebar />
-       <h1 style={{color:"black",}}>DevVault</h1>
-      <p className="content">
-       
-        Welcome to DevVault 🚀
-Your central hub for building and debugging the full stack. This space is designed to hold your quick-reference guides, code snippets, and architectural breakdowns.
+   <div style={{margin:"80px auto", padding:"0 30px", maxWidth:"800px", lineHeight:"1.8"}}>
+    <h1>Welcome to DevVault 👋</h1>
 
-System Architecture Overview
-The platform divides full-stack development into three distinct layers. Select a module from the sidebar to begin populating this workspace:
+    <p>
+        DevVault is a project I built to keep everything I'm learning in one
+        place. Instead of searching through dozens of browser tabs or bookmarks,
+        I can quickly find notes, code examples, and explanations whenever I
+        need them.
+    </p>
 
-Frontend Ecosystem: Core UI building blocks, state synchronization, type safety, and server-side rendering frameworks (React, Next.js, TypeScript).
+    <p>
+        Whether it's React hooks, Next.js routing, JavaScript concepts, or
+        backend topics, everything is organized into categories so learning
+        feels less chaotic.
+    </p>
 
-Backend Services: Server environments, routing architectures, middleware configuration, and REST/GraphQL API design (Node.js, Express).
+    <h2>What's inside?</h2>
 
-Data Layer: Schema design, indexing strategies, non-relational document storage, and relational query optimization (MongoDB, PostgreSQL).
+    <ul>
+        <li>React documentation and hooks</li>
+        <li>Next.js App Router</li>
+        <li>JavaScript concepts</li>
+        <li>Node.js & Express</li>
+        <li>MongoDB & PostgreSQL</li>
+    </ul>
 
-Workspace Configuration
-To begin integrating documentation into the main content panel, ensure your routing layer maps the sidebar navigation keys directly to their corresponding markdown or data components.
+    <h2>Why I made this</h2>
 
-{/* JavaScript
-// Example component routing logic
-const renderContent = (activeTab) => {
-  switch(activeTab) {
-    case 'react': return <ReactDocs />;
-    case 'nodejs': return <NodeDocs />;
-    default: return <HomeDashboard />;
-  }
-}; */}
-      </p>
+    <p>
+        I wanted a place where I could learn, revise, and quickly look things
+        up while building projects. DevVault is becoming my personal developer
+        handbook, and I'll continue adding new topics as I learn.
+    </p>
+
+    <p>
+        Pick a technology from the sidebar and start exploring.
+    </p>
+</div>
     </div>
   );
 }
