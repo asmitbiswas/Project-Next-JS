@@ -63,7 +63,7 @@ export default function React() {
         <ul>
           <li><Link href="/React/Introduction_to_React">Introduction to React</Link></li>
           <li><Link href="/React/React_Project">Getting Started</Link></li>
-          <li>Folder Structure</li>
+          <li><Link href="/React/Folder">Folder Structure</Link></li>
           <li>JSX</li>
           <li>Components</li>
           <li>Props</li>
