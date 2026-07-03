@@ -19,7 +19,7 @@ export default function RootLayout({
       <body style={{ background: "black", color: "white", padding: "20px", display: "flex", flexDirection: "column", minHeight: "100vh", justifyContent: "flex-start" }}>
          {/* <Sidebar /> */}
         {children}
-        <h1 className="ABC">DevVault</h1>
+        <h1 style={{ textAlign: "center" }}>-DevVault</h1>
       </body>
     </html>
 
