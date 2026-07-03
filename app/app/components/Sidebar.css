@@ -6,7 +6,21 @@
   padding: 20px;
   border-radius: 6px ;
   box-shadow: 6px 6px 12px black;
+  
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 220px;
+  height: 100vh;
+
+  background: #010810;
+  border-right: 1px solid white;
+  padding: 20px;
+
+  overflow-y: auto;
 }
+
 
 .sidebar h1 {
   font-size: 24px;
