@@ -17,7 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-         <Sidebar />
+         {/* <Sidebar /> */}
         {children}
         <h1 className="ABC">DevVault</h1>
       </body>

@@ -33,16 +33,13 @@ export default function Home() {
 
     <h2>What's inside?</h2>
 
-    <p>
-
-    
-        React documentation and hooks
-        Next.js App Router
-        JavaScript concepts
-        Node.js & Express
-        MongoDB & PostgreSQL
-    
-    </p>
+    <ul>
+        <li>React documentation and hooks</li>
+        <li>Next.js App Router</li>
+        <li>JavaScript concepts</li>
+        <li>Node.js & Express</li>
+        <li>MongoDB & PostgreSQL</li>
+    </ul>
 
     <h2>Why I made this</h2>
 
