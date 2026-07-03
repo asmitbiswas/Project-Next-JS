@@ -1,4 +1,5 @@
 import Sidebar from "@/app/components/page";
+import Link from "next/link";
 
 export default function React() {
   return (
@@ -60,7 +61,7 @@ export default function React() {
         <h2>Topics Covered</h2>
 
         <ul>
-          <li>Introduction to React</li>
+          <li><Link href="/React/Introduction_to_React">Introduction to React</Link></li>
           <li>Creating a React Project</li>
           <li>Folder Structure</li>
           <li>JSX</li>
