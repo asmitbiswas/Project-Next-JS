@@ -4,47 +4,65 @@ export default function React() {
   return (
     <div
       style={{
-        background: "black",
-        color: "white",
+        background: "#000",
+        color: "#fff",
         minHeight: "100vh",
         padding: "40px",
-        paddingLeft: "320px", // Space for the sidebar
-        lineHeight: "1.8",
       }}
     >
+      <Sidebar />
+
       <div
         style={{
-          maxWidth: "850px",
-          margin: "0 auto",
+          maxWidth: "900px",
+          marginLeft: "280px",
+          lineHeight: "1.8",
         }}
       >
-        <Sidebar />
+        <h1>React</h1>
 
-        <h1 style={{ fontSize: "48px", marginBottom: "20px" }}>React</h1>
-
-        <p style={{ fontSize: "18px", marginBottom: "20px" }}>
-          React is a JavaScript library used to build user interfaces. It allows
-          you to create reusable components, making applications easier to
-          manage as they grow. Instead of updating the entire page, React
-          efficiently updates only the parts that change.
+        <p>
+          React is a JavaScript library developed by Meta for building modern,
+          interactive user interfaces. It uses a component-based architecture,
+          allowing developers to build reusable UI elements that make
+          applications easier to maintain and scale.
         </p>
 
-        <h2 style={{ fontSize: "32px", marginTop: "40px" }}>
-          Why React?
-        </h2>
+        <h2>Why React?</h2>
 
-        <p style={{ fontSize: "18px", marginBottom: "20px" }}>
-          React makes building modern web applications much more organized. By
-          breaking the UI into components, you can reuse code, keep projects
-          maintainable, and develop faster.
+        <p>
+          React simplifies the process of building complex web applications by
+          dividing the interface into independent components. It efficiently
+          updates the page using the Virtual DOM, improving performance and
+          making development more organized.
         </p>
 
-        <h2 style={{ fontSize: "32px", marginTop: "40px" }}>
-          Topics Covered
-        </h2>
+        <h2>Key Features</h2>
 
-        <ul style={{ fontSize: "18px", paddingLeft: "25px" }}>
+        <ul>
+          <li>Component-based architecture</li>
+          <li>Reusable UI components</li>
+          <li>Virtual DOM for efficient rendering</li>
+          <li>Declarative programming style</li>
+          <li>One-way data flow</li>
+          <li>Large ecosystem and community support</li>
+        </ul>
+
+        <h2>Prerequisites</h2>
+
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript (ES6+)</li>
+          <li>Basic understanding of the DOM</li>
+        </ul>
+
+        <h2>Topics Covered</h2>
+
+        <ul>
           <li>Introduction to React</li>
+          <li>Creating a React Project</li>
+          <li>Folder Structure</li>
           <li>JSX</li>
           <li>Components</li>
           <li>Props</li>
@@ -59,19 +77,78 @@ export default function React() {
           <li>Performance Optimization</li>
         </ul>
 
-        <h2 style={{ fontSize: "32px", marginTop: "40px" }}>
-          What you'll learn
-        </h2>
+        <h2>React Hooks</h2>
 
-        <p style={{ fontSize: "18px", marginBottom: "20px" }}>
-          This section contains beginner to advanced React concepts with
-          explanations, examples, and practical notes. Each topic is organized
-          separately so you can quickly revisit concepts whenever you're working
-          on a project.
+        <p>
+          Hooks allow functional components to use state and other React
+          features without writing class components.
         </p>
 
-        <p style={{ fontSize: "18px" }}>
-          Choose a topic from the sidebar to start learning. Happy coding! 🚀
+        <ul>
+          <li>useState</li>
+          <li>useEffect</li>
+          <li>useRef</li>
+          <li>useMemo</li>
+          <li>useCallback</li>
+          <li>useReducer</li>
+          <li>useContext</li>
+          <li>Custom Hooks</li>
+        </ul>
+
+        <h2>Advantages</h2>
+
+        <ul>
+          <li>Fast rendering with Virtual DOM</li>
+          <li>Reusable components</li>
+          <li>Easy to maintain</li>
+          <li>Huge community support</li>
+          <li>Excellent developer tools</li>
+        </ul>
+
+        <h2>Common Use Cases</h2>
+
+        <ul>
+          <li>Single Page Applications (SPAs)</li>
+          <li>Dashboards</li>
+          <li>Portfolio websites</li>
+          <li>E-commerce applications</li>
+          <li>Social media platforms</li>
+          <li>Admin panels</li>
+        </ul>
+
+        <h2>Best Practices</h2>
+
+        <ul>
+          <li>Keep components small and reusable.</li>
+          <li>Use meaningful component names.</li>
+          <li>Avoid unnecessary re-renders.</li>
+          <li>Organize files logically.</li>
+          <li>Use hooks correctly.</li>
+          <li>Write clean and readable code.</li>
+        </ul>
+
+        <h2>Learning Path</h2>
+
+        <ol>
+          <li>Learn JSX</li>
+          <li>Understand Components</li>
+          <li>Master Props & State</li>
+          <li>Learn Event Handling</li>
+          <li>Practice Conditional Rendering</li>
+          <li>Understand Hooks</li>
+          <li>Learn Routing</li>
+          <li>Build Projects</li>
+        </ol>
+
+        <h2>Conclusion</h2>
+
+        <p>
+          React is one of the most popular libraries for building user
+          interfaces. Its component-based approach, powerful ecosystem, and
+          excellent performance make it a great choice for modern web
+          development. Mastering React will provide a strong foundation for
+          learning frameworks like Next.js and building production-ready web
+          applications.
         </p>
       </div>
     </div>
