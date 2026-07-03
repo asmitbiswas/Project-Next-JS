@@ -16,7 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
+      <body style={{ background: "black", color: "white", padding: "20px", display: "flex", flexDirection: "column", minHeight: "100vh", justifyContent: "flex-start" }}>
          {/* <Sidebar /> */}
         {children}
         <h1 className="ABC">DevVault</h1>
