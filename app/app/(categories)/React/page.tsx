@@ -65,7 +65,7 @@ export default function React() {
           <li><Link href="/React/React_Project" style={{color:"white"}}>Getting Started</Link></li>
           <li><Link href="/React/Folder" style={{color:"white"}}>Folder Structure</Link></li>
           <li><Link href="/React/JSX" style={{color:"white"}}>JSX</Link></li>
-          <li>Components</li>
+          <li><Link href="/React/Componentss" style={{color:"white"}}>Components</Link></li>
           <li>Props</li>
           <li>State</li>
           <li>Event Handling</li>
