@@ -61,12 +61,12 @@ export default function React() {
         <h2>Topics Covered</h2>
 
         <ul>
-          <li><Link href="/React/Introduction_to_React" style={{color:"white"}}>Introduction to React</Link></li>
-          <li><Link href="/React/React_Project" style={{color:"white"}}>Getting Started</Link></li>
-          <li><Link href="/React/Folder" style={{color:"white"}}>Folder Structure</Link></li>
-          <li><Link href="/React/JSX" style={{color:"white"}}>JSX</Link></li>
-          <li><Link href="/React/Componentss" style={{color:"white"}}>Components</Link></li>
-          <li>Props</li>
+          <li><Link href="/React/Introduction_to_React" style={{ color: "white" }}>Introduction to React</Link></li>
+          <li><Link href="/React/React_Project" style={{ color: "white" }}>Getting Started</Link></li>
+          <li><Link href="/React/Folder" style={{ color: "white" }}>Folder Structure</Link></li>
+          <li><Link href="/React/JSX" style={{ color: "white" }}>JSX</Link></li>
+          <li><Link href="/React/Componentss" style={{ color: "white" }}>Components</Link></li>
+          <li><Link href="/React/Props" style={{ color: "white" }}>Props</Link></li>
           <li>State</li>
           <li>Event Handling</li>
           <li>Conditional Rendering</li>
