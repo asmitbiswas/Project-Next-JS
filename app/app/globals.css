@@ -133,3 +133,16 @@ h1 {
   font-style: italic;
 }
 
+body {
+  margin: 0;
+  background: black;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.content {
+  margin-left: 240px;   /* Same as sidebar width */
+  min-height: 100vh;
+  padding: 40px;
+  box-sizing: border-box;
+}
