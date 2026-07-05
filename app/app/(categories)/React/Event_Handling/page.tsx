@@ -92,12 +92,14 @@ export default function EventHandling() {
                         <tr
                             style={{
                                 border: "1px solid white",
-                                padding: "10px"
+                                padding: "10px",
+                                textAlign: "left"
                             }}>
                             <td
                               style={{
                                 border: "1px solid white",
-                                padding: "10px"
+                                padding: "10px",
+                                textAlign: "left"
                             }}>onClick</td>
                             <td>Runs when an element is clicked.</td>
                         </tr>
@@ -105,12 +107,14 @@ export default function EventHandling() {
                         <tr
                             style={{
                                 border: "1px solid white",
-                                padding: "10px"
+                                padding: "10px",
+                                textAlign: "left"
                             }}>
                             <td
                               style={{
                                 border: "1px solid white",
-                                padding: "10px"
+                                padding: "10px",
+                                textAlign: "left"
                             }}>onChange</td>
                             <td>Runs when an input value changes.</td>
                         </tr>
@@ -118,12 +122,14 @@ export default function EventHandling() {
                         <tr
                             style={{
                                 border: "1px solid white",
-                                padding: "10px"
+                                padding: "10px",
+                                textAlign: "left"
                             }}>
                             <td
                               style={{
                                 border: "1px solid white",
-                                padding: "10px"
+                                padding: "10px",
+                                textAlign: "left"
                             }}>onSubmit</td>
                             <td>Runs when a form is submitted.</td>
                         </tr>
@@ -132,7 +138,8 @@ export default function EventHandling() {
                             <td
                               style={{
                                 border: "1px solid white",
-                                padding: "10px"
+                                padding: "10px",
+                                textAlign: "left"
                             }}>onKeyDown</td>
                             <td>Runs when a key is pressed.</td>
                         </tr>
@@ -140,12 +147,14 @@ export default function EventHandling() {
                         <tr
                             style={{
                                 border: "1px solid white",
-                                padding: "10px"
+                                padding: "10px",
+                                textAlign: "left"
                             }}>
                             <td
                               style={{
                                 border: "1px solid white",
-                                padding: "10px"
+                                padding: "10px",
+                                textAlign: "left"
                             }}>onMouseOver</td>
                             <td>Runs when the mouse enters an element.</td>
                         </tr>
@@ -153,12 +162,14 @@ export default function EventHandling() {
                         <tr
                             style={{
                                 border: "1px solid white",
-                                padding: "10px"
+                                padding: "10px",
+                                textAlign: "left"
                             }}>
                             <td
                               style={{
                                 border: "1px solid white",
-                                padding: "10px"
+                                padding: "10px",
+                                textAlign: "left"
                             }}>onMouseLeave</td>
                             <td>Runs when the mouse leaves an element.</td>
                         </tr>
