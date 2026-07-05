@@ -24,12 +24,12 @@ export default function ReactLayout({ children }: { children: React.ReactNode })
             borderCollapse: "collapse",
           }}
         >
-          <tbody>
+          {/* <tbody>
             <tr>
               <th style={{ border: "1px solid white", padding: "10px", textAlign: "left" }}></th>
               <th style={{ border: "1px solid white", padding: "10px", textAlign: "left" }}></th>
             </tr>
-          </tbody>
+          </tbody> */}
         </table>
         {children}
       </div>
