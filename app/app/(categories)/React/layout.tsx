@@ -17,6 +17,20 @@ export default function ReactLayout({ children }: { children: React.ReactNode })
           lineHeight: "1.8",
         }}
       >
+        <table
+          style={{
+            border: "1px solid white",
+            width: "100%",
+            borderCollapse: "collapse",
+          }}
+        >
+          <tbody>
+            <tr>
+              <th style={{ border: "1px solid white", padding: "10px", textAlign: "left" }}>Event</th>
+              <th style={{ border: "1px solid white", padding: "10px", textAlign: "left" }}>Description</th>
+            </tr>
+          </tbody>
+        </table>
         {children}
       </div>
     </div>
