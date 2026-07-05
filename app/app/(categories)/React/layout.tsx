@@ -26,8 +26,8 @@ export default function ReactLayout({ children }: { children: React.ReactNode })
         >
           <tbody>
             <tr>
-              <th style={{ border: "1px solid white", padding: "10px", textAlign: "left" }}>Event</th>
-              <th style={{ border: "1px solid white", padding: "10px", textAlign: "left" }}>Description</th>
+              <th style={{ border: "1px solid white", padding: "10px", textAlign: "left" }}></th>
+              <th style={{ border: "1px solid white", padding: "10px", textAlign: "left" }}></th>
             </tr>
           </tbody>
         </table>
