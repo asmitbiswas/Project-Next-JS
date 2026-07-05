@@ -107,7 +107,13 @@ export default function EventHandling() {
 
         <h2>Passing Arguments</h2>
 
-        <pre>
+        <pre
+             style={{
+            background:"#1d1d1d",
+            borderRadius:"8px",
+            padding:"18px",
+            overflowX:"auto",
+        }}>
 {`function App() {
 
   function greet(name) {
@@ -129,7 +135,14 @@ export default function EventHandling() {
           It contains useful information about the event that occurred.
         </p>
 
-        <pre>
+        <pre
+                    style={{
+            background:"#1d1d1d",
+            borderRadius:"8px",
+            padding:"18px",
+            overflowX:"auto",
+        }}
+        >
 {`function App() {
 
   function handleClick(event) {
@@ -146,7 +159,13 @@ export default function EventHandling() {
 
         <h2>Prevent Default Behavior</h2>
 
-        <pre>
+        <pre
+                    style={{
+            background:"#1d1d1d",
+            borderRadius:"8px",
+            padding:"18px",
+            overflowX:"auto",
+        }}>
 {`function App() {
 
   function handleSubmit(event) {
