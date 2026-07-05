@@ -25,7 +25,13 @@ export default function EventHandling() {
 
         <h2>Basic Example</h2>
 
-        <pre>
+        <pre
+        style={{
+            background:"#1d1d1d",
+            borderRadius:"8px",
+            padding:"18px",
+            overflowX:"auto",
+        }}>
 {`function App() {
 
   function handleClick() {
@@ -42,7 +48,13 @@ export default function EventHandling() {
 
         <h2>Arrow Function Example</h2>
 
-        <pre>
+        <pre
+          style={{
+            background:"#1d1d1d",
+            borderRadius:"8px",
+            padding:"18px",
+            overflowX:"auto",
+        }}>
 {`function App() {
   return (
     <button onClick={() => alert("Hello React!")}>
