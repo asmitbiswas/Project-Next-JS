@@ -3,23 +3,10 @@ import Sidebar from "@/app/components/page";
 
 export default function IntroductionToReact() {
   return (
-    <div
-      style={{
-        background: "#000",
-        color: "#fff",
-        minHeight: "100vh",
-        padding: "40px",
-      }}
-    >
+    <div >
       <Sidebar />
 
-      <div
-        style={{
-          maxWidth: "900px",
-          marginLeft: "280px",
-          lineHeight: "1.8",
-        }}
-      >
+      <div >
         <h1>Introduction to React</h1>
 
         <p>

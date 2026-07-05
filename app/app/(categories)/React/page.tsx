@@ -3,23 +3,10 @@ import Link from "next/link";
 
 export default function React() {
   return (
-    <div
-      style={{
-        background: "#000",
-        color: "#fff",
-        minHeight: "100vh",
-        padding: "40px",
-      }}
-    >
+    <div>
       <Sidebar />
 
-      <div
-        style={{
-          maxWidth: "900px",
-          marginLeft: "280px",
-          lineHeight: "1.8",
-        }}
-      >
+      <div>
         <h1>React</h1>
 
         <p>
