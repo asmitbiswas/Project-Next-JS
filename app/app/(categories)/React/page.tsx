@@ -68,7 +68,7 @@ export default function React() {
           <li><Link href="/React/Componentss" style={{ color: "white" }}>Components</Link></li>
           <li><Link href="/React/Props" style={{ color: "white" }}>Props</Link></li>
           <li><Link href="/React/State" style={{ color: "white" }}>State</Link></li>
-          <li>Event Handling</li>
+          <li><Link href="/React/Event_Handling" style={{ color: "white" }}>Event Handling</Link></li>
           <li>Conditional Rendering</li>
           <li>Lists & Keys</li>
           <li>Forms</li>
