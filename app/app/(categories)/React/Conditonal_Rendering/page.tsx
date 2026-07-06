@@ -24,8 +24,14 @@ export default function ConditionalRendering() {
 
         <h2>If Statement Example</h2>
 
-        <pre>
-{`function Greeting({ isLoggedIn }) {
+        <pre
+          style={{
+            background: "#111",
+            overflowX: "auto",
+            borderRadius: "2px",
+          }}
+        >
+          {`function Greeting({ isLoggedIn }) {
 
   if (isLoggedIn) {
     return <h1>Welcome Back!</h1>;
@@ -42,8 +48,14 @@ export default function ConditionalRendering() {
           two elements.
         </p>
 
-        <pre>
-{`function App() {
+        <pre
+          style={{
+            background: "#111",
+            overflowX: "auto",
+            borderRadius: "2px",
+          }}
+        >
+          {`function App() {
 
   const isLoggedIn = true;
 
@@ -62,8 +74,15 @@ export default function ConditionalRendering() {
           condition is true.
         </p>
 
-        <pre>
-{`function App() {
+        <pre
+          style={{
+            background: "#111",
+            overflowX: "auto",
+            borderRadius: "6px",
+            padding: "18px",
+          }}
+        >
+          {`function App() {
 
   const isAdmin = true;
 
@@ -77,25 +96,67 @@ export default function ConditionalRendering() {
 
         <h2>Conditional Rendering Methods</h2>
 
-        <table>
+        <table
+          style={{
+            border: "1px solid white",
+            width: "100%",
+            borderCollapse: "collapse",
+
+          }}
+        >
           <tbody>
-            <tr>
-              <th>Method</th>
+            <tr
+            style={{
+              border:"1px solid white",
+              padding: "10px"
+            }}
+            >
+              <th
+              style={{
+                border:"1px solid white",
+                padding:"5px"
+              }}
+              >Method</th>
               <th>Best Used For</th>
             </tr>
 
-            <tr>
-              <td>if / else</td>
+            <tr
+                style={{
+                border:"1px solid white",
+                padding:"5px"
+              }}>
+              <td
+                  style={{
+                border:"1px solid white",
+                padding:"5px"
+              }}>if / else</td>
               <td>Multiple conditions or returning different components.</td>
+              
             </tr>
 
-            <tr>
-              <td>Ternary Operator (?)</td>
+            <tr
+                style={{
+                border:"1px solid white",
+                padding:"5px"
+              }}>
+              <td
+                  style={{
+                border:"1px solid white",
+                padding:"5px"
+              }}>Ternary Operator (?)</td>
               <td>Choosing between two values.</td>
             </tr>
 
-            <tr>
-              <td>Logical AND (&&)</td>
+            <tr
+                style={{
+                border:"1px solid white",
+                padding:"5px"
+              }}>
+              <td
+                  style={{
+                border:"1px solid white",
+                padding:"5px"
+              }}>Logical AND (&&)</td>
               <td>Showing an element only when the condition is true.</td>
             </tr>
           </tbody>
@@ -103,8 +164,13 @@ export default function ConditionalRendering() {
 
         <h2>Real World Example</h2>
 
-        <pre>
-{`function Profile({ user }) {
+        <pre
+          style={{
+            background: "#111",
+            overflowX: "auto",
+            borderRadius: "2px",
+          }}>
+          {`function Profile({ user }) {
 
   return (
     <>
