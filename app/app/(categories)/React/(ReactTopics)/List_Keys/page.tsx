@@ -1,31 +1,39 @@
 import Sidebar from "@/app/components/page";
 
 export default function ListsAndKeys() {
-  return (
-    <div>
-      <Sidebar />
+    return (
+        <div>
+            <Sidebar />
 
-      <div>
-        <h1>Lists & Keys</h1>
+            <div>
+                <h1>Lists & Keys</h1>
 
-        <p>
-          Lists allow you to display multiple items by rendering components from
-          an array. Keys help React identify which items have changed, been
-          added, or removed, making updates faster and more efficient.
-        </p>
+                <p>
+                    Lists allow you to display multiple items by rendering components from
+                    an array. Keys help React identify which items have changed, been
+                    added, or removed, making updates faster and more efficient.
+                </p>
 
-        <h2>Why Use Lists?</h2>
+                <h2>Why Use Lists?</h2>
 
-        <p>
-          Instead of writing the same JSX multiple times, you can store data in
-          an array and use the <code>map()</code> method to generate UI
-          dynamically.
-        </p>
+                <p>
+                    Instead of writing the same JSX multiple times, you can store data in
+                    an array and use the <code>map()</code> method to generate UI
+                    dynamically.
+                </p>
 
-        <h2>Basic List Example</h2>
+                <h2>Basic List Example</h2>
 
-        <pre>
-{`function App() {
+                <pre
+                    style={{
+                        borderRadius: "8px",
+                        background: "#111",
+                        padding: "18px",
+                        overflowX: "auto",
+                        // borderCollapse: "collapse"
+                    }}
+                >
+                    {`function App() {
 
   const fruits = ["Apple", "Banana", "Mango"];
 
@@ -37,17 +45,25 @@ export default function ListsAndKeys() {
     </ul>
   );
 }`}
-        </pre>
+                </pre>
 
-        <h2>Using Keys</h2>
+                <h2>Using Keys</h2>
 
-        <p>
-          Every item rendered inside a list should have a unique
-          <code> key </code> prop.
-        </p>
+                <p>
+                    Every item rendered inside a list should have a unique
+                    <code> key </code> prop.
+                </p>
 
-        <pre>
-{`function App() {
+                <pre
+                    style={{
+                        borderRadius: "8px",
+                        background: "#111",
+                        padding: "18px",
+                        overflowX: "auto",
+                        borderCollapse: "collapse"
+                    }}
+                >
+                    {`function App() {
 
   const fruits = [
     { id: 1, name: "Apple" },
@@ -65,66 +81,143 @@ export default function ListsAndKeys() {
     </ul>
   );
 }`}
-        </pre>
+                </pre>
 
-        <h2>What is a Key?</h2>
+                <h2>What is a Key?</h2>
 
-        <p>
-          A key is a special React prop that uniquely identifies each element in
-          a list. It helps React determine which items have changed when the UI
-          updates.
-        </p>
+                <p>
+                    A key is a special React prop that uniquely identifies each element in
+                    a list. It helps React determine which items have changed when the UI
+                    updates.
+                </p>
 
-        <h2>Good vs Bad Keys</h2>
+                <h2>Good vs Bad Keys</h2>
 
-        <table>
-          <tbody>
-            <tr>
-              <th>Good</th>
-              <th>Bad</th>
-            </tr>
+                <table
+                style={{
+                    borderCollapse:"collapse",
+                    overflowX:"auto",
+                    // padding:"8px",
+                    border:"1px solid white",
+                    width:"100%"
+                }}
+                >
+                    <tbody>
+                        <tr
+                            style={{
+                                border: "1px solid white",
+                                padding: "10px"
+                            }}>
+                            <th
+                                style={{
+                                border: "1px solid white",
+                                padding: "10px",
+                                
+                            }}>Good</th>
+                            <th>Bad</th>
+                        </tr>
 
-            <tr>
-              <td>Database ID</td>
-              <td>Random Number</td>
-            </tr>
+                        <tr
+                            style={{
+                                border: "1px solid white",
+                                padding: "10px"
+                            }}>
+                            <td
+                                style={{
+                                border: "1px solid white",
+                                padding: "10px"
+                            }}>Database ID</td>
+                            <td>Random Number</td>
+                        </tr>
 
-            <tr>
-              <td>UUID</td>
-              <td>Math.random()</td>
-            </tr>
+                        <tr
+                            style={{
+                                border: "1px solid white",
+                                padding: "10px"
+                            }}>
+                            <td
+                                style={{
+                                border: "1px solid white",
+                                padding: "10px"
+                            }}>UUID</td>
+                            <td>Math.random()</td>
+                        </tr>
 
-            <tr>
-              <td>Unique Value</td>
-              <td>Duplicate Values</td>
-            </tr>
+                        <tr
+                            style={{
+                                border: "1px solid white",
+                                padding: "10px"
+                            }}>
+                            <td
+                                style={{
+                                border: "1px solid white",
+                                padding: "10px"
+                            }}>UUID</td>
+                            <td>Math.random()</td>
+                        </tr>
 
-            <tr>
-              <td>Stable IDs</td>
-              <td>Changing Keys</td>
-            </tr>
-          </tbody>
-        </table>
+                        <tr
+                            style={{
+                                border: "1px solid white",
+                                padding: "10px"
+                            }}>
+                            <td
+                                style={{
+                                border: "1px solid white",
+                                padding: "10px"
+                            }}>Unique Value</td>
+                            <td>Duplicate Values</td>
+                        </tr>
 
-        <h2>Using the Index as a Key</h2>
+                        <tr
+                            style={{
+                                border: "1px solid white",
+                                padding: "10px"
+                            }}>
+                            <td
+                                style={{
+                                border: "1px solid white",
+                                padding: "10px"
+                            }}>Stable IDs</td>
+                            <td>Changing Keys</td>
+                        </tr>
+                    </tbody>
+                </table>
 
-        <p>
-          React allows you to use the array index as a key, but this should only
-          be done when the list never changes order.
-        </p>
+                <h2>Using the Index as a Key</h2>
 
-        <pre>
-{`{fruits.map((fruit, index) => (
+                <p>
+                    React allows you to use the array index as a key, but this should only
+                    be done when the list never changes order.
+                </p>
+
+                <pre
+
+                    style={{
+                        borderRadius: "8px",
+                        background: "#111",
+                        padding: "18px",
+                        overflowX: "auto",
+                        borderCollapse: "collapse"
+                    }}>
+                    {`{fruits.map((fruit, index) => (
   <li key={index}>
     {fruit}
   </li>
 ))}`}
-        </pre>
+                </pre>
 
-        <h2>Real World Example</h2>
+                <h2>Real World Example</h2>
 
-        <pre>
-{`function Users() {
+                <pre
+                     style={{
+            borderRadius: "8px",
+            background: "#111",
+            padding: "18px",
+            overflowX: "auto",
+            borderCollapse:"collapse"
+        }}>
+                    {`function Users() {
 
   const users = [
     { id: 1, name: "Asmit" },
@@ -142,35 +235,35 @@ export default function ListsAndKeys() {
     </div>
   );
 }`}
-        </pre>
+                </pre>
 
-        <h2>Best Practices</h2>
+                <h2>Best Practices</h2>
 
-        <ul>
-          <li>Always use unique keys.</li>
-          <li>Prefer IDs over array indexes.</li>
-          <li>Use <code>map()</code> to render lists.</li>
-          <li>Keep list items small and reusable.</li>
-          <li>Avoid duplicate keys.</li>
-        </ul>
+                <ul>
+                    <li>Always use unique keys.</li>
+                    <li>Prefer IDs over array indexes.</li>
+                    <li>Use <code>map()</code> to render lists.</li>
+                    <li>Keep list items small and reusable.</li>
+                    <li>Avoid duplicate keys.</li>
+                </ul>
 
-        <h2>Common Mistakes</h2>
+                <h2>Common Mistakes</h2>
 
-        <ul>
-          <li>Forgetting the key prop.</li>
-          <li>Using Math.random() as a key.</li>
-          <li>Using duplicate keys.</li>
-          <li>Using array indexes for dynamic lists.</li>
-        </ul>
+                <ul>
+                    <li>Forgetting the key prop.</li>
+                    <li>Using Math.random() as a key.</li>
+                    <li>Using duplicate keys.</li>
+                    <li>Using array indexes for dynamic lists.</li>
+                </ul>
 
-        <h2>Summary</h2>
+                <h2>Summary</h2>
 
-        <p>
-          Lists make it easy to render multiple elements from an array, while
-          keys help React efficiently update the user interface. Using unique
-          and stable keys improves performance and prevents rendering issues.
-        </p>
-      </div>
-    </div>
-  );
+                <p>
+                    Lists make it easy to render multiple elements from an array, while
+                    keys help React efficiently update the user interface. Using unique
+                    and stable keys improves performance and prevents rendering issues.
+                </p>
+            </div>
+        </div>
+    );
 }
