@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function ReactLayout({ children }: { children: React.ReactNode }) {
   return (
     <div
@@ -17,6 +19,9 @@ export default function ReactLayout({ children }: { children: React.ReactNode })
           lineHeight: "1.8",
         }}
       >
+        <Link href="/" style={{
+            textDecoration:"none"
+        }}></Link>
         <table
           style={{
             border: "1px solid white",
