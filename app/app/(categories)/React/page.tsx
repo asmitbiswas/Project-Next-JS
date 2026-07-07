@@ -62,7 +62,7 @@ export default function React() {
           <li><Link href="/React/Hookss" style={{color:"white"}}>Hooks</Link></li>
           <li><Link href="/React/Api_Context" style={{ color: "white" }}>Context API</Link></li>
           <li><Link href="/React/React_Router" style={{ color: "white" }}>React Router</Link></li>
-          <li><Link href="/React/Performance_Optimization" style={{ color: "white" }}>Performance Optimization</Link></li>
+          <li><Link href="/React/Performance_Optimazation" style={{ color: "white" }}>Performance Optimization</Link></li>
         </ul>
 
         <h2>React Hooks</h2>
