@@ -87,36 +87,116 @@ function Navbar() {
 
         <h2>Main Components</h2>
 
-        <table>
+        <table
+        style={{
+            borderCollapse:"collapse",
+            // padding:"10px",
+            width:"100%",
+            border:"1px solid white",
+            margin:"25 0 px"
+        }}
+        >
           <tbody>
             <tr>
-              <th>Component</th>
-              <th>Purpose</th>
+              <th
+              style={{
+                textAlign:"left",
+                padding:"10px", 
+                border:"1px solid white"
+              }}
+              >Component</th>
+              <th
+                style={{
+                textAlign:"left",
+                padding:"10px", 
+                border:"1px solid white"
+              }}
+              >Purpose</th>
             </tr>
 
             <tr>
-              <td>BrowserRouter</td>
-              <td>Wraps the application.</td>
+              <td
+                style={{
+                textAlign:"left",
+                padding:"10px", 
+                border:"1px solid white"
+              }}
+              >BrowserRouter</td>
+              <td
+                style={{
+                textAlign:"left",
+                padding:"10px", 
+                border:"1px solid white"
+              }}
+              >Wraps the application.</td>
             </tr>
 
             <tr>
-              <td>Routes</td>
-              <td>Groups all routes.</td>
+              <td
+                style={{
+                textAlign:"left",
+                padding:"10px", 
+                border:"1px solid white"
+              }}
+              >Routes</td>
+              <td
+              
+                style={{
+                textAlign:"left",
+                padding:"10px", 
+                border:"1px solid white"
+              }}>Groups all routes.</td>
             </tr>
 
             <tr>
-              <td>Route</td>
-              <td>Defines a page.</td>
+              <td
+                style={{
+                textAlign:"left",
+                padding:"10px", 
+                border:"1px solid white"
+              }}
+                >Route</td>
+              <td
+                    style={{
+                textAlign:"left",
+                padding:"10px", 
+                border:"1px solid white"
+              }}
+              >Defines a page.</td>
             </tr>
 
             <tr>
-              <td>Link</td>
-              <td>Navigates without page reload.</td>
+              <td
+                    style={{
+                textAlign:"left",
+                padding:"10px", 
+                border:"1px solid white"
+              }}
+              >Link</td>
+              <td
+                    style={{
+                textAlign:"left",
+                padding:"10px", 
+                border:"1px solid white"
+              }}
+              >Navigates without page reload.</td>
             </tr>
 
             <tr>
-              <td>useNavigate</td>
-              <td>Programmatic navigation.</td>
+              <td
+                    style={{
+                textAlign:"left",
+                padding:"10px", 
+                border:"1px solid white"
+              }}
+              >useNavigate</td>
+              <td
+                    style={{
+                textAlign:"left",
+                padding:"10px", 
+                border:"1px solid white"
+              }}
+              >Programmatic navigation.</td>
             </tr>
           </tbody>
         </table>
