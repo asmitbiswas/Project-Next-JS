@@ -59,7 +59,7 @@ export default function React() {
           <li><Link href="/React/Conditonal_Rendering" style={{ color: "white" }}>Conditional Rendering</Link></li>
           <li><Link href="/React/List_Keys" style={{ color: "white" }}>Lists & Keys</Link></li>
           <li><Link href="/React/Forms" style={{ color: "white" }}>Forms</Link></li>
-          <li>React Hooks</li>
+          <li><Link href="/React/Hookss" style={{color:"white"}}>Hooks</Link></li>
           <li>Context API</li>
           <li>React Router</li>
           <li>Performance Optimization</li>
