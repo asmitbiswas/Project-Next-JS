@@ -24,7 +24,14 @@ export default function ContextAPI() {
 
         <h2>Creating a Context</h2>
 
-        <pre>
+        <pre
+        style={{
+            background:"#111",
+            overflowX:"auto",
+            borderRadius:"10px",
+            padding:"18px"
+        }}
+        >
 {`import { createContext } from "react";
 
 const UserContext = createContext();`}
@@ -32,7 +39,14 @@ const UserContext = createContext();`}
 
         <h2>Providing Context</h2>
 
-        <pre>
+        <pre
+              style={{
+            background:"#111",
+            overflowX:"auto",
+            borderRadius:"10px",
+            padding:"18px"
+        }}
+        >
 {`<UserContext.Provider value="Asmit">
   <App />
 </UserContext.Provider>`}
@@ -40,7 +54,14 @@ const UserContext = createContext();`}
 
         <h2>Consuming Context</h2>
 
-        <pre>
+        <pre
+              style={{
+            background:"#111",
+            overflowX:"auto",
+            borderRadius:"10px",
+            padding:"18px"
+        }}
+        >
 {`import { useContext } from "react";
 
 function Profile() {
@@ -52,26 +73,82 @@ function Profile() {
 
         <h2>How Context Works</h2>
 
-        <table>
+        <table
+        style={{
+            borderCollapse:"collapse",
+            width:"100%",
+            border:"1px solid white",
+            margin:"25px 0"
+        }}
+        >
           <tbody>
             <tr>
-              <th>Step</th>
-              <th>Description</th>
+              <th
+                  style={{
+                border:"1px solid white",
+                padding:"10px",
+                textAlign:"left"
+            }}
+              >Step</th>
+              <th
+                  style={{
+                border:"1px solid white",
+                padding:"10px",
+                textAlign:"left"
+            }}
+              >Description</th>
+            </tr>
+
+            <tr
+         
+            >
+              <td
+                  style={{
+                border:"1px solid white",
+                padding:"10px"
+            }}
+              >Create Context</td>
+              <td
+                     style={{
+                border:"1px solid white",
+                padding:"10px",
+                textAlign:"left"
+            }}
+              >Use createContext().</td>
             </tr>
 
             <tr>
-              <td>Create Context</td>
-              <td>Use createContext().</td>
+              <td
+                     style={{
+                border:"1px solid white",
+                padding:"10px",
+                textAlign:"left"
+            }}
+              >Provide Value</td>
+              <td
+                     style={{
+                border:"1px solid white",
+                padding:"10px",
+                textAlign:"left"
+            }}
+              >Wrap components with Provider.</td>
             </tr>
 
             <tr>
-              <td>Provide Value</td>
-              <td>Wrap components with Provider.</td>
-            </tr>
-
-            <tr>
-              <td>Consume Value</td>
-              <td>Access data using useContext().</td>
+              <td
+                     style={{
+                border:"1px solid white",
+                padding:"10px",
+                textAlign:"left"
+            }}
+              >Consume Value</td>
+              <td
+                     style={{
+                border:"1px solid white",
+                padding:"10px",
+                textAlign:"left"
+            }}
+              >Access data using useContext().</td>
             </tr>
           </tbody>
         </table>
