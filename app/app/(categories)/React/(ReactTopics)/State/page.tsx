@@ -153,7 +153,14 @@ function Counter() {
                             <td>Cannot be modified by the child</td>
                         </tr>
 
-                        <tr>
+                        <tr
+                        style={{
+                                                        
+
+                                
+
+                        }}
+                        >
                             <td style={{
                                 border: "1px solid white",
                                 padding: "10px",
