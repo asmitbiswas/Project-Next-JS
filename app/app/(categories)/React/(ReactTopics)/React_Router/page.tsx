@@ -22,13 +22,27 @@ export default function ReactRouter() {
 
         <h2>Installation</h2>
 
-        <pre>
+        <pre
+        style={{
+            background:"#111",
+            overflowX:"auto",
+            padding:"18px",
+            borderRadius:"10px"
+        }}
+        >
 {`npm install react-router-dom`}
         </pre>
 
         <h2>Basic Example</h2>
 
-        <pre>
+        <pre
+           style={{
+            background:"#111",
+            overflowX:"auto",
+            padding:"18px",
+            borderRadius:"10px"
+        }}
+        >
 {`import {
   BrowserRouter,
   Routes,
@@ -51,7 +65,14 @@ function App() {
 
         <h2>Navigation</h2>
 
-        <pre>
+        <pre
+           style={{
+            background:"#111",
+            overflowX:"auto",
+            padding:"18px",
+            borderRadius:"10px"
+        }}
+        >
 {`import { Link } from "react-router-dom";
 
 function Navbar() {
@@ -102,7 +123,14 @@ function Navbar() {
 
         <h2>Programmatic Navigation</h2>
 
-        <pre>
+        <pre
+           style={{
+            background:"#111",
+            overflowX:"auto",
+            padding:"18px",
+            borderRadius:"10px"
+        }}
+        >
 {`import { useNavigate } from "react-router-dom";
 
 function Home() {
