@@ -59,7 +59,14 @@ function Counter() {
 
                 <h2>Syntax</h2>
 
-                <pre>
+                <pre
+                style={{
+                    overflowX:"auto",
+                    padding:"18px",
+                    background:"#111",
+                    borderRadius:"12px",
+                }}
+                >
                     {`const [state, setState] = useState(initialValue);`}
                 </pre>
 
