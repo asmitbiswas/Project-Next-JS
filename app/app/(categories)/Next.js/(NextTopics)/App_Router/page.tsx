@@ -25,7 +25,17 @@ export default function AppRouter() {
 
         <h2>Basic Structure</h2>
 
-        <pre>
+        <pre
+                 style={{
+            background:"#111",
+            overflowX:"auto",
+            borderRadius:"10px",
+            padding:"18px",
+            borderLeft:"5px solid #00ff00",
+            lineHeight:"1.8",
+            fontSize:"16px"
+        }}
+        >
 {`app/
 │
 ├── layout.tsx
@@ -40,79 +50,245 @@ export default function AppRouter() {
 
         <h2>How Routing Works</h2>
 
-        <table>
+        <table
+        style={{
+            borderCollapse:"collapse",
+            width:"100%",
+            overflowX:"auto",
+            border:"1px solid #444",
+            margin:"25 0"
+        }}
+        >
           <tbody>
             <tr>
-              <th>Folder</th>
-              <th>Generated Route</th>
+                    <th
+                    style={{
+                        border:"1px solid #444",
+                        padding:"10px",
+                        background:"#111",
+                    }}
+              >Folder</th>
+              <th
+              style={{
+                border:"1px solid #444",
+                        padding:"10px",
+                        background:"#111",
+              }}
+              >Generated Route</th>
             </tr>
 
             <tr>
-              <td>app/page.tsx</td>
-              <td>/</td>
+              <td
+              style={{
+                border:"1px solid #444",
+                padding:"10px"
+              }}
+              >app/page.tsx</td>
+              <td
+               style={{
+                border:"1px solid #444",
+                padding:"10px"
+              }}
+              >/</td>
             </tr>
 
             <tr>
-              <td>app/about/page.tsx</td>
-              <td>/about</td>
+              <td
+               style={{
+                border:"1px solid #444",
+                padding:"10px",
+                background:"#111",
+              }}
+              >app/about/page.tsx</td>
+              <td
+               style={{
+                border:"1px solid #444",
+                padding:"10px",
+                background:"#111",
+              }}
+              >/about</td>
             </tr>
 
             <tr>
-              <td>app/contact/page.tsx</td>
-              <td>/contact</td>
+              <td
+               style={{
+                border:"1px solid #444",
+                padding:"10px"
+              }}
+              >app/contact/page.tsx</td>
+              <td
+               style={{
+                border:"1px solid #444",
+                padding:"10px"
+              }}
+              >/contact</td>
             </tr>
 
             <tr>
-              <td>app/dashboard/page.tsx</td>
-              <td>/dashboard</td>
+              <td
+               style={{
+                border:"1px solid #444",
+                padding:"10px",
+                background:"#111",
+              }}
+              >app/dashboard/page.tsx</td>
+              <td
+               style={{
+                border:"1px solid #444",
+                padding:"10px",
+                background:"#111",
+              }}
+              >/dashboard</td>
             </tr>
           </tbody>
         </table>
 
         <h2>Important Files</h2>
 
-        <table>
+        <table
+             style={{
+            borderCollapse:"collapse",
+            width:"100%",
+            overflowX:"auto",
+            border:"1px solid #444",
+            margin:"25 0"
+        }}
+        >
           <tbody>
             <tr>
-              <th>File</th>
-              <th>Purpose</th>
+              <th
+               style={{
+                        border:"1px solid #444",
+                        padding:"10px",
+                        background:"#111",
+                    }}
+              >File</th>
+              <th
+               style={{
+                        border:"1px solid #444",
+                        padding:"10px",
+                        background:"#111",
+               }}
+              >Purpose</th>
             </tr>
 
             <tr>
-              <td>page.tsx</td>
-              <td>Creates a page for a route.</td>
+              <td
+                  style={{
+                        border:"1px solid #444",
+                        padding:"10px",
+                        // background:"#111",
+               }}
+              >page.tsx</td>
+              <td
+                  style={{
+                        border:"1px solid #444",
+                        padding:"10px",
+                        // background:"#111",
+               }}
+              >Creates a page for a route.</td>
             </tr>
 
             <tr>
-              <td>layout.tsx</td>
-              <td>Shared UI across multiple pages.</td>
+              <td
+                  style={{
+                        border:"1px solid #444",
+                        padding:"10px",
+                        background:"#111",
+               }}
+              >layout.tsx</td>
+              <td
+                  style={{
+                        border:"1px solid #444",
+                        padding:"10px",
+                        background:"#111",
+               }}
+              >Shared UI across multiple pages.</td>
             </tr>
 
             <tr>
-              <td>loading.tsx</td>
-              <td>Displays a loading UI while content loads.</td>
+              <td
+                  style={{
+                        border:"1px solid #444",
+                        padding:"10px",
+                        // background:"#111",
+               }}
+              >loading.tsx</td>
+              <td
+                  style={{
+                        border:"1px solid #444",
+                        padding:"10px",
+                        // background:"#111",
+               }}
+              >Displays a loading UI while content loads.</td>
             </tr>
 
             <tr>
-              <td>error.tsx</td>
-              <td>Displays an error UI if something fails.</td>
+              <td
+                  style={{
+                        border:"1px solid #444",
+                        padding:"10px",
+                        background:"#111",
+               }}
+              >error.tsx</td>
+              <td
+                 style={{
+                        border:"1px solid #444",
+                        padding:"10px",
+                        background:"#111",
+               }}
+              >Displays an error UI if something fails.</td>
             </tr>
 
             <tr>
-              <td>not-found.tsx</td>
-              <td>Custom 404 page.</td>
+              <td
+                   style={{
+                        border:"1px solid #444",
+                        padding:"10px",
+                        // background:"#111",
+               }}
+              >not-found.tsx</td>
+              <td
+                   style={{
+                        border:"1px solid #444",
+                        padding:"10px",
+                        // background:"#111",
+               }}
+              >Custom 404 page.</td>
             </tr>
 
             <tr>
-              <td>template.tsx</td>
-              <td>Creates a new instance of a layout on navigation.</td>
+              <td
+                   style={{
+                        border:"1px solid #444",
+                        padding:"10px",
+                        background:"#111",
+               }}
+              >template.tsx</td>
+              <td
+                   style={{
+                        border:"1px solid #444",
+                        padding:"10px",
+                        background:"#111",
+               }}
+              >Creates a new instance of a layout on navigation.</td>
             </tr>
           </tbody>
         </table>
 
         <h2>Example Route</h2>
 
-        <pre>
+        <pre
+                 style={{
+            background:"#111",
+            overflowX:"auto",
+            borderRadius:"10px",
+            padding:"18px",
+            borderLeft:"5px solid #00ff00",
+            lineHeight:"1.8",
+            fontSize:"16px"
+        }}
+        >
 {`app/
 └── profile/
     └── page.tsx`}
@@ -122,7 +298,17 @@ export default function AppRouter() {
           This folder structure automatically creates the following route:
         </p>
 
-        <pre>
+        <pre
+                 style={{
+            background:"#111",
+            overflowX:"auto",
+            borderRadius:"10px",
+            padding:"18px",
+            borderLeft:"5px solid #00ff00",
+            lineHeight:"1.8",
+            fontSize:"16px"
+        }}
+        >
 {`http://localhost:3000/profile`}
         </pre>
 
@@ -155,6 +341,33 @@ export default function AppRouter() {
           layouts, server components, loading states, and error handling. It is
           the foundation of every new Next.js application.
         </p>
+
+        <h1>Don't make this Shitty mistake</h1>
+       <pre
+                 style={{
+            background:"#111",
+            overflowX:"auto",
+            borderRadius:"10px",
+            padding:"18px",
+            borderLeft:"5px solid #00ff00",
+            lineHeight:"1.8",
+            fontSize:"16px"
+        }}
+        >
+{`app/
+│
+├── layout.tsx
+├── page.tsx
+├── about/
+│   └── page.tsx
+├── contact/
+│   └── page.tsx
+└── dashboard/
+    └── page.tsx
+├── [Ur route group]/   
+    `}
+        </pre>
+        <p>If u do this ur app will break( route won't work properly )</p>
       </div>
     </div>
   );
