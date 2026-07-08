@@ -59,7 +59,7 @@ export default function NextJS() {
         <ul>
           <li><Link href="/Next.js/Creating_Next_Project" style={{color:"white"}}>Creating a Next.js project</Link></li>
           <li><Link href="/Next.js/Folder_Structure" style={{color:"white"}}>Folder Structure</Link></li>
-          <li>App Router</li>
+          <li><Link href="/Next.js/App_Router" style={{color:"white"}}>App Router</Link></li>
           <li>Pages & Layouts</li>
           <li>Routing</li>
           <li>Server & Client Components</li>
