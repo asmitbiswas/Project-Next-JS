@@ -1,9 +1,9 @@
-import Sidebar from "@/app/components/page";
+// import Sidebar from "@/app/components/page";
 
 export default function FolderStructure() {
   return (
     <div>
-      <Sidebar />
+      {/* <Sidebar /> */}
 
       <div>
         <h1>Folder Structure</h1>
@@ -16,7 +16,17 @@ export default function FolderStructure() {
 
         <h2>Default Folder Structure</h2>
 
-        <pre>
+        <pre
+       style={{
+            background:"#111",
+            overflowX:"auto",
+            borderRadius:"10px",
+            padding:"18px",
+            borderLeft:"5px solid #00ff00",
+            lineHeight:"1.8",
+            fontSize:"16px"
+        }}
+        >
 {`my-app/
 │
 ├── app/
@@ -41,72 +51,234 @@ export default function FolderStructure() {
 
         <h2>Important Folders</h2>
 
-        <table>
+        <table
+        style={{
+            borderCollapse:"collapse",
+            overflowX:"auto",
+            // padding:"10px",
+            width:"100%",
+            margin:"25 0",
+            border:"1px solid white",
+            // borderLeftL:
+            // textAlign
+        }}
+        >
           <tbody>
             <tr>
-              <th>Folder</th>
-              <th>Purpose</th>
+              <th
+              style={{
+                border:"1px solid white",
+                padding:"10px",
+                background:"#111111",
+              }}
+              >Folder</th>
+              <th
+                style={{
+                border:"1px solid white",
+                padding:"10px",
+                background:"#111111",
+              }}
+              >Purpose</th>
             </tr>
 
             <tr>
-              <td>app/</td>
-              <td>Contains routes, layouts, pages, and UI.</td>
+              <td
+                style={{
+                border:"1px solid white",
+                padding:"10px"
+              }}
+              >app/</td>
+              <td
+                style={{
+                border:"1px solid white",
+                padding:"10px"
+              }}
+              >Contains routes, layouts, pages, and UI.</td>
             </tr>
 
             <tr>
-              <td>public/</td>
-              <td>Stores static assets like images and icons.</td>
+              <td
+                style={{
+                border:"1px solid white",
+                padding:"10px",
+                background:"#111111"
+              }}
+              >public/</td>
+              <td
+                style={{
+                border:"1px solid white",
+                padding:"10px",
+                background:"#111111"
+              }}
+              >Stores static assets like images and icons.</td>
             </tr>
 
             <tr>
-              <td>node_modules/</td>
-              <td>Contains installed npm packages.</td>
+              <td
+                style={{
+                border:"1px solid white",
+                padding:"10px"
+              }}
+              >node_modules/</td>
+              <td
+                style={{
+                border:"1px solid white",
+                padding:"10px"
+              }}
+              >Contains installed npm packages.</td>
             </tr>
           </tbody>
         </table>
 
         <h2>Important Files</h2>
 
-        <table>
+        <table
+                style={{
+            borderCollapse:"collapse",
+            overflowX:"auto",
+            // padding:"10px",
+            width:"100%",
+            margin:"25 0",
+            border:"1px solid white",
+            // borderLeftL:
+            // textAlign
+        }}
+        >
           <tbody>
             <tr>
-              <th>File</th>
-              <th>Purpose</th>
+              <th
+               style={{
+                border:"1px solid white",
+                padding:"10px",
+                // background:"#111111",
+              }}
+              >File</th>
+              <th
+               style={{
+                border:"1px solid white",
+                padding:"10px",
+                // background:"#111111",
+              }}
+              >Purpose</th>
             </tr>
 
             <tr>
-              <td>page.tsx</td>
-              <td>Creates a route (page).</td>
+              <td
+               style={{
+                border:"1px solid white",
+                padding:"10px",
+                // background:"#111111",
+              }}
+              >page.tsx</td>
+              <td
+               style={{
+                border:"1px solid white",
+                padding:"10px",
+                // background:"#111111",
+              }}
+              >Creates a route (page).</td>
             </tr>
 
             <tr>
-              <td>layout.tsx</td>
-              <td>Shared layout between pages.</td>
+              <td
+               style={{
+                border:"1px solid white",
+                padding:"10px",
+                // background:"#111111",
+              }}
+              >layout.tsx</td>
+              <td
+               style={{
+                border:"1px solid white",
+                padding:"10px",
+                // background:"#111111",
+              }}
+              >Shared layout between pages.</td>
             </tr>
 
             <tr>
-              <td>globals.css</td>
-              <td>Global CSS for the application.</td>
+              <td
+               style={{
+                border:"1px solid white",
+                padding:"10px",
+                // background:"#111111",
+              }}
+              >globals.css</td>
+              <td
+               style={{
+                border:"1px solid white",
+                padding:"10px",
+                // background:"#111111",
+              }}
+              >Global CSS for the application.</td>
             </tr>
 
             <tr>
-              <td>package.json</td>
-              <td>Stores project information and dependencies.</td>
+              <td
+               style={{
+                border:"1px solid white",
+                padding:"10px",
+                // background:"#111111",
+              }}
+              >package.json</td>
+              <td
+               style={{
+                border:"1px solid white",
+                padding:"10px",
+                // background:"#111111",
+              }}
+              >Stores project information and dependencies.</td>
             </tr>
 
             <tr>
-              <td>tsconfig.json</td>
-              <td>TypeScript configuration.</td>
+              <td
+               style={{
+                border:"1px solid white",
+                padding:"10px",
+                // background:"#111111",
+              }}
+              >tsconfig.json</td>
+              <td
+               style={{
+                border:"1px solid white",
+                padding:"10px",
+                // background:"#111111",
+              }}
+              >TypeScript configuration.</td>
             </tr>
 
             <tr>
-              <td>next.config.ts</td>
-              <td>Next.js configuration file.</td>
+              <td
+               style={{
+                border:"1px solid white",
+                padding:"10px",
+                // background:"#111111",
+              }}
+              >next.config.ts</td>
+              <td
+               style={{
+                border:"1px solid white",
+                padding:"10px",
+                // background:"#111111",
+              }}
+              >Next.js configuration file.</td>
             </tr>
 
             <tr>
-              <td>README.md</td>
-              <td>Project documentation.</td>
+              <td
+               style={{
+                border:"1px solid white",
+                padding:"10px",
+                // background:"#111111",
+              }}
+              >README.md</td>
+              <td
+               style={{
+                border:"1px solid white",
+                padding:"10px",
+                // background:"#111111",
+              }}
+              >Project documentation.</td>
             </tr>
           </tbody>
         </table>
@@ -121,7 +293,17 @@ export default function FolderStructure() {
 
         <h2>Example</h2>
 
-        <pre>
+        <pre
+             style={{
+            background:"#111",
+            overflowX:"auto",
+            borderRadius:"10px",
+            padding:"18px",
+            borderLeft:"5px solid #00ff00",
+            lineHeight:"1.8",
+            fontSize:"16px"
+        }}
+        >
 {`app/
 │
 ├── page.tsx
