@@ -1,8 +1,92 @@
-export default function NextJsPage() {
+// import Sidebar from "@/app/components/page";
+
+export default function NextJS() {
   return (
-    <div>
-      <h1>Next.js</h1>
-      <p></p>
+    <div >
+      {/* <Sidebar /> */}
+
+      <div>
+        <h1>Next.js</h1>
+
+        <p>
+          Next.js is a React framework that helps developers build fast,
+          scalable, and production-ready web applications. It extends React by
+          providing features like file-based routing, server-side rendering,
+          static site generation, API routes, image optimization, and much more.
+        </p>
+
+        <h2>Why Next.js?</h2>
+
+        <p>
+          React is responsible for building user interfaces, while Next.js
+          provides the tools needed to build complete web applications. It
+          simplifies routing, improves performance, and offers excellent SEO
+          support out of the box.
+        </p>
+
+        <h2>Key Features</h2>
+
+        <ul>
+          <li>Built on top of React.</li>
+          <li>File-based Routing.</li>
+          <li>App Router.</li>
+          <li>Server Components.</li>
+          <li>Client Components.</li>
+          <li>Server-Side Rendering (SSR).</li>
+          <li>Static Site Generation (SSG).</li>
+          <li>API Routes.</li>
+          <li>Image Optimization.</li>
+          <li>Metadata API.</li>
+          <li>Loading & Error UI.</li>
+          <li>Route Groups.</li>
+          <li>Dynamic Routes.</li>
+        </ul>
+
+        <h2>Prerequisites</h2>
+
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript (ES6+)</li>
+          <li>React Fundamentals</li>
+          <li>Node.js & npm</li>
+        </ul>
+
+        <h2>What You'll Learn</h2>
+
+        <ul>
+          <li>Creating a Next.js project</li>
+          <li>Folder structure</li>
+          <li>App Router</li>
+          <li>Pages & Layouts</li>
+          <li>Routing</li>
+          <li>Server & Client Components</li>
+          <li>Navigation</li>
+          <li>Loading & Error Pages</li>
+          <li>Data Fetching</li>
+          <li>Metadata</li>
+          <li>API Routes</li>
+          <li>Deployment</li>
+        </ul>
+
+        <h2>Why Learn Next.js?</h2>
+
+        <p>
+          Next.js is one of the most popular frameworks for modern React
+          development. It is widely used for production applications because of
+          its excellent performance, SEO capabilities, and developer
+          experience.
+        </p>
+
+        <h2>Summary</h2>
+
+        <p>
+          Next.js combines the power of React with powerful built-in features,
+          making it one of the best choices for building modern web
+          applications. Throughout this section, you'll learn everything from
+          creating your first project to building production-ready applications.
+        </p>
+      </div>
     </div>
   );
 }
