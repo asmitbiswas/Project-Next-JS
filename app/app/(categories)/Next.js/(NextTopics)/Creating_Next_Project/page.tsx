@@ -1,24 +1,11 @@
-import Sidebar from "@/app/components/page";
+// import Sidebar from "@/app/components/page";
 
 export default function CreatingNextJSProject() {
   return (
-    <div
-      style={{
-        background: "#000",
-        color: "#fff",
-        minHeight: "100vh",
-        padding: "40px",
-      }}
-    >
-      <Sidebar />
+    <div>
+      
 
-      <div
-        style={{
-          marginLeft: "280px",
-          maxWidth: "900px",
-          lineHeight: "1.8",
-        }}
-      >
+      <div>
         <h1>Creating a Next.js Project</h1>
 
         <p>

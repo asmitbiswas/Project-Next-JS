@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 // import Sidebar from "@/app/components/page";
 
 export default function NextJS() {
@@ -55,7 +57,7 @@ export default function NextJS() {
         <h2>What You'll Learn</h2>
 
         <ul>
-          <li>Creating a Next.js project</li>
+          <li><Link href="/Next.js/Creating_Next_Project" style={{color:"white"}}>Creating a Next.js project</Link></li>
           <li>Folder structure</li>
           <li>App Router</li>
           <li>Pages & Layouts</li>

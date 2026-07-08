@@ -18,6 +18,9 @@ export default function NextJSLayout({ children }: { children: React.ReactNode }
           lineHeight: "1.8",
         }}
       >
+        {/* <ul>
+            <li style={{color:"white"}}></li>
+        </ul> */}
         {children}
       </div>
     </div>
