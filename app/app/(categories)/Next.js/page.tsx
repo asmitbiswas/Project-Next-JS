@@ -61,7 +61,7 @@ export default function NextJS() {
           <li><Link href="/Next.js/Folder_Structure" style={{color:"white"}}>Folder Structure</Link></li>
           <li><Link href="/Next.js/App_Router" style={{color:"white"}}>App Router</Link></li>
           <li><Link href="/Next.js/Page_Layouts" style={{color:"white"}}>Pages & Layouts</Link></li>
-          <li>Routing</li>
+          <li><Link href="/Next.js/Routing" style={{color:"white"}}>Routing</Link></li>
           <li>Server & Client Components</li>
           <li>Navigation</li>
           <li>Loading & Error Pages</li>
