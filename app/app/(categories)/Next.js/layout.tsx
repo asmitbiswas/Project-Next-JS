@@ -18,6 +18,11 @@ export default function NextJSLayout({ children }: { children: React.ReactNode }
           lineHeight: "1.8",
         }}
       >
+          <pre style={{
+            fontSize:"13px",
+            lineHeight:"1.8"
+          }}></pre>
+
         {/* <ul>
             <li style={{color:"white"}}></li>
         </ul> */}

@@ -1,9 +1,9 @@
-import Sidebar from "@/app/components/page";
+// import Sidebar from "@/app/components/page";
 
 export default function Routing() {
   return (
     <div>
-      <Sidebar />
+      {/* <Sidebar /> */}
 
       <div>
         <h1>Routing</h1>
@@ -25,7 +25,17 @@ export default function Routing() {
 
         <h2>Example Folder Structure</h2>
 
-        <pre>
+        <pre
+        style={
+            {
+                padding:"18px",
+                overflowX:"auto",
+                background:"#111",
+                borderRadius:"12px",
+                borderLeft:"7px solid rgba(13, 200, 13)"
+            }
+        }
+        >
 {`app/
 ├── page.tsx
 ├── about/
@@ -38,38 +48,113 @@ export default function Routing() {
 
         <h2>Generated Routes</h2>
 
-        <table>
+        <table
+        style={{
+            borderCollapse:"collapse",
+            width:"100%",
+            margin:"25 0",
+            border:"1px solid  #444"
+        }}
+        >
           <tbody>
             <tr>
-              <th>Folder</th>
-              <th>URL</th>
+              <th
+              style={{
+                border:"1px solid #444",
+                padding:"14px",
+                background:"#111"
+              }}
+              >Folder</th>
+              <th
+                 style={{
+                border:"1px solid #444",
+                padding:"14px",
+                background:"#111"
+              }}
+              >URL</th>
             </tr>
 
             <tr>
-              <td>app/page.tsx</td>
-              <td>/</td>
+              <td
+              style={{
+                border:"1px solid #444",
+                padding:"14px"
+              }}
+              >app/page.tsx</td>
+              <td
+                 style={{
+                border:"1px solid #444",
+                padding:"14px"
+              }}
+              >/</td>
             </tr>
 
             <tr>
-              <td>app/about/page.tsx</td>
-              <td>/about</td>
+              <td
+                 style={{
+                border:"1px solid #444",
+                padding:"14px",
+                background:"#111"
+              }}
+              >app/about/page.tsx</td>
+              <td
+                 style={{
+                border:"1px solid #444",
+                padding:"14px",
+                background:"#111"
+              }}
+              >/about</td>
             </tr>
 
             <tr>
-              <td>app/contact/page.tsx</td>
-              <td>/contact</td>
+              <td
+                 style={{
+                border:"1px solid #444",
+                padding:"14px",
+                // background:"#111"
+              }}
+              >app/contact/page.tsx</td>
+              <td
+                 style={{
+                border:"1px solid #444",
+                padding:"14px",
+                // background:"#111"
+              }}
+              >/contact</td>
             </tr>
 
             <tr>
-              <td>app/blog/page.tsx</td>
-              <td>/blog</td>
+              <td
+                 style={{
+                border:"1px solid #444",
+                padding:"14px",
+                background:"#111"
+              }}
+              >app/blog/page.tsx</td>
+              <td
+                 style={{
+                border:"1px solid #444",
+                padding:"14px",
+                background:"#111"
+              }}
+              >/blog</td>
             </tr>
           </tbody>
         </table>
 
         <h2>Creating a New Route</h2>
 
-        <pre>
+        <pre
+          style={
+            {
+                padding:"18px",
+                overflowX:"auto",
+                background:"#111",
+                borderRadius:"12px",
+                borderLeft:"7px solid rgba(13, 200, 13)"
+            }
+        }
+        >
 {`app/
 └── services/
     └── page.tsx`}
@@ -79,7 +164,17 @@ export default function Routing() {
           This automatically creates the following route:
         </p>
 
-        <pre>
+        <pre
+          style={
+            {
+                padding:"18px",
+                overflowX:"auto",
+                background:"#111",
+                borderRadius:"12px",
+                borderLeft:"7px solid rgba(13, 200, 13)"
+            }
+        }
+        >
 {`http://localhost:3000/services`}
         </pre>
 
@@ -91,7 +186,17 @@ export default function Routing() {
           full page refresh.
         </p>
 
-        <pre>
+        <pre
+          style={
+            {
+                padding:"18px",
+                overflowX:"auto",
+                background:"#111",
+                borderRadius:"12px",
+                borderLeft:"7px solid rgba(13, 200, 13)"
+            }
+        }
+        >
 {`import Link from "next/link";
 
 export default function Navbar() {
