@@ -43,26 +43,82 @@ export default function PagesLayouts() {
 
         <p>This creates the following routes:</p>
 
-        <table>
+        <table
+        style={{
+          borderCollapse:"collapse",
+          overflowX:"auto",
+          // margin:"25 0",
+          width:"100%",
+          border:"1px solid #444"
+        }}
+        >
           <tbody>
             <tr>
-              <th>File</th>
-              <th>Route</th>
+              <th
+              style={{
+                padding:"14px",
+                border:"1px solid #444",
+                background:"#111"
+              }}
+              >File</th>
+              <th
+                style={{
+                padding:"14px",
+                border:"1px solid #444",
+                background:"#111"
+              }}
+              >Route</th>
             </tr>
 
             <tr>
-              <td>app/page.tsx</td>
-              <td>/</td>
+              <td
+                style={{
+                padding:"14px",
+                border:"1px solid #444",
+               
+              }}
+              >app/page.tsx</td>
+              <td
+               style={{
+                padding:"14px",
+                border:"1px solid #444",
+               
+              }}
+              >/</td>
             </tr>
 
             <tr>
-              <td>app/about/page.tsx</td>
-              <td>/about</td>
+              <td
+                style={{
+                padding:"14px",
+                border:"1px solid #444",
+                background:"#111"
+              }}
+              >app/about/page.tsx</td>
+              <td
+                style={{
+                padding:"14px",
+                border:"1px solid #444",
+                background:"#111"
+              }}
+              >/about</td>
             </tr>
 
             <tr>
-              <td>app/contact/page.tsx</td>
-              <td>/contact</td>
+              <td
+               style={{
+                padding:"14px",
+                border:"1px solid #444",
+               
+              }}
+              >app/contact/page.tsx</td>
+              <td
+               style={{
+                padding:"14px",
+                border:"1px solid #444",
+               
+              }}
+              >/contact</td>
             </tr>
           </tbody>
         </table>
@@ -149,31 +205,98 @@ export default function PagesLayouts() {
 
         <h2>Pages vs Layouts</h2>
 
-        <table>
+        <table
+        style={{
+             borderCollapse:"collapse",
+          overflowX:"auto",
+          // margin:"25 0",
+          width:"100%",
+          border:"1px solid #444"
+        }}
+        >
           <tbody>
             <tr>
-              <th>Page</th>
-              <th>Layout</th>
+              <th
+                 style={{
+                padding:"14px",
+                border:"1px solid #444",
+                background:"#111"
+              }}
+              >Page</th>
+              <th
+               style={{
+                padding:"14px",
+                border:"1px solid #444",
+                background:"#111"
+              }}
+              >Layout</th>
             </tr>
 
             <tr>
-              <td>Creates a route.</td>
-              <td>Wraps multiple pages.</td>
+              <td
+                 style={{
+                padding:"14px",
+                border:"1px solid #444",
+                // background:"#111"
+              }}
+              >Creates a route.</td>
+              <td
+                 style={{
+                padding:"14px",
+                border:"1px solid #444",
+                // background:"#111"
+              }}
+              >Wraps multiple pages.</td>
             </tr>
 
             <tr>
-              <td>Unique for each route.</td>
-              <td>Shared between routes.</td>
+              <td
+                 style={{
+                padding:"14px",
+                border:"1px solid #444",
+                background:"#111"
+              }}
+              >Unique for each route.</td>
+              <td
+                 style={{
+                padding:"14px",
+                border:"1px solid #444",
+                background:"#111"
+              }}
+              >Shared between routes.</td>
             </tr>
 
             <tr>
-              <td>Displays page content.</td>
-              <td>Displays common UI.</td>
+              <td
+                 style={{
+                padding:"14px",
+                border:"1px solid #444",
+                // background:"#111"
+              }}
+              >Displays page content.</td>
+              <td
+                 style={{
+                padding:"14px",
+                border:"1px solid #444",
+                // background:"#111"
+              }}
+              >Displays common UI.</td>
             </tr>
 
             <tr>
-              <td>Uses page.tsx.</td>
-              <td>Uses layout.tsx.</td>
+              <td
+                 style={{
+                padding:"14px",
+                border:"1px solid #444",
+                background:"#111"
+              }}
+              >Uses page.tsx.</td>
+              <td
+                 style={{
+                padding:"14px",
+                border:"1px solid #444",
+                background:"#111"
+              }}>Uses layout.tsx.</td>
             </tr>
           </tbody>
         </table>
