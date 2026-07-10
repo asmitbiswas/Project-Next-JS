@@ -5,7 +5,7 @@ import "./Sidebar.css";
 export default function Sidebar() {
   return (
     <aside className="sidebar">
-      <h1 className="logo"> DevVault</h1>
+      <h1 className="logo"> DevVault (⌐■_■)⌐¯</h1>
 
       <input
         className="search"
