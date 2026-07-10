@@ -64,7 +64,7 @@ export default function NextJS() {
           <li><Link href="/Next.js/Routing" style={{color:"white"}}>Routing</Link></li>
           <li><Link href="/Next.js/ServerClientComponents" style={{color:"white"}}>Server & Client Components</Link></li>
           <li><Link href="/Next.js/Navigation" style={{color:"white"}}>Navigation</Link></li>
-          <li>Loading & Error Pages</li>
+          <li><Link href="/Next.js/LoadingPage" style={{color:"white"}}>Lodaing and error page</Link></li>
           <li>Data Fetching</li>
           <li>Metadata</li>
           <li>API Routes</li>
