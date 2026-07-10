@@ -18,6 +18,7 @@ export default function RootLayout({
     <html lang="en">
       <body style={{ background: "black", color: "white", padding: "20px", display: "flex", flexDirection: "column", minHeight: "100vh", justifyContent: "flex-start" }}>
          {/* <Sidebar /> */}
+         {/* <h1 style={{color:}}>DevVault</h1> */}
         {children}
         <h1 style={{ textAlign: "center" }}>-DevVault (⌐■_■)</h1>
       </body>
