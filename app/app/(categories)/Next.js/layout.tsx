@@ -1,4 +1,6 @@
+// Link
 import Sidebar from "@/app/components/page";
+import Link from "next/link";
 export default function NextJSLayout({ children }: { children: React.ReactNode }) {
   return (
     <div
@@ -26,6 +28,8 @@ export default function NextJSLayout({ children }: { children: React.ReactNode }
         {/* <ul>
             <li style={{color:"white"}}></li>
         </ul> */}
+
+        <Link href="/" style={{textDecoration:"none"}}></Link>
         {children}
       </div>
     </div>

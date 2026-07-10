@@ -1,9 +1,9 @@
-import Sidebar from "@/app/components/page";
+// import Sidebar from "/@/app/components/page";
 
 export default function ServerClientComponents() {
   return (
     <div>
-      <Sidebar />
+      {/* <Sidebar /> */}
 
       <div>
         <h1>Server & Client Components</h1>
@@ -24,7 +24,16 @@ export default function ServerClientComponents() {
 
         <h3>Example</h3>
 
-        <pre>
+        <pre
+        style={{
+          overflowX:"auto",
+          // borderCollapse:"collapse"
+          padding:"14px",
+          backgroundColor:"#111",
+          borderRadius:"12px",
+          borderLeft:"6px solid rgb(13, 200, 13)",
+        }}
+        >
 {`export default function Home() {
   return <h1>Welcome to DevVault</h1>;
 }`}
@@ -39,7 +48,16 @@ export default function ServerClientComponents() {
 
         <h3>Example</h3>
 
-        <pre>
+        <pre
+         style={{
+          overflowX:"auto",
+          // borderCollapse:"collapse"
+          padding:"14px",
+          backgroundColor:"#111",
+          borderRadius:"12px",
+          borderLeft:"6px solid rgb(13, 200, 13)",
+        }}
+        >
 {`"use client";
 
 import { useState } from "react";
@@ -57,36 +75,115 @@ export default function Counter() {
 
         <h2>Differences</h2>
 
-        <table>
+        <table
+        style={{
+          borderCollapse:"collapse",
+          border:"1px solid #444",
+          width:"100%",
+          margin:"25 0"
+        }}
+        >
           <tbody>
             <tr>
-              <th>Server Component</th>
-              <th>Client Component</th>
+              <th
+              style={{
+                padding:"14px",
+                border:"1px solid #444",
+                background:"#111"
+              }}
+              >Server Component</th>
+              <th
+                   style={{
+                padding:"14px",
+                border:"1px solid #444",
+                background:"#111"
+              }}
+              >Client Component</th>
             </tr>
 
             <tr>
-              <td>Runs on the server.</td>
-              <td>Runs in the browser.</td>
+              <td
+                   style={{
+                padding:"14px",
+                border:"1px solid #444",
+                
+              }}
+              >Runs on the server.</td>
+              <td
+                    style={{
+                padding:"14px",
+                border:"1px solid #444",
+                
+              }}
+              >Runs in the browser.</td>
             </tr>
 
             <tr>
-              <td>No "use client".</td>
-              <td>Requires "use client".</td>
+              <td
+                   style={{
+                padding:"14px",
+                border:"1px solid #444",
+                background:"#111"
+              }}
+              >No "use client".</td>
+              <td
+                   style={{
+                padding:"14px",
+                border:"1px solid #444",
+                background:"#111"
+              }}
+              >Requires "use client".</td>
             </tr>
 
             <tr>
-              <td>Can fetch data directly.</td>
-              <td>Uses browser APIs.</td>
+              <td
+                    style={{
+                padding:"14px",
+                border:"1px solid #444",
+                
+              }}
+              >Can fetch data directly.</td>
+              <td
+                    style={{
+                padding:"14px",
+                border:"1px solid #444",
+                
+              }}
+              >Uses browser APIs.</td>
             </tr>
 
             <tr>
-              <td>Smaller JavaScript bundle.</td>
-              <td>Larger JavaScript bundle.</td>
+              <td
+                   style={{
+                padding:"14px",
+                border:"1px solid #444",
+                background:"#111"
+              }}
+              >Smaller JavaScript bundle.</td>
+              <td
+                   style={{
+                padding:"14px",
+                border:"1px solid #444",
+                background:"#111"
+              }}
+              >Larger JavaScript bundle.</td>
             </tr>
 
             <tr>
-              <td>No useState or useEffect.</td>
-              <td>Supports React hooks.</td>
+              <td
+                    style={{
+                padding:"14px",
+                border:"1px solid #444",
+                
+              }}
+              >No useState or useEffect.</td>
+              <td
+                    style={{
+                padding:"14px",
+                border:"1px solid #444",
+                
+              }}
+              >Supports React hooks.</td>
             </tr>
           </tbody>
         </table>
