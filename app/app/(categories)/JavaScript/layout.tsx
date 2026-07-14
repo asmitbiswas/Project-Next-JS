@@ -8,7 +8,7 @@ export default function NextJSLayout({ children }: { children: React.ReactNode }
         background: "#000",
         color: "#fff",
         minHeight: "100vh",
-        padding: "40px",
+        padding: "30px",
         fontSize:"16px"
       }}
     >

@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 // import Sidebar from "@/app/components/page";
 
 export default function JavaScriptHome() {
@@ -16,7 +18,7 @@ export default function JavaScriptHome() {
         <h2>What You'll Learn</h2>
 
         <ul>
-          <li>Introduction to JavaScript</li>
+          <li><Link href="/JavaScript/Introduction_to_JavaScript" style={{color:"white"}}>Introduction to JavaScript </Link></li>
           <li>Variables and Data Types</li>
           <li>Operators</li>
           <li>Conditional Statements</li>
