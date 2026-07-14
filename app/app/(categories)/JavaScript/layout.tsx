@@ -1,5 +1,5 @@
 // Link
-import Sidebar from "@/app/components/page";
+// import Sidebar from "@/app/components/page";
 import Link from "next/link";
 export default function NextJSLayout({ children }: { children: React.ReactNode }) {
   return (
@@ -12,7 +12,7 @@ export default function NextJSLayout({ children }: { children: React.ReactNode }
         fontSize:"16px"
       }}
     >
-      <Sidebar />
+      {/* <Sidebar /> */}
 
       <div
         style={{
