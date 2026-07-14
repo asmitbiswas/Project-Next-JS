@@ -67,8 +67,8 @@ export default function NextJS() {
           <li><Link href="/Next.js/LoadingPage" style={{color:"white"}}>Lodaing and error page</Link></li>
           <li><Link href="/Next.js/DataFetching" style={{color:"white"}}>Fetching Data</Link></li>
           <li><Link href="/Next.js/Metadata"  style={{color:"white"}}>MetaData</Link></li>
-          <li><Link href="/Next.js/Api_Routes">Api Routes</Link></li>
-          <li>Deployment</li>
+          <li><Link href="/Next.js/Api_Routes" style={{color:"white"}}>Api Routes</Link></li>
+          <li><Link href="/Next.js/Deployment" style={{color:"white"}}>Deployment</Link></li>
         </ul>
 
         <h2>Why Learn Next.js?</h2>
