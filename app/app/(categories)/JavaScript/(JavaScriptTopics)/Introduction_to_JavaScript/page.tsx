@@ -184,7 +184,8 @@ export default function Introduction() {
                     borderRadius:"12px",
                     overflowX:"auto",
                     background:"#111",
-                    borderLeft:"6px solid rgb(13 200 13)"
+                    borderLeft:"6px solid rgb(13 200 13)",
+                    lineHeight:"1.8",
                 }}
                 >
                     {`Hello, World!`}
