@@ -3,8 +3,6 @@
 export default function JavaScriptHome() {
   return (
     <div>
-
-
       <div>
         <h1>JavaScript</h1>
 
@@ -38,38 +36,110 @@ export default function JavaScriptHome() {
 
         <h2>Why Learn JavaScript?</h2>
 
-        <table>
+        <table
+        style={{
+            borderCollapse:"collapse",
+            overflowX:"auto",
+            margin:"25 0",
+            border:"1px solid #444",
+            width:"100%"
+        }}
+        >
           <tbody>
             <tr>
-              <th>Reason</th>
-              <th>Description</th>
+              <th
+              style={{
+                border:"1px solid #444",
+                padding:"14px",
+                background:"#111"
+              }}
+              >Reason</th>
+              <th
+                style={{
+                border:"1px solid #444",
+                padding:"14px",
+                background:"#111"
+              }}
+              >Description</th>
             </tr>
 
             <tr>
-              <td>Interactivity</td>
-              <td>Adds dynamic behavior to web pages.</td>
+              <td
+              style={{
+                border:"1px solid #444",
+                padding:"14px"
+              }}
+              >Interactivity</td>
+              <td
+               style={{
+                border:"1px solid #444",
+                padding:"14px"
+              }}
+              >Adds dynamic behavior to web pages.</td>
             </tr>
 
             <tr>
-              <td>Versatility</td>
-              <td>Works on both the frontend and backend.</td>
+              <td
+                style={{
+                border:"1px solid #444",
+                padding:"14px",
+                background:"#111"
+              }}
+              >Versatility</td>
+              <td
+                style={{
+                border:"1px solid #444",
+                padding:"14px",
+                background:"#111"
+              }}
+              >Works on both the frontend and backend.</td>
             </tr>
 
             <tr>
-              <td>Popularity</td>
-              <td>One of the most widely used programming languages.</td>
+              <td
+               style={{
+                border:"1px solid #444",
+                padding:"14px"
+              }}
+              >Popularity</td>
+              <td
+               style={{
+                border:"1px solid #444",
+                padding:"14px"
+              }}
+              >One of the most widely used programming languages.</td>
             </tr>
 
             <tr>
-              <td>Frameworks</td>
-              <td>Powers React, Next.js, Vue, Angular, and more.</td>
+              <td
+                style={{
+                border:"1px solid #444",
+                padding:"14px",
+                background:"#111"
+              }}
+              >Frameworks</td>
+              <td
+                style={{
+                border:"1px solid #444",
+                padding:"14px",
+                background:"#111"
+              }}
+              >Powers React, Next.js, Vue, Angular, and more.</td>
             </tr>
           </tbody>
         </table>
 
         <h2>Example</h2>
 
-        <pre>
+        <pre
+        style={{
+            padding:"14px",
+            overflowX:"auto",
+            borderRadius:"12px",
+            borderLeft:"6px rgb(13, 200, 13)",
+            background:"#111"
+        }}
+        >
 {`function greet(name) {
   return "Hello, " + name + "!";
 }

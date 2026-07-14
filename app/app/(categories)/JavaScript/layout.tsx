@@ -9,6 +9,7 @@ export default function NextJSLayout({ children }: { children: React.ReactNode }
         color: "#fff",
         minHeight: "100vh",
         padding: "40px",
+        fontSize:"16px"
       }}
     >
       <Sidebar />
