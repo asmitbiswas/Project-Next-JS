@@ -19,7 +19,7 @@ export default function JavaScriptHome() {
 
         <ul>
           <li><Link href="/JavaScript/Introduction_to_JavaScript" style={{color:"white"}}>Introduction to JavaScript </Link></li>
-          <li>Variables and Data Types</li>
+          <li><Link href="/JavaScript/Variable_Data_Types" style={{color:"white"}}>Variables and Data Types</Link></li>
           <li>Operators</li>
           <li>Conditional Statements</li>
           <li>Loops</li>

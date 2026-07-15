@@ -38,7 +38,10 @@ export default function VariablesAndDataTypes() {
         <pre
         style={{
             overflowX:"auto",
-            padding:"14px"
+            padding:"14px",
+            borderRadius:"12px",
+            background:"#111",
+            borderLeft:"6px solid rgb(13 200 13)"
         }}
         >
 {`var name = "DevVault";
@@ -52,7 +55,15 @@ console.log(name);`}
 
         <h2>let</h2>
 
-        <pre>
+        <pre
+          style={{
+            overflowX:"auto",
+            padding:"14px",
+            borderRadius:"12px",
+            background:"#111",
+            borderLeft:"6px solid rgb(13 200 13)"
+        }}
+        >
 {`let age = 18;
 age = 19;
 
@@ -66,7 +77,15 @@ console.log(age);`}
 
         <h2>const</h2>
 
-        <pre>
+        <pre
+          style={{
+            overflowX:"auto",
+            padding:"14px",
+            borderRadius:"12px",
+            background:"#111",
+            borderLeft:"6px solid rgb(13 200 13)"
+        }}
+        >
 {`const pi = 3.14159;
 
 console.log(pi);`}
@@ -78,34 +97,130 @@ console.log(pi);`}
 
         <h2>Difference Between var, let, and const</h2>
 
-        <table>
+        <table
+        style={{
+            borderCollapse:"collapse",
+            width:"100%",
+            margin:"25 0",
+            overflowX:"auto",
+            border:"1px solid #444"
+        }}
+        >
           <tbody>
             <tr>
-              <th>Feature</th>
-              <th>var</th>
-              <th>let</th>
-              <th>const</th>
+              <th
+              style={{
+                border:"1px solid #444",
+                padding:"14px",
+                background:"#111"
+              }}
+              >Feature</th>
+              <th
+                   style={{
+                border:"1px solid #444",
+                padding:"14px",
+                background:"#111"
+              }}
+              >var</th>
+              <th
+                   style={{
+                border:"1px solid #444",
+                padding:"14px",
+                background:"#111"
+              }}
+              >let</th>
+              <th
+                   style={{
+                border:"1px solid #444",
+                padding:"14px",
+                background:"#111"
+              }}
+              >const</th>
             </tr>
 
             <tr>
-              <td>Redeclare</td>
-              <td>Yes</td>
-              <td>No</td>
-              <td>No</td>
+              <td
+              style={{
+                padding:"14px",
+                border:"1px solid #444"
+              }}
+              >Redeclare</td>
+              <td
+               style={{
+                padding:"14px",
+                border:"1px solid #444"
+              }}
+              >Yes</td>
+              <td
+               style={{
+                padding:"14px",
+                border:"1px solid #444"
+              }}
+              >No</td>
+              <td
+               style={{
+                padding:"14px",
+                border:"1px solid #444"
+              }}
+              >No</td>
             </tr>
 
             <tr>
-              <td>Reassign</td>
-              <td>Yes</td>
-              <td>Yes</td>
-              <td>No</td>
+              <td
+                   style={{
+                border:"1px solid #444",
+                padding:"14px",
+                background:"#111"
+              }}
+              >Reassign</td>
+              <td
+                   style={{
+                border:"1px solid #444",
+                padding:"14px",
+                background:"#111"
+              }}
+              >Yes</td>
+              <td
+                   style={{
+                border:"1px solid #444",
+                padding:"14px",
+                background:"#111"
+              }}
+              >Yes</td>
+              <td
+                   style={{
+                border:"1px solid #444",
+                padding:"14px",
+                background:"#111"
+              }}
+              >No</td>
             </tr>
 
             <tr>
-              <td>Block Scope</td>
-              <td>No</td>
-              <td>Yes</td>
-              <td>Yes</td>
+              <td
+               style={{
+                padding:"14px",
+                border:"1px solid #444"
+              }}
+              >Block Scope</td>
+              <td
+               style={{
+                padding:"14px",
+                border:"1px solid #444"
+              }}
+              >No</td>
+              <td
+               style={{
+                padding:"14px",
+                border:"1px solid #444"
+              }}
+              >Yes</td>
+              <td
+               style={{
+                padding:"14px",
+                border:"1px solid #444"
+              }}
+              >Yes</td>
             </tr>
           </tbody>
         </table>
@@ -118,53 +233,157 @@ console.log(pi);`}
 
         <h2>Primitive Data Types</h2>
 
-        <table>
+        <table
+              style={{
+            borderCollapse:"collapse",
+            width:"100%",
+            margin:"25 0",
+            overflowX:"auto",
+            border:"1px solid #444"
+        }}
+        >
           <tbody>
             <tr>
-              <th>Type</th>
-              <th>Example</th>
+              <th
+               style={{
+                border:"1px solid #444",
+                padding:"14px",
+                background:"#111"
+              }}
+              >Type</th>
+              <th
+               style={{
+                border:"1px solid #444",
+                padding:"14px",
+                background:"#111"
+              }}
+              >Example</th>
             </tr>
 
             <tr>
-              <td>String</td>
-              <td>"Hello"</td>
+              <td
+                 style={{
+                padding:"14px",
+                border:"1px solid #444"
+              }}
+              >String</td>
+              <td
+                 style={{
+                padding:"14px",
+                border:"1px solid #444"
+              }}
+              >"Hello"</td>
             </tr>
 
             <tr>
-              <td>Number</td>
-              <td>42</td>
+              <td
+               style={{
+                border:"1px solid #444",
+                padding:"14px",
+                background:"#111"
+              }}
+              >Number</td>
+              <td
+               style={{
+                border:"1px solid #444",
+                padding:"14px",
+                background:"#111"
+              }}
+              >42</td>
             </tr>
 
             <tr>
-              <td>Boolean</td>
-              <td>true</td>
+              <td
+                 style={{
+                padding:"14px",
+                border:"1px solid #444"
+              }}
+              >Boolean</td>
+              <td
+                 style={{
+                padding:"14px",
+                border:"1px solid #444"
+              }}
+              >true</td>
             </tr>
 
             <tr>
-              <td>Undefined</td>
-              <td>undefined</td>
+              <td
+               style={{
+                border:"1px solid #444",
+                padding:"14px",
+                background:"#111"
+              }}
+              >Undefined</td>
+              <td
+               style={{
+                border:"1px solid #444",
+                padding:"14px",
+                background:"#111"
+              }}
+              >undefined</td>
             </tr>
 
             <tr>
-              <td>Null</td>
-              <td>null</td>
+              <td
+                 style={{
+                padding:"14px",
+                border:"1px solid #444"
+              }}
+              >Null</td>
+              <td
+                 style={{
+                padding:"14px",
+                border:"1px solid #444"
+              }}
+              >null</td>
             </tr>
 
             <tr>
-              <td>BigInt</td>
-              <td>123n</td>
+              <td
+               style={{
+                border:"1px solid #444",
+                padding:"14px",
+                background:"#111"
+              }}
+              >BigInt</td>
+              <td
+                style={{
+                border:"1px solid #444",
+                padding:"14px",
+                background:"#111"
+              }}
+              >123n</td>
             </tr>
 
             <tr>
-              <td>Symbol</td>
-              <td>Symbol()</td>
+              <td
+                 style={{
+                padding:"14px",
+                border:"1px solid #444"
+              }}
+              >Symbol</td>
+              <td
+                 style={{
+                padding:"14px",
+                border:"1px solid #444"
+              }}
+              >Symbol()</td>
             </tr>
           </tbody>
         </table>
 
         <h2>Examples</h2>
 
-        <pre>
+        <pre
+          style={{
+            overflowX:"auto",
+            padding:"14px",
+            borderRadius:"12px",
+            background:"#111",
+            borderLeft:"6px solid rgb(13 200 13)"
+        }}
+        >
 {`let username = "Asmit";
 let age = 12;
 let isCoding = true;
@@ -180,7 +399,15 @@ console.log(isCoding);`}
           Use the <code>typeof</code> operator to check the type of a value.
         </p>
 
-        <pre>
+        <pre
+          style={{
+            overflowX:"auto",
+            padding:"14px",
+            borderRadius:"12px",
+            background:"#111",
+            borderLeft:"6px solid rgb(13 200 13)"
+        }}
+        >
 {`let language = "JavaScript";
 
 console.log(typeof language);`}
@@ -188,7 +415,15 @@ console.log(typeof language);`}
 
         <h2>Output</h2>
 
-        <pre>
+        <pre
+             style={{
+            overflowX:"auto",
+            padding:"14px",
+            borderRadius:"12px",
+            background:"#111",
+            borderLeft:"6px solid rgb(13 200 13)"
+        }}
+        >
 {`string`}
         </pre>
 
