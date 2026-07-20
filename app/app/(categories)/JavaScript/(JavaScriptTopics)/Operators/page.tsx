@@ -355,7 +355,15 @@ console.log(10 == "10");`}
           </tbody>
         </table>
 
-        <pre>
+        <pre
+         style={{
+            padding:"14px",
+            background:"#111",
+            overflowX:"auto",
+            borderRadius:"12px",
+            borderLeft:"6px solid rgb(13 200 13)"
+        }}
+        >
 {`let isLoggedIn = true;
 let isAdmin = false;
 
@@ -366,7 +374,9 @@ console.log(!isLoggedIn);`}
 
         <h2>Increment & Decrement</h2>
 
-        <pre>
+        <pre
+        
+        >
 {`let count = 5;
 
 count++;
