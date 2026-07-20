@@ -185,7 +185,7 @@ export default function Operators() {
             </tr>
           </tbody>
         </table>
-
+            <h2>Arithmetic Operator Examples</h2>
         <pre>
 {`let a = 10;
 let b = 5;
