@@ -1,9 +1,9 @@
-import Sidebar from "@/app/components/page";
+// import Sidebar from "@/app/components/page";
 
 export default function Operators() {
   return (
     <div>
-      <Sidebar />
+      {/* <Sidebar /> */}
 
       <div>
         <h1>Operators</h1>
@@ -16,48 +16,172 @@ export default function Operators() {
 
         <h2>Arithmetic Operators</h2>
 
-        <table>
+        <table
+        style={{
+            borderCollapse:"collapse",
+            width:"100%",
+            border:"1px solid #444",
+            padding:"20px"
+        }}
+        >
           <tbody>
             <tr>
-              <th>Operator</th>
-              <th>Description</th>
-              <th>Example</th>
+              <th
+              style={{
+                border:"1px solid #444",
+                padding:"14px",
+                background:"#111"
+              }}
+              >Operator</th>
+              <th
+                  style={{
+                border:"1px solid #444",
+                padding:"14px",
+                background:"#111"
+              }}
+              >Description</th>
+              <th
+                  style={{
+                border:"1px solid #444",
+                padding:"14px",
+                background:"#111"
+              }}
+              >Example</th>
             </tr>
 
             <tr>
-              <td>+</td>
-              <td>Addition</td>
-              <td>5 + 2 = 7</td>
+              <td
+              style={{
+                padding:"14px",
+                border:"1px solid #444"
+              }}
+              >+</td>
+              <td
+               style={{
+                padding:"14px",
+                border:"1px solid #444"
+              }}
+              >Addition</td>
+              <td
+               style={{
+                padding:"14px",
+                border:"1px solid #444"
+              }}
+              >5 + 2 = 7</td>
             </tr>
 
             <tr>
-              <td>-</td>
-              <td>Subtraction</td>
-              <td>5 - 2 = 3</td>
+              <td
+                  style={{
+                border:"1px solid #444",
+                padding:"14px",
+                background:"#111"
+              }}
+              >-</td>
+              <td
+                  style={{
+                border:"1px solid #444",
+                padding:"14px",
+                background:"#111"
+              }}
+              >Subtraction</td>
+              <td
+                  style={{
+                border:"1px solid #444",
+                padding:"14px",
+                background:"#111"
+              }}
+              >5 - 2 = 3</td>
             </tr>
 
             <tr>
-              <td>*</td>
-              <td>Multiplication</td>
-              <td>5 * 2 = 10</td>
+              <td
+               style={{
+                padding:"14px",
+                border:"1px solid #444"
+              }}
+              >*</td>
+              <td
+               style={{
+                padding:"14px",
+                border:"1px solid #444"
+              }}
+              >Multiplication</td>
+              <td
+               style={{
+                padding:"14px",
+                border:"1px solid #444"
+              }}
+              >5 * 2 = 10</td>
             </tr>
 
             <tr>
-              <td>/</td>
-              <td>Division</td>
-              <td>10 / 2 = 5</td>
+              <td
+                  style={{
+                border:"1px solid #444",
+                padding:"14px",
+                background:"#111"
+              }}
+              >/</td>
+              <td
+                  style={{
+                border:"1px solid #444",
+                padding:"14px",
+                background:"#111"
+              }}
+              >Division</td>
+              <td
+                  style={{
+                border:"1px solid #444",
+                padding:"14px",
+                background:"#111"
+              }}
+              >10 / 2 = 5</td>
             </tr>
 
             <tr>
-              <td>%</td>
-              <td>Remainder</td>
-              <td>10 % 3 = 1</td>
+              <td
+               style={{
+                padding:"14px",
+                border:"1px solid #444"
+              }}
+              >%</td>
+              <td
+               style={{
+                padding:"14px",
+                border:"1px solid #444"
+              }}
+              >Remainder</td>
+              <td
+               style={{
+                padding:"14px",
+                border:"1px solid #444"
+              }}
+              >10 % 3 = 1</td>
             </tr>
 
             <tr>
-              <td>**</td>
-              <td>Exponentiation</td>
-              <td>2 ** 3 = 8</td>
+              <td
+                  style={{
+                border:"1px solid #444",
+                padding:"14px",
+                background:"#111"
+              }}
+              >**</td>
+              <td
+                  style={{
+                border:"1px solid #444",
+                padding:"14px",
+                background:"#111"
+              }}
+              >Exponentiation</td>
+              <td
+                  style={{
+                border:"1px solid #444",
+                padding:"14px",
+                background:"#111"
+              }}
+              >2 ** 3 = 8</td>
             </tr>
           </tbody>
         </table>
