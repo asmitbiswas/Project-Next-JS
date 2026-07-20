@@ -247,7 +247,15 @@ console.log(a ** 2);`}
           </tbody>
         </table>
 
-        <pre>
+        <pre
+         style={{
+            padding:"14px",
+            background:"#111",
+            overflowX:"auto",
+            borderRadius:"12px",
+            borderLeft:"6px solid rgb(13 200 13)"
+        }}
+        >
 {`let score = 10;
 
 score += 5;
