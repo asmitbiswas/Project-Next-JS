@@ -174,7 +174,14 @@ console.log(message);`}
 
         <h2>Comparison Operators Used</h2>
 
-        <table>
+        <table
+        style={{
+          borderCollapse:"collapse",
+          width:"100%",
+          overflowX:"auto",
+          border:"1px solid #444"
+        }}
+        >
           <tbody>
             <tr>
               <th>Operator</th>
