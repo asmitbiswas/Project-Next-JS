@@ -1,9 +1,9 @@
-import Sidebar from "@/app/components/page";
+// import Sidebar from "@/app/components/page";
 
 export default function ConditionalStatements() {
   return (
     <div>
-      <Sidebar />
+      {/* <Sidebar /> */}
 
       <div>
         <h1>Conditional Statements</h1>
@@ -21,7 +21,14 @@ export default function ConditionalStatements() {
           the specified condition is true.
         </p>
 
-        <pre>
+        <pre
+        style={{
+          borderLeft:"6px solid rgb(13 200 13)",
+          padding:"14px",
+          background:"#111",
+          borderRadius:"12px"
+        }}
+        >
 {`let age = 18;
 
 if (age >= 18) {
@@ -36,7 +43,14 @@ if (age >= 18) {
           the condition is false.
         </p>
 
-        <pre>
+        <pre
+          style={{
+          borderLeft:"6px solid rgb(13 200 13)",
+          padding:"14px",
+          background:"#111",
+          borderRadius:"12px"
+        }}
+        >
 {`let age = 16;
 
 if (age >= 18) {
@@ -53,7 +67,14 @@ if (age >= 18) {
           conditions.
         </p>
 
-        <pre>
+        <pre
+          style={{
+          borderLeft:"6px solid rgb(13 200 13)",
+          padding:"14px",
+          background:"#111",
+          borderRadius:"12px"
+        }}
+        >
 {`let marks = 82;
 
 if (marks >= 90) {
@@ -74,7 +95,14 @@ if (marks >= 90) {
           <code>if</code> statement.
         </p>
 
-        <pre>
+        <pre
+          style={{
+          borderLeft:"6px solid rgb(13 200 13)",
+          padding:"14px",
+          background:"#111",
+          borderRadius:"12px"
+        }}
+        >
 {`let age = 20;
 let hasLicense = true;
 
@@ -92,7 +120,14 @@ if (age >= 18) {
           value against multiple possible cases.
         </p>
 
-        <pre>
+        <pre
+          style={{
+          borderLeft:"6px solid rgb(13 200 13)",
+          padding:"14px",
+          background:"#111",
+          borderRadius:"12px"
+        }}
+        >
 {`let day = 3;
 
 switch (day) {
@@ -120,7 +155,14 @@ switch (day) {
           <code>if...else</code> statement.
         </p>
 
-        <pre>
+        <pre
+          style={{
+          borderLeft:"6px solid rgb(13 200 13)",
+          padding:"14px",
+          background:"#111",
+          borderRadius:"12px"
+        }}
+        >
 {`let age = 20;
 
 let message = age >= 18
