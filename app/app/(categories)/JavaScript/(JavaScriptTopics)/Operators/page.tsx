@@ -208,41 +208,126 @@ console.log(a ** 2);`}
 
         <h2>Assignment Operators</h2>
 
-        <table>
+        <table
+          style={{
+            borderCollapse:"collapse",
+            width:"100%",
+            border:"1px solid #444",
+            padding:"20px"
+        }}
+        >
           <tbody>
             <tr>
-              <th>Operator</th>
-              <th>Example</th>
+              <th
+                   style={{
+                border:"1px solid #444",
+                padding:"14px",
+                background:"#111"
+              }}
+              >Operator</th>
+              <th
+                   style={{
+                border:"1px solid #444",
+                padding:"14px",
+                background:"#111"
+              }}
+              >Example</th>
             </tr>
 
             <tr>
-              <td>=</td>
-              <td>x = 10</td>
+              <td
+                style={{
+                padding:"14px",
+                border:"1px solid #444"
+              }}
+              >=</td>
+              <td
+                style={{
+                padding:"14px",
+                border:"1px solid #444"
+              }}
+              >x = 10</td>
             </tr>
 
             <tr>
-              <td>+=</td>
-              <td>x += 5</td>
+              <td
+                   style={{
+                border:"1px solid #444",
+                padding:"14px",
+                background:"#111"
+              }}
+              >+=</td>
+              <td
+                   style={{
+                border:"1px solid #444",
+                padding:"14px",
+                background:"#111"
+              }}
+              >x += 5</td>
             </tr>
 
             <tr>
-              <td>-=</td>
-              <td>x -= 5</td>
+              <td
+                   style={{
+                border:"1px solid #444",
+                padding:"14px",
+                // background:"#111"
+              }}
+              >-=</td>
+              <td
+                   style={{
+                border:"1px solid #444",
+                padding:"14px",
+                // background:"#111"
+              }}
+              >x -= 5</td>
             </tr>
 
             <tr>
-              <td>*=</td>
-              <td>x *= 5</td>
+              <td
+                style={{
+                padding:"14px",
+                border:"1px solid #444"
+              }}
+              >*=</td>
+              <td
+                style={{
+                padding:"14px",
+                border:"1px solid #444"
+              }}
+              >x *= 5</td>
             </tr>
 
             <tr>
-              <td>/=</td>
-              <td>x /= 5</td>
+              <td
+                   style={{
+                border:"1px solid #444",
+                padding:"14px",
+                background:"#111"
+              }}
+              >/=</td>
+              <td
+                   style={{
+                border:"1px solid #444",
+                padding:"14px",
+                background:"#111"
+              }}
+              >x /= 5</td>
             </tr>
 
             <tr>
-              <td>%=</td>
-              <td>x %= 5</td>
+              <td
+                style={{
+                padding:"14px",
+                border:"1px solid #444"
+              }}
+              >%=</td>
+              <td
+                style={{
+                padding:"14px",
+                border:"1px solid #444"
+              }}
+              >x %= 5</td>
             </tr>
           </tbody>
         </table>
@@ -266,31 +351,94 @@ console.log(score);`}
 
         <h2>Comparison Operators</h2>
 
-        <table>
+        <table
+          style={{
+            borderCollapse:"collapse",
+            width:"100%",
+            border:"1px solid #444",
+            padding:"20px"
+        }}
+        >
           <tbody>
             <tr>
-              <th>Operator</th>
-              <th>Description</th>
+              <th
+                   style={{
+                border:"1px solid #444",
+                padding:"14px",
+                background:"#111"
+              }}
+              >Operator</th>
+              <th
+                   style={{
+                border:"1px solid #444",
+                padding:"14px",
+                background:"#111"
+              }}
+              >Description</th>
             </tr>
 
             <tr>
-              <td>==</td>
-              <td>Equal to</td>
+              <td
+                style={{
+                padding:"14px",
+                border:"1px solid #444"
+              }}
+              >==</td>
+              <td
+                style={{
+                padding:"14px",
+                border:"1px solid #444"
+              }}
+              >Equal to</td>
             </tr>
 
             <tr>
-              <td>===</td>
-              <td>Strict equal to</td>
+              <td
+                   style={{
+                border:"1px solid #444",
+                padding:"14px",
+                background:"#111"
+              }}
+              >===</td>
+              <td
+                   style={{
+                border:"1px solid #444",
+                padding:"14px",
+                background:"#111"
+              }}
+              >Strict equal to</td>
             </tr>
 
             <tr>
-              <td>!=</td>
-              <td>Not equal to</td>
+              <td
+                style={{
+                padding:"14px",
+                border:"1px solid #444"
+              }}
+              >!=</td>
+              <td
+                style={{
+                padding:"14px",
+                border:"1px solid #444"
+              }}
+              >Not equal to</td>
             </tr>
 
             <tr>
-              <td>!==</td>
-              <td>Strict not equal to</td>
+              <td
+                   style={{
+                border:"1px solid #444",
+                padding:"14px",
+                background:"#111"
+              }}
+              >!==</td>
+              <td
+                   style={{
+                border:"1px solid #444",
+                padding:"14px",
+                background:"#111"
+              }}
+              >Strict not equal to</td>
             </tr>
 
             <tr>
@@ -299,18 +447,52 @@ console.log(score);`}
             </tr>
 
             <tr>
-              <td>&lt;</td>
-              <td>Less than</td>
+              <td
+                   style={{
+                border:"1px solid #444",
+                padding:"14px",
+                background:"#111"
+              }}
+              >&lt;</td>
+              <td
+                   style={{
+                border:"1px solid #444",
+                padding:"14px",
+                background:"#111"
+              }}
+              >Less than</td>
             </tr>
 
             <tr>
-              <td>&gt;=</td>
-              <td>Greater than or equal to</td>
+              <td
+               style={{
+                padding:"14px",
+                border:"1px solid #444"
+              }}
+              >&gt;=</td>
+              <td
+               style={{
+                padding:"14px",
+                border:"1px solid #444"
+              }}
+              >Greater than or equal to</td>
             </tr>
 
             <tr>
-              <td>&lt;=</td>
-              <td>Less than or equal to</td>
+              <td
+                   style={{
+                border:"1px solid #444",
+                padding:"14px",
+                background:"#111"
+              }}
+              >&lt;=</td>
+              <td
+                   style={{
+                border:"1px solid #444",
+                padding:"14px",
+                background:"#111"
+              }}
+              >Less than or equal to</td>
             </tr>
           </tbody>
         </table>
@@ -331,26 +513,77 @@ console.log(10 == "10");`}
 
         <h2>Logical Operators</h2>
 
-        <table>
+        <table
+            style={{
+            borderCollapse:"collapse",
+            width:"100%",
+            border:"1px solid #444",
+            padding:"20px"
+        }}
+        >
           <tbody>
             <tr>
-              <th>Operator</th>
-              <th>Description</th>
+              <th
+                   style={{
+                border:"1px solid #444",
+                padding:"14px",
+                background:"#111"
+              }}
+              >Operator</th>
+              <th
+                   style={{
+                border:"1px solid #444",
+                padding:"14px",
+                background:"#111"
+              }}
+              >Description</th>
             </tr>
 
             <tr>
-              <td>&&</td>
-              <td>Logical AND</td>
+              <td
+                style={{
+                padding:"14px",
+                border:"1px solid #444"
+              }}
+              >&&</td>
+              <td
+                style={{
+                padding:"14px",
+                border:"1px solid #444"
+              }}
+              >Logical AND</td>
             </tr>
 
             <tr>
-              <td>||</td>
-              <td>Logical OR</td>
+              <td
+                   style={{
+                border:"1px solid #444",
+                padding:"14px",
+                background:"#111"
+              }}
+              >||</td>
+              <td
+                   style={{
+                border:"1px solid #444",
+                padding:"14px",
+                background:"#111"
+              }}
+              >Logical OR</td>
             </tr>
 
             <tr>
-              <td>!</td>
-              <td>Logical NOT</td>
+              <td
+                style={{
+                padding:"14px",
+                border:"1px solid #444"
+              }}
+              >!</td>
+              <td
+                style={{
+                padding:"14px",
+                border:"1px solid #444"
+              }}
+              >Logical NOT</td>
             </tr>
           </tbody>
         </table>
