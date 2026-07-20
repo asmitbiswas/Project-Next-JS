@@ -186,7 +186,15 @@ export default function Operators() {
           </tbody>
         </table>
             <h2>Arithmetic Operator Examples</h2>
-        <pre>
+        <pre
+        style={{
+            padding:"14px",
+            background:"#111",
+            overflowX:"auto",
+            borderRadius:"12px",
+            borderLeft:"6px solid rgb(13 200 13)"
+        }}
+        >
 {`let a = 10;
 let b = 5;
 
