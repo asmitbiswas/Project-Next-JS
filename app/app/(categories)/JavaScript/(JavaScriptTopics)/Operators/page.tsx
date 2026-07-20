@@ -375,7 +375,13 @@ console.log(!isLoggedIn);`}
         <h2>Increment & Decrement</h2>
 
         <pre
-        
+              style={{
+            padding:"14px",
+            background:"#111",
+            overflowX:"auto",
+            borderRadius:"12px",
+            borderLeft:"6px solid rgb(13 200 13)"
+        }}
         >
 {`let count = 5;
 
@@ -387,7 +393,15 @@ console.log(count);`}
 
         <h2>Operator Precedence</h2>
 
-        <pre>
+        <pre
+              style={{
+            padding:"14px",
+            background:"#111",
+            overflowX:"auto",
+            borderRadius:"12px",
+            borderLeft:"6px solid rgb(13 200 13)"
+        }}
+        >
 {`let result = 5 + 2 * 3;
 
 console.log(result); // 11`}
