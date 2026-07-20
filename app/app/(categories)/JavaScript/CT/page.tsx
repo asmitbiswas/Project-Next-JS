@@ -184,48 +184,148 @@ console.log(message);`}
         >
           <tbody>
             <tr>
-              <th>Operator</th>
-              <th>Description</th>
+              <th
+              style={{
+                border:"1px solid #444",
+                padding:"14px",
+                background:"#111"
+              }}
+              >Operator</th>
+              <th
+                 style={{
+                border:"1px solid #444",
+                padding:"14px",
+                background:"#111"
+              }}
+              >Description</th>
             </tr>
 
             <tr>
-              <td>==</td>
-              <td>Equal to</td>
+              <td
+              style={{
+                border:"1px solid #444",
+                padding:"14px"
+              }}
+              >==</td>
+              <td
+               style={{
+                border:"1px solid #444",
+                padding:"14px"
+              }}
+              >Equal to</td>
             </tr>
 
             <tr>
-              <td>===</td>
-              <td>Strict equal to</td>
+              <td
+                 style={{
+                border:"1px solid #444",
+                padding:"14px",
+                background:"#111"
+              }}
+              >===</td>
+              <td
+                 style={{
+                border:"1px solid #444",
+                padding:"14px",
+                background:"#111"
+              }}
+              >Strict equal to</td>
             </tr>
 
             <tr>
-              <td>!=</td>
-              <td>Not equal to</td>
+              <td
+               style={{
+                border:"1px solid #444",
+                padding:"14px"
+              }}
+              >!=</td>
+              <td
+               style={{
+                border:"1px solid #444",
+                padding:"14px"
+              }}
+              >Not equal to</td>
             </tr>
 
             <tr>
-              <td>!==</td>
-              <td>Strict not equal to</td>
+              <td
+                 style={{
+                border:"1px solid #444",
+                padding:"14px",
+                background:"#111"
+              }}
+              >!==</td>
+              <td
+                 style={{
+                border:"1px solid #444",
+                padding:"14px",
+                background:"#111"
+              }}
+              >Strict not equal to</td>
             </tr>
 
             <tr>
-              <td>&gt;</td>
-              <td>Greater than</td>
+              <td
+               style={{
+                border:"1px solid #444",
+                padding:"14px"
+              }}
+              >&gt;</td>
+              <td
+               style={{
+                border:"1px solid #444",
+                padding:"14px"
+              }}
+              >Greater than</td>
             </tr>
 
             <tr>
-              <td>&lt;</td>
-              <td>Less than</td>
+              <td
+                 style={{
+                border:"1px solid #444",
+                padding:"14px",
+                background:"#111"
+              }}
+              >&lt;</td>
+              <td
+                 style={{
+                border:"1px solid #444",
+                padding:"14px",
+                background:"#111"
+              }}
+              >Less than</td>
             </tr>
 
             <tr>
-              <td>&gt;=</td>
-              <td>Greater than or equal to</td>
+              <td
+               style={{
+                border:"1px solid #444",
+                padding:"14px"
+              }}
+              >&gt;=</td>
+              <td
+               style={{
+                border:"1px solid #444",
+                padding:"14px"
+              }}
+              >Greater than or equal to</td>
             </tr>
 
             <tr>
-              <td>&lt;=</td>
-              <td>Less than or equal to</td>
+              <td
+                 style={{
+                border:"1px solid #444",
+                padding:"14px",
+                background:"#111"
+              }}
+              >&lt;=</td>
+              <td
+                 style={{
+                border:"1px solid #444",
+                padding:"14px",
+                background:"#111"
+              }}
+              >Less than or equal to</td>
             </tr>
           </tbody>
         </table>
