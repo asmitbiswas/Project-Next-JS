@@ -138,7 +138,7 @@ export default function JavaScriptHome() {
             padding:"14px",
             overflowX:"auto",
             borderRadius:"12px",
-            borderLeft:"6px rgb(13, 200, 13)",
+            borderLeft:"6px solid rgb(13 200 13)",
             background:"#111"
         }}
         >
