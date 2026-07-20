@@ -315,7 +315,15 @@ console.log(score);`}
           </tbody>
         </table>
 
-        <pre>
+        <pre
+         style={{
+            padding:"14px",
+            background:"#111",
+            overflowX:"auto",
+            borderRadius:"12px",
+            borderLeft:"6px solid rgb(13 200 13)"
+        }}
+        >
 {`console.log(10 > 5);
 console.log(10 === "10");
 console.log(10 == "10");`}
