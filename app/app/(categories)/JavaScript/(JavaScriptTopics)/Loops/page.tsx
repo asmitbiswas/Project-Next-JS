@@ -35,7 +35,14 @@ export default function Loops() {
         the code should run.
       </p>
 
-      <pre>
+      <pre
+      style={{
+        borderLeft:"6px solid rgb(13 200 13)",
+        padding:"14px",
+        background:"#111",
+        borderRadius:"12px"
+      }}
+      >
 {`for (let i = 1; i <= 5; i++) {
     console.log(i);
 }`}
@@ -48,7 +55,14 @@ export default function Loops() {
         is true.
       </p>
 
-      <pre>
+      <pre
+           style={{
+        borderLeft:"6px solid rgb(13 200 13)",
+        padding:"14px",
+        background:"#111",
+        borderRadius:"12px"
+      }}
+      >
 {`let i = 1;
 
 while (i <= 5) {
@@ -64,7 +78,14 @@ while (i <= 5) {
         checked after the code executes.
       </p>
 
-      <pre>
+      <pre
+           style={{
+        borderLeft:"6px solid rgb(13 200 13)",
+        padding:"14px",
+        background:"#111",
+        borderRadius:"12px"
+      }}
+      >
 {`let i = 1;
 
 do {
@@ -80,7 +101,14 @@ do {
         iterable objects.
       </p>
 
-      <pre>
+      <pre
+           style={{
+        borderLeft:"6px solid rgb(13 200 13)",
+        padding:"14px",
+        background:"#111",
+        borderRadius:"12px"
+      }}
+      >
 {`const fruits = ["Apple", "Banana", "Mango"];
 
 for (const fruit of fruits) {
@@ -94,7 +122,14 @@ for (const fruit of fruits) {
         Use <code>for...in</code> to loop through the keys of an object.
       </p>
 
-      <pre>
+      <pre
+           style={{
+        borderLeft:"6px solid rgb(13 200 13)",
+        padding:"14px",
+        background:"#111",
+        borderRadius:"12px"
+      }}
+      >
 {`const user = {
     name: "Asmit",
     age: 13
@@ -107,28 +142,76 @@ for (const key in user) {
 
       <h2>Loop Control Statements</h2>
 
-      <table>
+      <table
+      style={{
+        borderCollapse:"collapse",
+        width:"100%",
+        border:"1px solid #444",
+        overflowX:"auto"
+      }}
+      >
         <tbody>
           <tr>
-            <th>Statement</th>
-            <th>Purpose</th>
+            <th
+            style={{
+                border:"1px solid #444",
+                padding:"14px",
+                background:"#111"
+            }}
+            >Statement</th>
+            <th
+             style={{
+                border:"1px solid #444",
+                padding:"14px",
+                background:"#111"
+            }}
+            >Purpose</th>
           </tr>
 
           <tr>
-            <td>break</td>
-            <td>Stops the loop immediately.</td>
+            <td
+            style={{
+                padding:"10px",
+                border:"1px solid #444"
+            }}
+            >break</td>
+            <td
+                style={{
+                padding:"10px",
+                border:"1px solid #444"
+            }}
+            >Stops the loop immediately.</td>
           </tr>
 
           <tr>
-            <td>continue</td>
-            <td>Skips the current iteration and moves to the next one.</td>
+            <td
+             style={{
+                border:"1px solid #444",
+                padding:"14px",
+                background:"#111"
+            }}
+            >continue</td>
+            <td
+             style={{
+                border:"1px solid #444",
+                padding:"14px",
+                background:"#111"
+            }}
+            >Skips the current iteration and moves to the next one.</td>
           </tr>
         </tbody>
       </table>
 
       <h2>Example</h2>
 
-      <pre>
+      <pre
+           style={{
+        borderLeft:"6px solid rgb(13 200 13)",
+        padding:"14px",
+        background:"#111",
+        borderRadius:"12px"
+      }}
+      >
 {`for (let i = 1; i <= 10; i++) {
 
     if (i === 5) continue;
