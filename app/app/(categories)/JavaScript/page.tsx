@@ -23,7 +23,7 @@ export default function JavaScriptHome() {
           <li><Link href="/JavaScript/Operators" style={{color:"white"}}>Operators</Link></li>
           <li><Link href="/JavaScript/CT" style={{color:"white"}}>Conditional Statements</Link></li>
           <li><Link href="/JavaScript/Loops" style={{color:"white"}}>Loops</Link></li>
-          <li>Functions</li>
+          <li><Link href="/JavaScript/Functions">Functions</Link></li>
           <li>Arrays</li>
           <li>Objects</li>
           <li>Strings</li>
