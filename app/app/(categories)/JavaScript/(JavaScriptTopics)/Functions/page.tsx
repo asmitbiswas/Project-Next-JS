@@ -19,7 +19,15 @@ export default function Functions() {
 
       <h2>Function Syntax</h2>
 
-      <pre>
+      <pre
+      style={{
+        padding:"14px",
+        background:"#111",
+        borderRadius:"12px",
+        borderLeft:"6px solid rgb(13 200 13)",
+        overflowX:"auto"
+      }}
+      >
 {`function greet() {
     console.log("Hello, World!");
 }
@@ -33,7 +41,15 @@ greet();`}
         Parameters are values a function receives when it is called.
       </p>
 
-      <pre>
+      <pre
+           style={{
+        padding:"14px",
+        background:"#111",
+        borderRadius:"12px",
+        borderLeft:"6px solid rgb(13 200 13)",
+        overflowX:"auto"
+      }}
+      >
 {`function greet(name) {
     console.log("Hello " + name);
 }
@@ -48,7 +64,15 @@ greet("Asmit");`}
         send a value back.
       </p>
 
-      <pre>
+      <pre
+           style={{
+        padding:"14px",
+        background:"#111",
+        borderRadius:"12px",
+        borderLeft:"6px solid rgb(13 200 13)",
+        overflowX:"auto"
+      }}
+      >
 {`function add(a, b) {
     return a + b;
 }
@@ -64,7 +88,15 @@ console.log(result);`}
         A function can also be stored inside a variable.
       </p>
 
-      <pre>
+      <pre
+           style={{
+        padding:"14px",
+        background:"#111",
+        borderRadius:"12px",
+        borderLeft:"6px solid rgb(13 200 13)",
+        overflowX:"auto"
+      }}
+      >
 {`const greet = function () {
     console.log("Hello!");
 };
@@ -78,7 +110,15 @@ greet();`}
         Arrow functions are a shorter way to write functions.
       </p>
 
-      <pre>
+      <pre
+           style={{
+        padding:"14px",
+        background:"#111",
+        borderRadius:"12px",
+        borderLeft:"6px solid rgb(13 200 13)",
+        overflowX:"auto"
+      }}
+      >
 {`const add = (a, b) => {
     return a + b;
 };
@@ -100,7 +140,15 @@ console.log(square(5));`}
         Default parameters are used when no value is passed.
       </p>
 
-      <pre>
+      <pre
+           style={{
+        padding:"14px",
+        background:"#111",
+        borderRadius:"12px",
+        borderLeft:"6px solid rgb(13 200 13)",
+        overflowX:"auto"
+      }}
+      >
 {`function greet(name = "Guest") {
     console.log("Hello " + name);
 }
@@ -116,7 +164,15 @@ greet("Asmit");`}
         function.
       </p>
 
-      <pre>
+      <pre
+           style={{
+        padding:"14px",
+        background:"#111",
+        borderRadius:"12px",
+        borderLeft:"6px solid rgb(13 200 13)",
+        overflowX:"auto"
+      }}
+      >
 {`function demo() {
     let message = "Inside Function";
     console.log(message);
