@@ -181,7 +181,14 @@ for (let i = 0; i < fruits.length; i++) {
 
       <h2>Common Array Methods</h2>
 
-      <table>
+      <table
+      style={{
+        borderCollapse:"collapse",
+        width:"100%",
+        border:"1px solid #444"
+      }}
+      
+      >
         <tbody>
           <tr>
             <th>Method</th>
