@@ -27,7 +27,15 @@ console.log(fruits);`}
 
       <h2>Accessing Array Elements</h2>
 
-      <pre>
+      <pre
+         style={{
+        padding:"14px",
+        background:"#111",
+        overflowX:"auto",
+        borderRadius:"12px",
+        borderLeft:"6px solid rgb(13 200 13 )"
+      }}
+      >
 {`const fruits = ["Apple", "Banana", "Mango"];
 
 console.log(fruits[0]);
@@ -37,7 +45,15 @@ console.log(fruits[2]);`}
 
       <h2>Changing an Element</h2>
 
-      <pre>
+      <pre
+         style={{
+        padding:"14px",
+        background:"#111",
+        overflowX:"auto",
+        borderRadius:"12px",
+        borderLeft:"6px solid rgb(13 200 13 )"
+      }}
+      >
 {`const fruits = ["Apple", "Banana", "Mango"];
 
 fruits[1] = "Orange";
@@ -47,7 +63,15 @@ console.log(fruits);`}
 
       <h2>Array Length</h2>
 
-      <pre>
+      <pre
+         style={{
+        padding:"14px",
+        background:"#111",
+        overflowX:"auto",
+        borderRadius:"12px",
+        borderLeft:"6px solid rgb(13 200 13 )"
+      }}
+      >
 {`const fruits = ["Apple", "Banana", "Mango"];
 
 console.log(fruits.length);`}
@@ -59,7 +83,15 @@ console.log(fruits.length);`}
 
       <p>Adds an element to the end of the array.</p>
 
-      <pre>
+      <pre
+         style={{
+        padding:"14px",
+        background:"#111",
+        overflowX:"auto",
+        borderRadius:"12px",
+        borderLeft:"6px solid rgb(13 200 13 )"
+      }}
+      >
 {`const fruits = ["Apple", "Banana"];
 
 fruits.push("Mango");
@@ -71,7 +103,15 @@ console.log(fruits);`}
 
       <p>Adds an element to the beginning of the array.</p>
 
-      <pre>
+      <pre
+         style={{
+        padding:"14px",
+        background:"#111",
+        overflowX:"auto",
+        borderRadius:"12px",
+        borderLeft:"6px solid rgb(13 200 13 )"
+      }}
+      >
 {`const fruits = ["Banana", "Mango"];
 
 fruits.unshift("Apple");
@@ -85,7 +125,15 @@ console.log(fruits);`}
 
       <p>Removes the last element.</p>
 
-      <pre>
+      <pre
+         style={{
+        padding:"14px",
+        background:"#111",
+        overflowX:"auto",
+        borderRadius:"12px",
+        borderLeft:"6px solid rgb(13 200 13 )"
+      }}
+      >
 {`const fruits = ["Apple", "Banana", "Mango"];
 
 fruits.pop();
@@ -97,7 +145,15 @@ console.log(fruits);`}
 
       <p>Removes the first element.</p>
 
-      <pre>
+      <pre
+         style={{
+        padding:"14px",
+        background:"#111",
+        overflowX:"auto",
+        borderRadius:"12px",
+        borderLeft:"6px solid rgb(13 200 13 )"
+      }}
+      >
 {`const fruits = ["Apple", "Banana", "Mango"];
 
 fruits.shift();
@@ -107,7 +163,15 @@ console.log(fruits);`}
 
       <h2>Looping Through an Array</h2>
 
-      <pre>
+      <pre
+         style={{
+        padding:"14px",
+        background:"#111",
+        overflowX:"auto",
+        borderRadius:"12px",
+        borderLeft:"6px solid rgb(13 200 13 )"
+      }}
+      >
 {`const fruits = ["Apple", "Banana", "Mango"];
 
 for (let i = 0; i < fruits.length; i++) {
