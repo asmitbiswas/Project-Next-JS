@@ -11,7 +11,15 @@ export default function Arrays() {
 
       <h2>Creating an Array</h2>
 
-      <pre>
+      <pre
+      style={{
+        padding:"14px",
+        background:"#111",
+        overflowX:"auto",
+        borderRadius:"12px",
+        borderLeft:"6px solid rgb(13 200 13 )"
+      }}
+      >
 {`const fruits = ["Apple", "Banana", "Mango"];
 
 console.log(fruits);`}
