@@ -25,7 +25,7 @@ export default function JavaScriptHome() {
           <li><Link href="/JavaScript/Loops" style={{color:"white"}}>Loops</Link></li>
           <li><Link href="/JavaScript/Functions" style={{color:"white"}}>Functions</Link></li>
           <li><Link href="/JavaScript/Arrays" style={{color:"white"}}>Arrays</Link></li>
-          <li>Objects</li>
+          <li><Link href="/JavaScript/Objects" style={{color:"white"}}>Objects</Link></li>
           <li>Strings</li>
           <li>DOM Manipulation</li>
           <li>Events</li>
