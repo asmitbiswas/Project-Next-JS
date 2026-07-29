@@ -331,7 +331,7 @@ console.log(a ** 2);`}
             </tr>
           </tbody>
         </table>
-
+              <h2>Example</h2>
         <pre
          style={{
             padding:"14px",
