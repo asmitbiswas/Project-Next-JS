@@ -166,36 +166,109 @@ for (let key in person) {
 
       <h2>Common Object Methods</h2>
 
-      <table>
+      <table
+                  style={{
+            borderCollapse:"collapse",
+            width:"100%",
+            border:"1px solid #444",
+            padding:"20px"
+        }}
+      >
         <tbody>
           <tr>
-            <th>Method</th>
-            <th>Description</th>
+            <th
+            style={{
+                border:"1px solid #444",
+                padding:"14px",
+                background:"#111"
+            }}
+            >Method</th>
+            <th
+                style={{
+                border:"1px solid #444",
+                padding:"14px",
+                background:"#111"
+            }}
+            >Description</th>
           </tr>
 
           <tr>
-            <td>Object.keys()</td>
-            <td>Returns an array of all keys.</td>
+            <td
+            style={{
+                padding:"14px",
+                border:"1px solid #444"
+            }}
+            >Object.keys()</td>
+            <td
+              style={{
+                padding:"14px",
+                border:"1px solid #444"
+            }}
+            >Returns an array of all keys.</td>
           </tr>
 
           <tr>
-            <td>Object.values()</td>
-            <td>Returns an array of all values.</td>
+            <td
+                style={{
+                border:"1px solid #444",
+                padding:"14px",
+                background:"#111"
+            }}
+            >Object.values()</td>
+            <td
+                style={{
+                border:"1px solid #444",
+                padding:"14px",
+                background:"#111"
+            }}
+            >Returns an array of all values.</td>
           </tr>
 
           <tr>
-            <td>Object.entries()</td>
-            <td>Returns key-value pairs as arrays.</td>
+            <td
+              style={{
+                padding:"14px",
+                border:"1px solid #444"
+            }}
+            >Object.entries()</td>
+            <td
+                     style={{
+                padding:"14px",
+                border:"1px solid #444"
+            }}
+            >Returns key-value pairs as arrays.</td>
           </tr>
 
           <tr>
-            <td>hasOwnProperty()</td>
-            <td>Checks if a property exists.</td>
+            <td
+                style={{
+                border:"1px solid #444",
+                padding:"14px",
+                background:"#111"
+            }}
+            >hasOwnProperty()</td>
+            <td
+                style={{
+                border:"1px solid #444",
+                padding:"14px",
+                background:"#111"
+            }}
+            >Checks if a property exists.</td>
           </tr>
 
           <tr>
-            <td>delete</td>
-            <td>Removes a property.</td>
+            <td
+                     style={{
+                padding:"14px",
+                border:"1px solid #444"
+            }}
+            >delete</td>
+            <td
+                     style={{
+                padding:"14px",
+                border:"1px solid #444"
+            }}
+            >Removes a property.</td>
           </tr>
         </tbody>
       </table>
