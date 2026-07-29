@@ -55,7 +55,15 @@ console.log(person["age"]);`}
 
       <h2>Adding a Property</h2>
 
-      <pre>
+      <pre
+        style={{
+        background:"#111",
+        padding:"14px",
+        borderRadius:"12px",
+        overflowX:"auto",
+        borderLeft:"6px solid rgb(13 200 13)"
+      }}
+      >
 {`const person = {
     name: "Asmit"
 };
