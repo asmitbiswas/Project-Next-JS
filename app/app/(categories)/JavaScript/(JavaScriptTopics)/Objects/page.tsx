@@ -11,7 +11,15 @@ export default function Objects() {
 
       <h2>Creating an Object</h2>
 
-      <pre>
+      <pre
+      style={{
+        background:"#111",
+        padding:"14px",
+        borderRadius:"12px",
+        overflowX:"auto",
+        borderLeft:"6px solid rgb(13 200 13)"
+      }}
+      >
 {`const person = {
     name: "Asmit",
     age: 13,
