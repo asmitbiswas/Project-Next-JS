@@ -191,43 +191,133 @@ for (let i = 0; i < fruits.length; i++) {
       >
         <tbody>
           <tr>
-            <th>Method</th>
-            <th>Description</th>
+            <th 
+            style={{
+              border:"1px solid #444",
+              padding:"14px",
+              background:"#111"
+            }}
+            >Method</th>
+            <th
+                   style={{
+              border:"1px solid #444",
+              padding:"14px",
+              background:"#111"
+            }}
+            >Description</th>
           </tr>
 
           <tr>
-            <td>push()</td>
-            <td>Adds an element to the end.</td>
+            <td
+            style={{
+              border:"1px solid #444",
+              padding:"14px"
+            }}
+            >push()</td>
+            <td
+              style={{
+              border:"1px solid #444",
+              padding:"14px"
+            }}
+            >Adds an element to the end.</td>
           </tr>
 
           <tr>
-            <td>pop()</td>
-            <td>Removes the last element.</td>
+            <td
+                   style={{
+              border:"1px solid #444",
+              padding:"14px",
+              background:"#111"
+            }}
+            >pop()</td>
+            <td
+                   style={{
+              border:"1px solid #444",
+              padding:"14px",
+              background:"#111"
+            }}
+            >Removes the last element.</td>
           </tr>
 
           <tr>
-            <td>shift()</td>
-            <td>Removes the first element.</td>
+            <td
+                   style={{
+              border:"1px solid #444",
+              padding:"14px",
+              background:"#111"
+            }}
+            >shift()</td>
+            <td
+                   style={{
+              border:"1px solid #444",
+              padding:"14px",
+              background:"#111"
+            }}
+            >Removes the first element.</td>
           </tr>
 
           <tr>
-            <td>unshift()</td>
-            <td>Adds an element to the beginning.</td>
+            <td
+              style={{
+              border:"1px solid #444",
+              padding:"14px"
+            }}
+            >unshift()</td>
+            <td
+              style={{
+              border:"1px solid #444",
+              padding:"14px"
+            }}
+            >Adds an element to the beginning.</td>
           </tr>
 
           <tr>
-            <td>length</td>
-            <td>Returns the number of elements.</td>
+            <td
+                   style={{
+              border:"1px solid #444",
+              padding:"14px",
+              background:"#111"
+            }}
+            >length</td>
+            <td
+                   style={{
+              border:"1px solid #444",
+              padding:"14px",
+              background:"#111"
+            }}
+            >Returns the number of elements.</td>
           </tr>
 
           <tr>
-            <td>includes()</td>
-            <td>Checks if a value exists.</td>
+            <td
+              style={{
+              border:"1px solid #444",
+              padding:"14px"
+            }}
+            >includes()</td>
+            <td
+              style={{
+              border:"1px solid #444",
+              padding:"14px"
+            }}
+            >Checks if a value exists.</td>
           </tr>
 
           <tr>
-            <td>indexOf()</td>
-            <td>Returns the index of a value.</td>
+            <td
+                   style={{
+              border:"1px solid #444",
+              padding:"14px",
+              background:"#111"
+            }}
+            >indexOf()</td>
+            <td
+                   style={{
+              border:"1px solid #444",
+              padding:"14px",
+              background:"#111"
+            }}
+            >Returns the index of a value.</td>
           </tr>
         </tbody>
       </table>
