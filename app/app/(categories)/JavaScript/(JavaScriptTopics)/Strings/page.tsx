@@ -36,7 +36,15 @@ console.log(language);`}
         in a string.
       </p>
 
-      <pre>
+      <pre
+        style={{
+        overflowX:"auto",
+        background:"#111",
+        padding:"14px",
+        borderRadius:"12px",
+        borderLeft:"6px solid rgb(13 200 13)"
+      }}
+      >
 {`const text = "DevVault";
 
 console.log(text.length);`}
@@ -44,7 +52,15 @@ console.log(text.length);`}
 
       <h2>Accessing Characters</h2>
 
-      <pre>
+      <pre
+        style={{
+        overflowX:"auto",
+        background:"#111",
+        padding:"14px",
+        borderRadius:"12px",
+        borderLeft:"6px solid rgb(13 200 13)"
+      }}
+      >
 {`const text = "JavaScript";
 
 console.log(text[0]);
