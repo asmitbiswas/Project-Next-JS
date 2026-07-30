@@ -212,56 +212,173 @@ console.log(\`My name is \${name} and I am \${age} years old.\`);`}
 
       <h2>Common String Methods</h2>
 
-      <table>
+      <table
+      style={{
+        borderCollapse:"collapse",
+        width:"100%",
+        border:"1px solid #444",
+        overflowX:"auto"
+      }}
+      >
         <tbody>
           <tr>
-            <th>Method</th>
-            <th>Description</th>
+            <th
+            style={{
+              border:"1px solid #444",
+              background:"#111",
+              padding:"14px"
+            }}
+            >Method</th>
+            <th
+                style={{
+              border:"1px solid #444",
+              background:"#111",
+              padding:"14px"
+            }}
+            >Description</th>
           </tr>
 
           <tr>
-            <td>length</td>
-            <td>Returns the number of characters.</td>
+            <td
+            style={{
+              border:"1px solid #444",
+              padding:"14px"
+            }}
+            >length</td>
+            <td
+             style={{
+              border:"1px solid #444",
+              padding:"14px"
+            }}
+            >Returns the number of characters.</td>
           </tr>
 
           <tr>
-            <td>toUpperCase()</td>
-            <td>Converts text to uppercase.</td>
+            <td
+                style={{
+              border:"1px solid #444",
+              background:"#111",
+              padding:"14px"
+            }}
+            >toUpperCase()</td>
+            <td
+                style={{
+              border:"1px solid #444",
+              background:"#111",
+              padding:"14px"
+            }}
+            >Converts text to uppercase.</td>
           </tr>
 
           <tr>
-            <td>toLowerCase()</td>
-            <td>Converts text to lowercase.</td>
+            <td
+             style={{
+              border:"1px solid #444",
+              padding:"14px"
+            }}
+            >toLowerCase()</td>
+            <td
+             style={{
+              border:"1px solid #444",
+              padding:"14px"
+            }}
+            >Converts text to lowercase.</td>
           </tr>
 
           <tr>
-            <td>trim()</td>
-            <td>Removes extra spaces.</td>
+            <td
+                style={{
+              border:"1px solid #444",
+              background:"#111",
+              padding:"14px"
+            }}
+            >trim()</td>
+            <td
+                style={{
+              border:"1px solid #444",
+              background:"#111",
+              padding:"14px"
+            }}
+            >Removes extra spaces.</td>
           </tr>
 
           <tr>
-            <td>includes()</td>
-            <td>Checks if text exists.</td>
+            <td
+             style={{
+              border:"1px solid #444",
+              padding:"14px"
+            }}
+            >includes()</td>
+            <td
+             style={{
+              border:"1px solid #444",
+              padding:"14px"
+            }}
+            >Checks if text exists.</td>
           </tr>
 
           <tr>
-            <td>indexOf()</td>
-            <td>Returns the first matching index.</td>
+            <td
+                style={{
+              border:"1px solid #444",
+              background:"#111",
+              padding:"14px"
+            }}
+            >indexOf()</td>
+            <td
+                style={{
+              border:"1px solid #444",
+              background:"#111",
+              padding:"14px"
+            }}
+            >Returns the first matching index.</td>
           </tr>
 
           <tr>
-            <td>slice()</td>
-            <td>Extracts part of a string.</td>
+            <td
+             style={{
+              border:"1px solid #444",
+              padding:"14px"
+            }}
+            >slice()</td>
+            <td
+             style={{
+              border:"1px solid #444",
+              padding:"14px"
+            }}
+            >Extracts part of a string.</td>
           </tr>
 
           <tr>
-            <td>replace()</td>
-            <td>Replaces text.</td>
+            <td
+                style={{
+              border:"1px solid #444",
+              background:"#111",
+              padding:"14px"
+            }}
+            >replace()</td>
+            <td
+                style={{
+              border:"1px solid #444",
+              background:"#111",
+              padding:"14px"
+            }}
+            >Replaces text.</td>
           </tr>
 
           <tr>
-            <td>split()</td>
-            <td>Converts a string into an array.</td>
+            <td
+             style={{
+              border:"1px solid #444",
+              padding:"14px"
+            }}
+            >split()</td>
+            <td
+             style={{
+              border:"1px solid #444",
+              padding:"14px"
+            }}
+            >Converts a string into an array.</td>
           </tr>
         </tbody>
       </table>
