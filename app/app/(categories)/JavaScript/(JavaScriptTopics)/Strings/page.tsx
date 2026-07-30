@@ -11,7 +11,15 @@ export default function Strings() {
 
       <h2>Creating Strings</h2>
 
-      <pre>
+      <pre
+      style={{
+        overflowX:"auto",
+        background:"#111",
+        padding:"14px",
+        borderRadius:"12px",
+        borderLeft:"6px solid rgb(13 200 13)"
+      }}
+      >
 {`const firstName = "Asmit";
 const lastName = 'Biswas';
 const language = \`JavaScript\`;
