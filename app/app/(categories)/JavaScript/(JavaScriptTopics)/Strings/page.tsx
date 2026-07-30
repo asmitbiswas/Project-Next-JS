@@ -69,7 +69,15 @@ console.log(text[4]);`}
 
       <h2>Changing Case</h2>
 
-      <pre>
+      <pre
+          style={{
+        overflowX:"auto",
+        background:"#111",
+        padding:"14px",
+        borderRadius:"12px",
+        borderLeft:"6px solid rgb(13 200 13)"
+      }}
+      >
 {`const text = "JavaScript";
 
 console.log(text.toUpperCase());
@@ -83,7 +91,15 @@ console.log(text.toLowerCase());`}
         of a string.
       </p>
 
-      <pre>
+      <pre
+          style={{
+        overflowX:"auto",
+        background:"#111",
+        padding:"14px",
+        borderRadius:"12px",
+        borderLeft:"6px solid rgb(13 200 13)"
+      }}
+      >
 {`const text = "   Hello World   ";
 
 console.log(text.trim());`}
@@ -91,7 +107,15 @@ console.log(text.trim());`}
 
       <h2>Finding Text</h2>
 
-      <pre>
+      <pre
+          style={{
+        overflowX:"auto",
+        background:"#111",
+        padding:"14px",
+        borderRadius:"12px",
+        borderLeft:"6px solid rgb(13 200 13)"
+      }}
+      >
 {`const text = "I love JavaScript";
 
 console.log(text.includes("JavaScript"));
@@ -101,7 +125,15 @@ console.log(text.endsWith("Script"));`}
 
       <h2>Finding the Position</h2>
 
-      <pre>
+      <pre
+          style={{
+        overflowX:"auto",
+        background:"#111",
+        padding:"14px",
+        borderRadius:"12px",
+        borderLeft:"6px solid rgb(13 200 13)"
+      }}
+      >
 {`const text = "JavaScript";
 
 console.log(text.indexOf("S"));
@@ -110,7 +142,15 @@ console.log(text.lastIndexOf("a"));`}
 
       <h2>Extracting Part of a String</h2>
 
-      <pre>
+      <pre
+          style={{
+        overflowX:"auto",
+        background:"#111",
+        padding:"14px",
+        borderRadius:"12px",
+        borderLeft:"6px solid rgb(13 200 13)"
+      }}
+      >
 {`const text = "JavaScript";
 
 console.log(text.slice(0, 4));
@@ -119,7 +159,15 @@ console.log(text.substring(4, 10));`}
 
       <h2>Replacing Text</h2>
 
-      <pre>
+      <pre
+          style={{
+        overflowX:"auto",
+        background:"#111",
+        padding:"14px",
+        borderRadius:"12px",
+        borderLeft:"6px solid rgb(13 200 13)"
+      }}
+      >
 {`const text = "I love Java";
 
 console.log(text.replace("Java", "JavaScript"));`}
@@ -127,7 +175,15 @@ console.log(text.replace("Java", "JavaScript"));`}
 
       <h2>Splitting a String</h2>
 
-      <pre>
+      <pre
+          style={{
+        overflowX:"auto",
+        background:"#111",
+        padding:"14px",
+        borderRadius:"12px",
+        borderLeft:"6px solid rgb(13 200 13)"
+      }}
+      >
 {`const fruits = "Apple,Banana,Mango";
 
 console.log(fruits.split(","));`}
@@ -139,7 +195,15 @@ console.log(fruits.split(","));`}
         Template literals make it easier to combine variables with text.
       </p>
 
-      <pre>
+      <pre
+          style={{
+        overflowX:"auto",
+        background:"#111",
+        padding:"14px",
+        borderRadius:"12px",
+        borderLeft:"6px solid rgb(13 200 13)"
+      }}
+      >
 {`const name = "Asmit";
 const age = 13;
 
