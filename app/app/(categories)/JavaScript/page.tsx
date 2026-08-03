@@ -28,7 +28,7 @@ export default function JavaScriptHome() {
           <li><Link href="/JavaScript/Objects" style={{color:"white"}}>Objects</Link></li>
           <li><Link href="/JavaScript/Strings" style={{color:"white"}}>Strings</Link></li>
           <li><Link href="/JavaScript/DOM_Manuplation" style={{color:"white"}}>DOM Manipulation</Link></li>
-          <li>Events</li>
+          <li><Link href="/JavaScript/Events" style={{color:"white"}}>Events</Link></li>
           <li>ES6 Features</li>
           <li>Promises</li>
           <li>Async / Await</li>
