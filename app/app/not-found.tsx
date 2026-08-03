@@ -1,17 +1,54 @@
 "use client";
 
 import Link from "next/link";
+import { useEffect, useState } from "react";
+
+const lines = [
+  "$ locate requested-page",
+  "Scanning filesystem...",
+  "ERROR 404: Page Not Found",
+  "Requested resource does not exist.",
+  "",
+  "$ status",
+  "[✓] Server Online",
+  "[✓] Database Connected",
+  "[✗] Resource Missing",
+  "",
+  "root@devvault:~$",
+];
 
 export default function NotFound() {
+  const [displayed, setDisplayed] = useState<string[]>([]);
+  const [lineIndex, setLineIndex] = useState(0);
+  const [text, setText] = useState("");
+
+  useEffect(() => {
+    if (lineIndex >= lines.length) return;
+
+    const current = lines[lineIndex];
+
+    if (text.length < current.length) {
+      const timer = setTimeout(() => {
+        setText(current.slice(0, text.length + 1));
+      }, 35);
+
+      return () => clearTimeout(timer);
+    }
+
+    const timer = setTimeout(() => {
+      setDisplayed((prev) => [...prev, current]);
+      setText("");
+      setLineIndex((prev) => prev + 1);
+    }, 250);
+
+    return () => clearTimeout(timer);
+  }, [text, lineIndex]);
+
   return (
     <>
       <style jsx>{`
         * {
           box-sizing: border-box;
-        }
-
-        body {
-          margin: 0;
         }
 
         .page {
@@ -31,7 +68,7 @@ export default function NotFound() {
           border: 1px solid #00ff66;
           border-radius: 12px;
           overflow: hidden;
-          box-shadow: 0 0 30px rgba(0, 255, 102, 0.3);
+          box-shadow: 0 0 25px rgba(0, 255, 100, 0.3);
         }
 
         .header {
@@ -73,6 +110,7 @@ export default function NotFound() {
           font-size: 18px;
           line-height: 1.8;
           text-shadow: 0 0 8px #00ff66;
+          min-height: 340px;
         }
 
         .error {
@@ -93,8 +131,8 @@ export default function NotFound() {
           display: inline-block;
           margin-top: 20px;
           padding: 12px 24px;
-          color: #00ff66;
           border: 1px solid #00ff66;
+          color: #00ff66;
           text-decoration: none;
           transition: 0.3s;
         }
@@ -108,34 +146,34 @@ export default function NotFound() {
       <main className="page">
         <div className="terminal">
           <div className="header">
-            <span className="dot red"></span>
-            <span className="dot yellow"></span>
-            <span className="dot green"></span>
+            <span className="dot red" />
+            <span className="dot yellow" />
+            <span className="dot green" />
             <span className="title">root@devvault:~/404</span>
           </div>
 
           <div className="body">
-            <div>$ locate requested-page</div>
-            <div>Scanning filesystem...</div>
-            <div className="error">ERROR 404: Page Not Found</div>
-            <div>Requested resource does not exist.</div>
+            {displayed.map((line, i) => (
+              <div
+                key={i}
+                className={line.includes("ERROR") ? "error" : ""}
+              >
+                {line === "" ? <br /> : line}
+              </div>
+            ))}
 
-            <br />
+            {lineIndex < lines.length && (
+              <div className={lines[lineIndex].includes("ERROR") ? "error" : ""}>
+                {text}
+                <span className="cursor">█</span>
+              </div>
+            )}
 
-            <div>$ status</div>
-            <div>[✓] Server Online</div>
-            <div>[✓] Database Connected</div>
-            <div>[✗] Resource Missing</div>
-
-            <br />
-
-            <div>
-              root@devvault:~$ <span className="cursor">█</span>
-            </div>
-
-            <Link href="/" className="button">
-              Return Home
-            </Link>
+            {lineIndex >= lines.length && (
+              <Link href="/" className="button">
+                Return Home
+              </Link>
+            )}
           </div>
         </div>
       </main>
