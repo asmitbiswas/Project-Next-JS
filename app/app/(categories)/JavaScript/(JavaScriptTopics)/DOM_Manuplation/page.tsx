@@ -227,67 +227,206 @@ console.log(input.value);`}
 
       <h2>Common DOM Methods</h2>
 
-      <table>
+      <table
+      style={{
+        width:"100%",
+        borderCollapse:"collapse",
+        overflowX:"auto",
+        border:"1px solid #444"
+      }}
+      >
         <tbody>
 
           <tr>
-            <th>Method</th>
-            <th>Description</th>
+            <th
+            style={{
+              border:"1px solid #444",
+              padding:"14px",
+              background:"#111",
+            }}
+            >Method</th>
+            <th
+            style={{
+              padding:"14px",
+              border:"1px solid #444"
+            }}
+            >Description</th>
           </tr>
 
           <tr>
-            <td>getElementById()</td>
-            <td>Selects an element by ID.</td>
+            <td
+               style={{
+              padding:"14px",
+              border:"1px solid #444"
+            }}
+            >getElementById()</td>
+            <td
+              style={{
+              border:"1px solid #444",
+              padding:"14px",
+              background:"#111",
+            }}
+            >Selects an element by ID.</td>
           </tr>
 
           <tr>
-            <td>querySelector()</td>
-            <td>Selects the first matching element.</td>
+            <td
+              style={{
+              border:"1px solid #444",
+              padding:"14px",
+              background:"#111",
+            }}
+            >querySelector()</td>
+            <td
+               style={{
+              padding:"14px",
+              border:"1px solid #444"
+            }}
+            >Selects the first matching element.</td>
           </tr>
 
           <tr>
-            <td>querySelectorAll()</td>
-            <td>Selects all matching elements.</td>
+            <td
+               style={{
+              padding:"14px",
+              border:"1px solid #444"
+            }}
+            >querySelectorAll()</td>
+            <td
+              style={{
+              border:"1px solid #444",
+              padding:"14px",
+              background:"#111",
+            }}
+            >Selects all matching elements.</td>
           </tr>
 
           <tr>
-            <td>textContent</td>
-            <td>Changes or returns text.</td>
+            <td
+              style={{
+              border:"1px solid #444",
+              padding:"14px",
+              background:"#111",
+            }}
+            >textContent</td>
+            <td
+               style={{
+              padding:"14px",
+              border:"1px solid #444"
+            }}
+            >Changes or returns text.</td>
           </tr>
 
           <tr>
-            <td>innerHTML</td>
-            <td>Changes HTML content.</td>
+            <td
+               style={{
+              padding:"14px",
+              border:"1px solid #444"
+            }}
+            >innerHTML</td>
+            <td
+              style={{
+              border:"1px solid #444",
+              padding:"14px",
+              background:"#111",
+            }}
+            >Changes HTML content.</td>
           </tr>
 
           <tr>
-            <td>style</td>
-            <td>Changes CSS styles.</td>
+            <td
+              style={{
+              border:"1px solid #444",
+              padding:"14px",
+              background:"#111",
+            }}
+            >style</td>
+            <td
+               style={{
+              padding:"14px",
+              border:"1px solid #444"
+            }}
+            >Changes CSS styles.</td>
           </tr>
 
           <tr>
-            <td>classList</td>
-            <td>Adds, removes, or toggles classes.</td>
+            <td
+               style={{
+              padding:"14px",
+              border:"1px solid #444"
+            }}
+            >classList</td>
+            <td
+              style={{
+              border:"1px solid #444",
+              padding:"14px",
+              background:"#111",
+            }}
+            >Adds, removes, or toggles classes.</td>
           </tr>
 
           <tr>
-            <td>createElement()</td>
-            <td>Creates a new HTML element.</td>
+            <td
+              style={{
+              border:"1px solid #444",
+              padding:"14px",
+              background:"#111",
+            }}
+            >createElement()</td>
+            <td
+               style={{
+              padding:"14px",
+              border:"1px solid #444"
+            }}
+            >Creates a new HTML element.</td>
           </tr>
 
           <tr>
-            <td>appendChild()</td>
-            <td>Adds an element to the page.</td>
+            <td
+               style={{
+              padding:"14px",
+              border:"1px solid #444"
+            }}
+            >appendChild()</td>
+            <td
+            
+              style={{
+              border:"1px solid #444",
+              padding:"14px",
+              background:"#111",
+            }}>Adds an element to the page.</td>
           </tr>
 
           <tr>
-            <td>remove()</td>
-            <td>Removes an element.</td>
+            <td
+              style={{
+              border:"1px solid #444",
+              padding:"14px",
+              background:"#111",
+            }}
+            >remove()</td>
+            <td
+               style={{
+              padding:"14px",
+              border:"1px solid #444"
+            }}
+            >Removes an element.</td>
           </tr>
 
           <tr>
-            <td>addEventListener()</td>
-            <td>Listens for user events.</td>
+            <td
+               style={{
+              padding:"14px",
+              border:"1px solid #444"
+            }}
+            >addEventListener()</td>
+            <td
+              style={{
+              border:"1px solid #444",
+              padding:"14px",
+              background:"#111",
+            }}
+            >Listens for user events.</td>
           </tr>
 
         </tbody>
