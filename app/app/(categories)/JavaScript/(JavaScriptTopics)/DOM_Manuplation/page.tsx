@@ -22,7 +22,15 @@ export default function DOM() {
 
       <h3>getElementById()</h3>
 
-      <pre>
+      <pre
+      style={{
+        overflowX:"auto",
+        background:"#111",
+        padding:"14px",
+        borderRadius:"12px",
+        borderLeft:"6px solid rgb(13 200 13)"
+      }}
+      >
 {`const heading = document.getElementById("title");
 
 console.log(heading);`}
@@ -30,7 +38,15 @@ console.log(heading);`}
 
       <h3>querySelector()</h3>
 
-      <pre>
+      <pre
+         style={{
+        overflowX:"auto",
+        background:"#111",
+        padding:"14px",
+        borderRadius:"12px",
+        borderLeft:"6px solid rgb(13 200 13)"
+      }}
+      >
 {`const heading = document.querySelector(".title");
 
 console.log(heading);`}
@@ -38,7 +54,15 @@ console.log(heading);`}
 
       <h3>querySelectorAll()</h3>
 
-      <pre>
+      <pre
+         style={{
+        overflowX:"auto",
+        background:"#111",
+        padding:"14px",
+        borderRadius:"12px",
+        borderLeft:"6px solid rgb(13 200 13)"
+      }}
+      >
 {`const items = document.querySelectorAll(".item");
 
 console.log(items);`}
@@ -46,7 +70,15 @@ console.log(items);`}
 
       <h2>Changing Text</h2>
 
-      <pre>
+      <pre
+         style={{
+        overflowX:"auto",
+        background:"#111",
+        padding:"14px",
+        borderRadius:"12px",
+        borderLeft:"6px solid rgb(13 200 13)"
+      }}
+      >
 {`const heading = document.getElementById("title");
 
 heading.textContent = "Welcome to DevVault";`}
@@ -54,7 +86,15 @@ heading.textContent = "Welcome to DevVault";`}
 
       <h2>Changing HTML</h2>
 
-      <pre>
+      <pre
+         style={{
+        overflowX:"auto",
+        background:"#111",
+        padding:"14px",
+        borderRadius:"12px",
+        borderLeft:"6px solid rgb(13 200 13)"
+      }}
+      >
 {`const box = document.querySelector(".box");
 
 box.innerHTML = "<h2>Hello World</h2>";`}
@@ -62,7 +102,15 @@ box.innerHTML = "<h2>Hello World</h2>";`}
 
       <h2>Changing CSS</h2>
 
-      <pre>
+      <pre
+         style={{
+        overflowX:"auto",
+        background:"#111",
+        padding:"14px",
+        borderRadius:"12px",
+        borderLeft:"6px solid rgb(13 200 13)"
+      }}
+      >
 {`const heading = document.querySelector("h1");
 
 heading.style.color = "lime";
@@ -71,7 +119,15 @@ heading.style.fontSize = "40px";`}
 
       <h2>Changing Attributes</h2>
 
-      <pre>
+      <pre
+         style={{
+        overflowX:"auto",
+        background:"#111",
+        padding:"14px",
+        borderRadius:"12px",
+        borderLeft:"6px solid rgb(13 200 13)"
+      }}
+      >
 {`const image = document.querySelector("img");
 
 image.src = "logo.png";
@@ -80,7 +136,15 @@ image.alt = "Logo";`}
 
       <h2>Adding Classes</h2>
 
-      <pre>
+      <pre
+         style={{
+        overflowX:"auto",
+        background:"#111",
+        padding:"14px",
+        borderRadius:"12px",
+        borderLeft:"6px solid rgb(13 200 13)"
+      }}
+      >
 {`const box = document.querySelector(".box");
 
 box.classList.add("active");
@@ -90,7 +154,15 @@ box.classList.toggle("dark");`}
 
       <h2>Creating Elements</h2>
 
-      <pre>
+      <pre
+         style={{
+        overflowX:"auto",
+        background:"#111",
+        padding:"14px",
+        borderRadius:"12px",
+        borderLeft:"6px solid rgb(13 200 13)"
+      }}
+      >
 {`const heading = document.createElement("h2");
 
 heading.textContent = "New Heading";
@@ -100,7 +172,15 @@ document.body.appendChild(heading);`}
 
       <h2>Removing Elements</h2>
 
-      <pre>
+      <pre
+         style={{
+        overflowX:"auto",
+        background:"#111",
+        padding:"14px",
+        borderRadius:"12px",
+        borderLeft:"6px solid rgb(13 200 13)"
+      }}
+      >
 {`const heading = document.querySelector("h2");
 
 heading.remove();`}
@@ -112,7 +192,16 @@ heading.remove();`}
         Event listeners allow JavaScript to respond to user actions.
       </p>
 
-      <pre>
+      <pre
+         style={{
+        overflowX:"auto",
+        background:"#111",
+        padding:"14px",
+        borderRadius:"12px",
+        // borderLeft:"rgb(13 200 13)",
+        borderLeft:"6px solid rgb(13 200 13)",
+      }}
+      >
 {`const button = document.querySelector("button");
 
 button.addEventListener("click", () => {
@@ -122,7 +211,15 @@ button.addEventListener("click", () => {
 
       <h2>Getting Input Value</h2>
 
-      <pre>
+      <pre
+      style={{
+        overflowX:"auto",
+        background:"#111",
+        padding:"14px",
+        borderRadius:"12px",
+        borderLeft:"6px solid rgb(13 200 13)"
+      }}
+      >
 {`const input = document.querySelector("input");
 
 console.log(input.value);`}
