@@ -4,17 +4,28 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 
 const lines = [
-  "$ locate requested-page",
-  "Scanning filesystem...",
-  "ERROR 404: Page Not Found",
-  "Requested resource does not exist.",
+  "$ boot sequence initiated...",
+  "[ OK ] Loading kernel modules",
+  "[ OK ] Mounting virtual filesystem",
+  "[ OK ] Starting network services",
+  "[ OK ] Connecting to devvault.local",
+  "[ OK ] Authentication successful",
+  "$ cd /requested-page",
+  "bash: /requested-page: No such file or directory",
+  "$ find . -name requested-page",
+  "No matches found.",
+  "$ system status",
+  "[✓] CPU ............ Online",
+  "[✓] Memory ......... Stable",
+  "[✓] Network ........ Connected",
+  "[✓] Database ....... Connected",
+  "[✗] Requested page . Missing",
   "",
-  "$ status",
-  "[✓] Server Online",
-  "[✓] Database Connected",
-  "[✗] Resource Missing",
+  "Error 404: The requested resource could not be located.",
   "",
-  "root@devvault:~$",
+  "Type 'home' to return to the homepage.",
+  "",
+  "root@devvault:~$"
 ];
 
 export default function NotFound() {
