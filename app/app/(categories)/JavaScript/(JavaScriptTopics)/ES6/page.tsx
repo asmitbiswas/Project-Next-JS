@@ -13,8 +13,8 @@ export default function ES6Features() {
             <h2>let and const</h2>
 
             <p>
-                <code>let</code> is used for variables that can change, while
-                <code>const</code> is used for values that should not be reassigned.
+                <code style={{ color: "#12fa40a1" }}>let</code> is used for variables that can change, while
+                <code style={{ color: "#12fa40a1" }}> const </code> is used for values that should not be reassigned.
             </p>
 
             <pre>
