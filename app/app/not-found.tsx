@@ -32,8 +32,18 @@ export default function NotFound() {
   const [displayed, setDisplayed] = useState<string[]>([]);
   const [lineIndex, setLineIndex] = useState(0);
   const [text, setText] = useState("");
+  const [started, setStarted] = useState(false);
 
   useEffect(() => {
+    const timer = setTimeout(() => {
+      setStarted(true);
+    }, 1000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  useEffect(() => {
+    if (!started) return;
     if (lineIndex >= lines.length) return;
 
     const current = lines[lineIndex];
@@ -53,13 +63,17 @@ export default function NotFound() {
     }, 250);
 
     return () => clearTimeout(timer);
-  }, [text, lineIndex]);
+  }, [started, text, lineIndex]);
 
   return (
     <>
       <style jsx>{`
         * {
           box-sizing: border-box;
+        }
+
+        body {
+          margin: 0;
         }
 
         .page {
@@ -79,7 +93,7 @@ export default function NotFound() {
           border: 1px solid #00ff66;
           border-radius: 12px;
           overflow: hidden;
-          box-shadow: 0 0 25px rgba(0, 255, 100, 0.3);
+          box-shadow: 0 0 30px rgba(0, 255, 102, 0.3);
         }
 
         .header {
@@ -142,8 +156,8 @@ export default function NotFound() {
           display: inline-block;
           margin-top: 20px;
           padding: 12px 24px;
-          border: 1px solid #00ff66;
           color: #00ff66;
+          border: 1px solid #00ff66;
           text-decoration: none;
           transition: 0.3s;
         }
@@ -157,13 +171,19 @@ export default function NotFound() {
       <main className="page">
         <div className="terminal">
           <div className="header">
-            <span className="dot red" />
-            <span className="dot yellow" />
-            <span className="dot green" />
+            <span className="dot red"></span>
+            <span className="dot yellow"></span>
+            <span className="dot green"></span>
             <span className="title">root@devvault:~/404</span>
           </div>
 
           <div className="body">
+            {!started && (
+              <div>
+                <span className="cursor">█</span>
+              </div>
+            )}
+
             {displayed.map((line, i) => (
               <div
                 key={i}
@@ -173,14 +193,18 @@ export default function NotFound() {
               </div>
             ))}
 
-            {lineIndex < lines.length && (
-              <div className={lines[lineIndex].includes("ERROR") ? "error" : ""}>
+            {started && lineIndex < lines.length && (
+              <div
+                className={
+                  lines[lineIndex].includes("ERROR") ? "error" : ""
+                }
+              >
                 {text}
                 <span className="cursor">█</span>
               </div>
             )}
 
-            {lineIndex >= lines.length && (
+            {started && lineIndex >= lines.length && (
               <Link href="/" className="button">
                 Return Home
               </Link>
