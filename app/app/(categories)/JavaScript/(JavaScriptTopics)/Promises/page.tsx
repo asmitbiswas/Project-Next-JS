@@ -25,7 +25,15 @@ export default function Promises() {
 
             <h2>Creating a Promise</h2>
 
-            <pre>
+            <pre
+            style={{
+                background:"#111",
+                padding:"14px",
+                borderRadius:"12px",
+                borderLeft:"6px solid rgb(13 200 13)",
+                overflowX:"auto"
+            }}
+            >
 {`const promise = new Promise((resolve, reject) => {
 
     const success = true;
@@ -45,7 +53,15 @@ export default function Promises() {
                 The <code>then()</code> method runs when the Promise is fulfilled.
             </p>
 
-            <pre>
+            <pre
+                    style={{
+                background:"#111",
+                padding:"14px",
+                borderRadius:"12px",
+                borderLeft:"6px solid rgb(13 200 13)",
+                overflowX:"auto"
+            }}
+            >
 {`promise.then((result) => {
     console.log(result);
 });`}
@@ -57,7 +73,15 @@ export default function Promises() {
                 The <code>catch()</code> method handles errors.
             </p>
 
-            <pre>
+            <pre
+                    style={{
+                background:"#111",
+                padding:"14px",
+                borderRadius:"12px",
+                borderLeft:"6px solid rgb(13 200 13)",
+                overflowX:"auto"
+            }}
+            >
 {`promise.catch((error) => {
     console.log(error);
 });`}
@@ -70,7 +94,15 @@ export default function Promises() {
                 succeeds or fails.
             </p>
 
-            <pre>
+            <pre
+                    style={{
+                background:"#111",
+                padding:"14px",
+                borderRadius:"12px",
+                borderLeft:"6px solid rgb(13 200 13)",
+                overflowX:"auto"
+            }}
+            >
 {`promise.finally(() => {
     console.log("Finished");
 });`}
@@ -78,7 +110,15 @@ export default function Promises() {
 
             <h2>Chaining Promises</h2>
 
-            <pre>
+            <pre
+                    style={{
+                background:"#111",
+                padding:"14px",
+                borderRadius:"12px",
+                borderLeft:"6px solid rgb(13 200 13)",
+                overflowX:"auto"
+            }}
+            >
 {`Promise.resolve(10)
     .then((value) => value * 2)
     .then((value) => value + 5)
@@ -93,7 +133,15 @@ export default function Promises() {
                 Waits until all Promises are completed.
             </p>
 
-            <pre>
+            <pre
+                    style={{
+                background:"#111",
+                padding:"14px",
+                borderRadius:"12px",
+                borderLeft:"6px solid rgb(13 200 13)",
+                overflowX:"auto"
+            }}
+            >
 {`Promise.all([
     Promise.resolve("HTML"),
     Promise.resolve("CSS"),
@@ -109,7 +157,15 @@ export default function Promises() {
                 Returns the result of the first Promise to finish.
             </p>
 
-            <pre>
+            <pre
+                    style={{
+                background:"#111",
+                padding:"14px",
+                borderRadius:"12px",
+                borderLeft:"6px solid rgb(13 200 13)",
+                overflowX:"auto"
+            }}
+            >
 {`Promise.race([
     Promise.resolve("Fast"),
     Promise.resolve("Slow")
@@ -125,7 +181,15 @@ export default function Promises() {
                 way to work with Promises.
             </p>
 
-            <pre>
+            <pre
+                    style={{
+                background:"#111",
+                padding:"14px",
+                borderRadius:"12px",
+                borderLeft:"6px solid rgb(13 200 13)",
+                overflowX:"auto"
+            }}
+            >
 {`async function getData() {
 
     const result = await Promise.resolve("Hello DevVault");
