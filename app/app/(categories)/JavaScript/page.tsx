@@ -30,7 +30,7 @@ export default function JavaScriptHome() {
           <li><Link href="/JavaScript/DOM_Manuplation" style={{color:"white"}}>DOM Manipulation</Link></li>
           <li><Link href="/JavaScript/Events" style={{color:"white"}}>Events</Link></li>
           <li><Link href="/JavaScript/ES6" style={{color:"white"}}>ES6 Features</Link></li>
-          <li>Promises</li>
+          <li><Link href="/JavaScript/Promises" style={{color:"white"}}>Promises</Link></li>
           <li>Async / Await</li>
           <li>Modules</li>
           <li>Error Handling</li>
