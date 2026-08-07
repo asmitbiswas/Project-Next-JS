@@ -8,7 +8,7 @@ export default function Promises() {
                 A Promise is an object that represents the result of an
                 asynchronous operation. It allows JavaScript to handle tasks
                 that take time, such as fetching data from an API or reading
-                a file, without blocking the rest of the code. :contentReference[oaicite:0]{index=0}
+                a file, without blocking the rest of the code. :contentReference[oaicite:0] [index=0]
             </p>
 
             <h2>Promise States</h2>
@@ -192,7 +192,7 @@ getData();`}
                 structured way to handle success and failure. They replace
                 deeply nested callbacks and work seamlessly with
                 <code> async </code> and <code>await</code>, making modern
-                JavaScript code cleaner and easier to read. :contentReference[oaicite:1]{index=1}
+                JavaScript code cleaner and easier to read. :contentReference[oaicite:1] [index=1]
             </p>
 
         </div>
