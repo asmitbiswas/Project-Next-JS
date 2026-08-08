@@ -10,7 +10,14 @@ export default function TypeAnnotationsPage() {
 
       <h2>Basic Syntax</h2>
 
-      <pre>
+      <pre
+      style={{
+        background:"#111",
+        borderLeft:"6px solid rgb( 13 200 13)",
+        padding:"14px",
+        borderRadius:"12px"
+      }}
+      >
         <code>{`let username: string = "Asmit";
 let age: number = 13;
 let isDeveloper: boolean = true;`}</code>
