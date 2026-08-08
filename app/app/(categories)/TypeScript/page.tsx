@@ -52,13 +52,27 @@ console.log(age);`}
                 such as type annotations, interfaces, generics, and more.
             </p>
 
-            <pre>
+            <pre
+              style={{
+                background:"#111",
+                padding:"14px",
+                borderLeft:"6px solid rgb( 13 200 13 )",
+                borderRadius:"12px"
+            }}
+            >
 {`// JavaScript
 
 let username = "Asmit";`}
             </pre>
 
-            <pre>
+            <pre
+              style={{
+                background:"#111",
+                padding:"14px",
+                borderLeft:"6px solid rgb( 13 200 13 )",
+                borderRadius:"12px"
+            }}
+            >
 {`// TypeScript
 
 let username: string = "Asmit";`}
@@ -100,13 +114,27 @@ let username: string = "Asmit";`}
                 Check the installed TypeScript version with:
             </p>
 
-            <pre>
+            <pre
+              style={{
+                background:"#111",
+                padding:"14px",
+                borderLeft:"6px solid rgb( 13 200 13 )",
+                borderRadius:"12px"
+            }}
+            >
 {`tsc --version`}
             </pre>
 
             <h2>Your First TypeScript Program</h2>
 
-            <pre>
+            <pre
+              style={{
+                background:"#111",
+                padding:"14px",
+                borderLeft:"6px solid rgb( 13 200 13 )",
+                borderRadius:"12px"
+            }}
+            >
 {`function greet(name: string): string {
     return "Hello, " + name;
 }
