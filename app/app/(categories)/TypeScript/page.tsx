@@ -1,3 +1,6 @@
+import Link from "next/link";
+
+
 export default function TypeScript() {
     return (
         <div>
@@ -81,7 +84,7 @@ let username: string = "Asmit";`}
             <h2>What You Will Learn</h2>
 
             <ul>
-                <li>Basic Types</li>
+                <li><Link href="/TypeScript/Basic_Types" style={{color:"white"}}>Basic_Types</Link></li>
                 <li>Type Inference</li>
                 <li>Type Annotations</li>
                 <li>Union Types</li>
