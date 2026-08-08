@@ -85,7 +85,7 @@ let username: string = "Asmit";`}
 
             <ul>
                 <li><Link href="/TypeScript/Basic_Types" style={{color:"white"}}>Basic_Types</Link></li>
-                <li>Type Inference</li>
+                <li><Link href="/TypeScript/TI"style={{color:"white"}}>Type interface</Link></li>
                 <li>Type Annotations</li>
                 <li>Union Types</li>
                 <li>Type Narrowing</li>
