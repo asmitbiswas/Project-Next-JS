@@ -30,7 +30,14 @@ let isDeveloper: boolean = true;`}</code>
 
       <h2>Common Types</h2>
 
-      <pre>
+      <pre
+          style={{
+        background:"#111",
+        borderLeft:"6px solid rgb( 13 200 13)",
+        padding:"14px",
+        borderRadius:"12px"
+      }}
+      >
         <code>{`let name: string = "John";
 let score: number = 100;
 let online: boolean = true;`}</code>
@@ -40,7 +47,14 @@ let online: boolean = true;`}</code>
 
       <p>You can specify the type of values an array can contain.</p>
 
-      <pre>
+      <pre
+           style={{
+        background:"#111",
+        borderLeft:"6px solid rgb( 13 200 13)",
+        padding:"14px",
+        borderRadius:"12px"
+      }}
+      >
         <code>{`let fruits: string[] = ["Apple", "Banana", "Mango"];
 
 let scores: number[] = [10, 20, 30];`}</code>
@@ -52,7 +66,14 @@ let scores: number[] = [10, 20, 30];`}</code>
         Type annotations are especially useful for function parameters.
       </p>
 
-      <pre>
+      <pre
+        style={{
+        background:"#111",
+        borderLeft:"6px solid rgb( 13 200 13)",
+        padding:"14px",
+        borderRadius:"12px"
+      }}
+      >
         <code>{`function greet(name: string): string {
   return "Hello " + name;
 }
