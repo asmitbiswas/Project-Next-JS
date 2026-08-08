@@ -34,7 +34,7 @@ export default function ErrorHandling() {
                     overflowX: "auto"
                 }}
             >
-{`try {
+                {`try {
     console.log("Running code...");
 } catch (error) {
     console.log("An error occurred:", error);
@@ -57,7 +57,7 @@ export default function ErrorHandling() {
                     overflowX: "auto"
                 }}
             >
-{`try {
+                {`try {
     let result = unknownVariable;
 }`}
             </pre>
@@ -78,7 +78,7 @@ export default function ErrorHandling() {
                     overflowX: "auto"
                 }}
             >
-{`try {
+                {`try {
     let result = unknownVariable;
 } catch (error) {
     console.log(error);
@@ -101,7 +101,7 @@ export default function ErrorHandling() {
                     overflowX: "auto"
                 }}
             >
-{`try {
+                {`try {
     throw new Error("Something went wrong!");
 } catch (error) {
     console.log(error);
@@ -123,7 +123,7 @@ export default function ErrorHandling() {
                     overflowX: "auto"
                 }}
             >
-{`try {
+                {`try {
     throw new Error("Invalid username");
 } catch (error) {
     console.log(error.message);
@@ -147,7 +147,7 @@ export default function ErrorHandling() {
                     overflowX: "auto"
                 }}
             >
-{`try {
+                {`try {
     console.log("Trying...");
 } catch (error) {
     console.log("Error:", error);
@@ -172,7 +172,7 @@ export default function ErrorHandling() {
                     overflowX: "auto"
                 }}
             >
-{`function checkAge(age) {
+                {`function checkAge(age) {
     if (age < 18) {
         throw new Error("You must be 18 or older.");
     }
@@ -204,7 +204,7 @@ try {
                     overflowX: "auto"
                 }}
             >
-{`throw new Error("Something went wrong!");`}
+                {`throw new Error("Something went wrong!");`}
             </pre>
 
             <h2>ReferenceError</h2>
@@ -223,7 +223,7 @@ try {
                     overflowX: "auto"
                 }}
             >
-{`try {
+                {`try {
     console.log(username);
 } catch (error) {
     console.log(error.name);
@@ -246,7 +246,7 @@ try {
                     overflowX: "auto"
                 }}
             >
-{`try {
+                {`try {
     const number = 10;
     number.toUpperCase();
 } catch (error) {
@@ -270,7 +270,7 @@ try {
                     overflowX: "auto"
                 }}
             >
-{`const name = ;`}
+                {`const name = ;`}
             </pre>
 
             <h2>RangeError</h2>
@@ -289,7 +289,7 @@ try {
                     overflowX: "auto"
                 }}
             >
-{`try {
+                {`try {
     const number = 10;
     number.toFixed(200);
 } catch (error) {
@@ -308,7 +308,7 @@ try {
                     overflowX: "auto"
                 }}
             >
-{`function divide(a, b) {
+                {`function divide(a, b) {
     if (b === 0) {
         throw new Error("Cannot divide by zero.");
     }
@@ -338,7 +338,7 @@ try {
                     overflowX: "auto"
                 }}
             >
-{`Promise.reject("Something went wrong!")
+                {`Promise.reject("Something went wrong!")
     .catch((error) => {
         console.log(error);
     });`}
@@ -360,7 +360,7 @@ try {
                     overflowX: "auto"
                 }}
             >
-{`async function getData() {
+                {`async function getData() {
     try {
         const response = await fetch("/api/data");
 
@@ -392,7 +392,7 @@ getData();`}
                     overflowX: "auto"
                 }}
             >
-{`try {
+                {`try {
     try {
         throw new Error("Inner error");
     } catch (error) {
@@ -419,7 +419,7 @@ getData();`}
                     overflowX: "auto"
                 }}
             >
-{`class ValidationError extends Error {
+                {`class ValidationError extends Error {
     constructor(message) {
         super(message);
         this.name = "ValidationError";
@@ -436,36 +436,136 @@ try {
 
             <h2>Common Error Types</h2>
 
-            <table>
+            <table
+                style={{
+                    width: "100%",
+                    borderCollapse: "collapse",
+                    margin: "24px 0"
+                }}
+            >
                 <tbody>
                     <tr>
-                        <th>Error</th>
-                        <th>Description</th>
+                        <th
+                            style={{
+                                border: "1px solid #333",
+                                padding: "12px",
+                                textAlign: "left",
+                                backgroundColor: "#111"
+                            }}
+                        >
+                            Error
+                        </th>
+
+                        <th
+                            style={{
+                                border: "1px solid #333",
+                                padding: "12px",
+                                textAlign: "left",
+                                backgroundColor: "#111"
+                            }}
+                        >
+                            Description
+                        </th>
                     </tr>
 
                     <tr>
-                        <td>Error</td>
-                        <td>Generic error.</td>
+                        <td
+                            style={{
+                                border: "1px solid #333",
+                                padding: "12px"
+                            }}
+                        >
+                            Error
+                        </td>
+
+                        <td
+                            style={{
+                                border: "1px solid #333",
+                                padding: "12px"
+                            }}
+                        >
+                            Generic error.
+                        </td>
                     </tr>
 
                     <tr>
-                        <td>ReferenceError</td>
-                        <td>Invalid variable reference.</td>
+                        <td
+                            style={{
+                                border: "1px solid #333",
+                                padding: "12px"
+                            }}
+                        >
+                            TypeError
+                        </td>
+
+                        <td
+                            style={{
+                                border: "1px solid #333",
+                                padding: "12px"
+                            }}
+                        >
+                            Invalid operation on a value.
+                        </td>
                     </tr>
 
                     <tr>
-                        <td>TypeError</td>
-                        <td>Invalid operation on a value.</td>
+                        <td
+                            style={{
+                                border: "1px solid #333",
+                                padding: "12px"
+                            }}
+                        >
+                            ReferenceError
+                        </td>
+
+                        <td
+                            style={{
+                                border: "1px solid #333",
+                                padding: "12px"
+                            }}
+                        >
+                            Invalid variable reference.
+                        </td>
                     </tr>
 
                     <tr>
-                        <td>SyntaxError</td>
-                        <td>Invalid JavaScript syntax.</td>
+                        <td
+                            style={{
+                                border: "1px solid #333",
+                                padding: "12px"
+                            }}
+                        >
+                            SyntaxError
+                        </td>
+
+                        <td
+                            style={{
+                                border: "1px solid #333",
+                                padding: "12px"
+                            }}
+                        >
+                            Invalid JavaScript syntax.
+                        </td>
                     </tr>
 
                     <tr>
-                        <td>RangeError</td>
-                        <td>A value is outside an allowed range.</td>
+                        <td
+                            style={{
+                                border: "1px solid #333",
+                                padding: "12px"
+                            }}
+                        >
+                            RangeError
+                        </td>
+
+                        <td
+                            style={{
+                                border: "1px solid #333",
+                                padding: "12px"
+                            }}
+                        >
+                            A value is outside an allowed range.
+                        </td>
                     </tr>
                 </tbody>
             </table>
