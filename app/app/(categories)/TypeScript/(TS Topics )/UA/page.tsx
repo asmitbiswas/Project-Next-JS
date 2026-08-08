@@ -1,4 +1,4 @@
-```tsx
+
 export default function UnionTypes() {
     return (
         <div>
@@ -216,4 +216,4 @@ id = 123;`}
         </div>
     );
 }
-```
+
