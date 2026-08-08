@@ -92,7 +92,14 @@ greet("Asmit");`}</code>
         Add <code>?</code> when a parameter is allowed to be omitted.
       </p>
 
-      <pre>
+      <pre
+        style={{
+        background:"#111",
+        borderLeft:"6px solid rgb( 13 200 13)",
+        padding:"14px",
+        borderRadius:"12px"
+      }}
+      >
         <code>{`function greet(name?: string) {
   console.log(name);
 }
@@ -103,7 +110,14 @@ greet("Asmit");`}</code>
 
       <h2>Object Type Annotations</h2>
 
-      <pre>
+      <pre
+        style={{
+        background:"#111",
+        borderLeft:"6px solid rgb( 13 200 13)",
+        padding:"14px",
+        borderRadius:"12px"
+      }}
+      >
         <code>{`let user: {
   name: string;
   age: number;
@@ -120,7 +134,14 @@ greet("Asmit");`}</code>
         <strong> type inference</strong>.
       </p>
 
-      <pre>
+      <pre
+        style={{
+        background:"#111",
+        borderLeft:"6px solid rgb( 13 200 13)",
+        padding:"14px",
+        borderRadius:"12px"
+      }}
+      >
         <code>{`// Type annotation
 let age: number = 13;
 
