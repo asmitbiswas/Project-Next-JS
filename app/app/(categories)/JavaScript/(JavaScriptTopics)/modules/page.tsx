@@ -33,7 +33,14 @@ export default function Modules() {
                 <code> export </code> or <code> import </code>.
             </p>
 
-            <pre>
+            <pre
+            style={{
+                background:"#111",
+                padding:"14px",
+                borderRadius:"12px",
+                borderLeft:"6px solid rgb(13 200 13)"
+            }}
+            >
 {`// math.js
 
 export const pi = 3.14159;
@@ -50,7 +57,14 @@ export function add(a, b) {
                 module.
             </p>
 
-            <pre>
+            <pre
+             style={{
+                background:"#111",
+                padding:"14px",
+                borderRadius:"12px",
+                borderLeft:"6px solid rgb(13 200 13)"
+            }}
+            >
 {`// math.js
 
 export const number = 10;
@@ -66,7 +80,14 @@ export function multiply(a, b) {
                 Named exports can be imported using their exact exported names.
             </p>
 
-            <pre>
+            <pre
+             style={{
+                background:"#111",
+                padding:"14px",
+                borderRadius:"12px",
+                borderLeft:"6px solid rgb(13 200 13)"
+            }}
+            >
 {`// app.js
 
 import { number, multiply } from "./math.js";
@@ -77,7 +98,14 @@ console.log(multiply(5, 4));`}
 
             <h2>Exporting Multiple Values</h2>
 
-            <pre>
+            <pre
+             style={{
+                background:"#111",
+                padding:"14px",
+                borderRadius:"12px",
+                borderLeft:"6px solid rgb(13 200 13)"
+            }}
+            >
 {`const name = "Asmit";
 const age = 13;
 
@@ -90,7 +118,14 @@ export { name, age, greet };`}
 
             <h2>Importing Multiple Values</h2>
 
-            <pre>
+            <pre
+             style={{
+                background:"#111",
+                padding:"14px",
+                borderRadius:"12px",
+                borderLeft:"6px solid rgb(13 200 13)"
+            }}
+            >
 {`import { name, age, greet } from "./user.js";
 
 console.log(name);
@@ -105,7 +140,14 @@ greet();`}
                 not need to use the same name when it is imported.
             </p>
 
-            <pre>
+            <pre
+             style={{
+                background:"#111",
+                padding:"14px",
+                borderRadius:"12px",
+                borderLeft:"6px solid rgb(13 200 13)"
+            }}
+            >
 {`// message.js
 
 export default function message() {
@@ -115,7 +157,14 @@ export default function message() {
 
             <h2>Importing a Default Export</h2>
 
-            <pre>
+            <pre
+             style={{
+                background:"#111",
+                padding:"14px",
+                borderRadius:"12px",
+                borderLeft:"6px solid rgb(13 200 13)"
+            }}
+            >
 {`import message from "./message.js";
 
 message();`}
@@ -123,7 +172,14 @@ message();`}
 
             <h2>Default Export with a Value</h2>
 
-            <pre>
+            <pre
+             style={{
+                background:"#111",
+                padding:"14px",
+                borderRadius:"12px",
+                borderLeft:"6px solid rgb(13 200 13)"
+            }}
+            >
 {`// config.js
 
 const appName = "DevVault";
@@ -131,7 +187,14 @@ const appName = "DevVault";
 export default appName;`}
             </pre>
 
-            <pre>
+            <pre
+             style={{
+                background:"#111",
+                padding:"14px",
+                borderRadius:"12px",
+                borderLeft:"6px solid rgb(13 200 13)"
+            }}
+            >
 {`// app.js
 
 import appName from "./config.js";
@@ -146,7 +209,14 @@ console.log(appName);`}
                 exports.
             </p>
 
-            <pre>
+            <pre
+             style={{
+                background:"#111",
+                padding:"14px",
+                borderRadius:"12px",
+                borderLeft:"6px solid rgb(13 200 13)"
+            }}
+            >
 {`// user.js
 
 const version = "1.0";
@@ -160,7 +230,14 @@ export function greet() {
 export default version;`}
             </pre>
 
-            <pre>
+            <pre
+             style={{
+                background:"#111",
+                padding:"14px",
+                borderRadius:"12px",
+                borderLeft:"6px solid rgb(13 200 13)"
+            }}
+            >
 {`import version, { name, greet } from "./user.js";
 
 console.log(version);
@@ -175,7 +252,14 @@ greet();`}
                 value a different name.
             </p>
 
-            <pre>
+            <pre
+             style={{
+                background:"#111",
+                padding:"14px",
+                borderRadius:"12px",
+                borderLeft:"6px solid rgb(13 200 13)"
+            }}
+            >
 {`import { add as sum } from "./math.js";
 
 console.log(sum(10, 20));`}
@@ -183,7 +267,14 @@ console.log(sum(10, 20));`}
 
             <h2>Renaming Exports</h2>
 
-            <pre>
+            <pre
+             style={{
+                background:"#111",
+                padding:"14px",
+                borderRadius:"12px",
+                borderLeft:"6px solid rgb(13 200 13)"
+            }}
+            >
 {`const username = "Asmit";
 
 export {
@@ -197,7 +288,14 @@ export {
                 You can import all named exports from a module as an object.
             </p>
 
-            <pre>
+            <pre
+                     style={{
+                background:"#111",
+                padding:"14px",
+                borderRadius:"12px",
+                borderLeft:"6px solid rgb(13 200 13)"
+            }}
+            >
 {`import * as math from "./math.js";
 
 console.log(math.add(10, 20));
@@ -211,7 +309,14 @@ console.log(math.pi);`}
                 the module is located.
             </p>
 
-            <pre>
+            <pre
+                     style={{
+                background:"#111",
+                padding:"14px",
+                borderRadius:"12px",
+                borderLeft:"6px solid rgb(13 200 13)"
+            }}
+            >
 {`import { add } from "./math.js";`}
             </pre>
 
@@ -219,7 +324,14 @@ console.log(math.pi);`}
                 <code>./</code> means the current directory.
             </p>
 
-            <pre>
+            <pre
+                     style={{
+                background:"#111",
+                padding:"14px",
+                borderRadius:"12px",
+                borderLeft:"6px solid rgb(13 200 13)"
+            }}
+            >
 {`import { add } from "../math.js";`}
             </pre>
 
@@ -234,7 +346,14 @@ console.log(math.pi);`}
                 not need to manually add <code>"use strict"</code>.
             </p>
 
-            <pre>
+            <pre
+                     style={{
+                background:"#111",
+                padding:"14px",
+                borderRadius:"12px",
+                borderLeft:"6px solid rgb(13 200 13)"
+            }}
+            >
 {`// module.js
 
 x = 10;`}
@@ -252,7 +371,14 @@ x = 10;`}
                 They are not automatically added to the global scope.
             </p>
 
-            <pre>
+            <pre
+                     style={{
+                background:"#111",
+                padding:"14px",
+                borderRadius:"12px",
+                borderLeft:"6px solid rgb(13 200 13)"
+            }}
+            >
 {`// file.js
 
 const secret = "hidden";
@@ -267,13 +393,27 @@ console.log(secret);`}
 
             <h2>Exporting Functions</h2>
 
-            <pre>
+            <pre
+                     style={{
+                background:"#111",
+                padding:"14px",
+                borderRadius:"12px",
+                borderLeft:"6px solid rgb(13 200 13)"
+            }}
+            >
 {`export function square(number) {
     return number * number;
 }`}
             </pre>
 
-            <pre>
+            <pre
+                     style={{
+                background:"#111",
+                padding:"14px",
+                borderRadius:"12px",
+                borderLeft:"6px solid rgb(13 200 13)"
+            }}
+            >
 {`import { square } from "./math.js";
 
 console.log(square(5));`}
@@ -281,14 +421,28 @@ console.log(square(5));`}
 
             <h2>Exporting Variables</h2>
 
-            <pre>
+            <pre
+                     style={{
+                background:"#111",
+                padding:"14px",
+                borderRadius:"12px",
+                borderLeft:"6px solid rgb(13 200 13)"
+            }}
+            >
 {`export const username = "Asmit";
 export let score = 100;`}
             </pre>
 
             <h2>Exporting Classes</h2>
 
-            <pre>
+            <pre
+                     style={{
+                background:"#111",
+                padding:"14px",
+                borderRadius:"12px",
+                borderLeft:"6px solid rgb(13 200 13)"
+            }}
+            >
 {`export class User {
 
     constructor(name) {
@@ -302,7 +456,14 @@ export let score = 100;`}
 }`}
             </pre>
 
-            <pre>
+            <pre
+                     style={{
+                background:"#111",
+                padding:"14px",
+                borderRadius:"12px",
+                borderLeft:"6px solid rgb(13 200 13)"
+            }}
+            >
 {`import { User } from "./User.js";
 
 const user = new User("Asmit");
@@ -316,13 +477,27 @@ user.greet();`}
                 A module can export values that come from another module.
             </p>
 
-            <pre>
+            <pre
+                     style={{
+                background:"#111",
+                padding:"14px",
+                borderRadius:"12px",
+                borderLeft:"6px solid rgb(13 200 13)"
+            }}
+            >
 {`export { add, subtract } from "./math.js";`}
             </pre>
 
             <h2>Re-exporting Everything</h2>
 
-            <pre>
+            <pre
+                     style={{
+                background:"#111",
+                padding:"14px",
+                borderRadius:"12px",
+                borderLeft:"6px solid rgb(13 200 13)"
+            }}
+            >
 {`export * from "./math.js";`}
             </pre>
 
@@ -333,7 +508,14 @@ user.greet();`}
                 modules and re-exports them from one place.
             </p>
 
-            <pre>
+            <pre
+                     style={{
+                background:"#111",
+                padding:"14px",
+                borderRadius:"12px",
+                borderLeft:"6px solid rgb(13 200 13)"
+            }}
+            >
 {`// index.js
 
 export { add } from "./math.js";
@@ -345,7 +527,14 @@ export { greet } from "./greet.js";`}
                 Other files can then import everything from the barrel file.
             </p>
 
-            <pre>
+            <pre
+                     style={{
+                background:"#111",
+                padding:"14px",
+                borderRadius:"12px",
+                borderLeft:"6px solid rgb(13 200 13)"
+            }}
+            >
 {`import { add, User, greet } from "./index.js";`}
             </pre>
 
@@ -356,7 +545,14 @@ export { greet } from "./greet.js";`}
                 a module at the top of the file, you can load it when needed.
             </p>
 
-            <pre>
+            <pre
+                     style={{
+                background:"#111",
+                padding:"14px",
+                borderRadius:"12px",
+                borderLeft:"6px solid rgb(13 200 13)"
+            }}
+            >
 {`const module = await import("./math.js");
 
 console.log(module.add(10, 20));`}
@@ -364,7 +560,14 @@ console.log(module.add(10, 20));`}
 
             <h2>Dynamic Import with a Promise</h2>
 
-            <pre>
+            <pre
+                     style={{
+                background:"#111",
+                padding:"14px",
+                borderRadius:"12px",
+                borderLeft:"6px solid rgb(13 200 13)"
+            }}
+            >
 {`import("./math.js")
     .then((math) => {
         console.log(math.add(5, 10));
@@ -378,7 +581,14 @@ console.log(module.add(10, 20));`}
                 loaded under certain conditions.
             </p>
 
-            <pre>
+            <pre
+                     style={{
+                background:"#111",
+                padding:"14px",
+                borderRadius:"12px",
+                borderLeft:"6px solid rgb(13 200 13)"
+            }}
+            >
 {`if (condition) {
     const module = await import("./feature.js");
 
@@ -393,19 +603,40 @@ console.log(module.add(10, 20));`}
                 <code> type="module" </code> to a script element.
             </p>
 
-            <pre>
+            <pre
+                     style={{
+                background:"#111",
+                padding:"14px",
+                borderRadius:"12px",
+                borderLeft:"6px solid rgb(13 200 13)"
+            }}
+            >
 {`<script type="module" src="app.js"></script>`}
             </pre>
 
             <h2>Browser Module Example</h2>
 
-            <pre>
+            <pre
+                     style={{
+                background:"#111",
+                padding:"14px",
+                borderRadius:"12px",
+                borderLeft:"6px solid rgb(13 200 13)"
+            }}
+            >
 {`<!-- index.html -->
 
 <script type="module" src="app.js"></script>`}
             </pre>
 
-            <pre>
+            <pre
+                     style={{
+                background:"#111",
+                padding:"14px",
+                borderRadius:"12px",
+                borderLeft:"6px solid rgb(13 200 13)"
+            }}
+            >
 {`// app.js
 
 import { greet } from "./greet.js";
@@ -413,7 +644,14 @@ import { greet } from "./greet.js";
 greet();`}
             </pre>
 
-            <pre>
+            <pre
+                     style={{
+                background:"#111",
+                padding:"14px",
+                borderRadius:"12px",
+                borderLeft:"6px solid rgb(13 200 13)"
+            }}
+            >
 {`// greet.js
 
 export function greet() {
@@ -428,7 +666,14 @@ export function greet() {
                 becomes a dependency of the current module.
             </p>
 
-            <pre>
+            <pre
+                     style={{
+                background:"#111",
+                padding:"14px",
+                borderRadius:"12px",
+                borderLeft:"6px solid rgb(13 200 13)"
+            }}
+            >
 {`// app.js
 
 import { add } from "./math.js";`}
@@ -445,7 +690,14 @@ import { add } from "./math.js";`}
                 modules are evaluated before the code that depends on them.
             </p>
 
-            <pre>
+            <pre
+                     style={{
+                background:"#111",
+                padding:"14px",
+                borderRadius:"12px",
+                borderLeft:"6px solid rgb(13 200 13)"
+            }}
+            >
 {`// math.js
 
 console.log("Math module loaded");
@@ -455,7 +707,14 @@ export function add(a, b) {
 }`}
             </pre>
 
-            <pre>
+            <pre
+                     style={{
+                background:"#111",
+                padding:"14px",
+                borderRadius:"12px",
+                borderLeft:"6px solid rgb(13 200 13)"
+            }}
+            >
 {`// app.js
 
 import { add } from "./math.js";
@@ -470,7 +729,14 @@ console.log(add(2, 3));`}
                 made to the exported binding.
             </p>
 
-            <pre>
+            <pre
+                     style={{
+                background:"#111",
+                padding:"14px",
+                borderRadius:"12px",
+                borderLeft:"6px solid rgb(13 200 13)"
+            }}
+            >
 {`// counter.js
 
 export let count = 0;
@@ -480,7 +746,14 @@ export function increment() {
 }`}
             </pre>
 
-            <pre>
+            <pre
+                     style={{
+                background:"#111",
+                padding:"14px",
+                borderRadius:"12px",
+                borderLeft:"6px solid rgb(13 200 13)"
+            }}
+            >
 {`// app.js
 
 import { count, increment } from "./counter.js";
@@ -499,7 +772,14 @@ console.log(count);`}
                 module.
             </p>
 
-            <pre>
+            <pre
+                     style={{
+                background:"#111",
+                padding:"14px",
+                borderRadius:"12px",
+                borderLeft:"6px solid rgb(13 200 13)"
+            }}
+            >
 {`import { count } from "./counter.js";
 
 count = 10;`}
@@ -516,7 +796,14 @@ count = 10;`}
                 containing the module's named exports.
             </p>
 
-            <pre>
+            <pre
+                     style={{
+                background:"#111",
+                padding:"14px",
+                borderRadius:"12px",
+                borderLeft:"6px solid rgb(13 200 13)"
+            }}
+            >
 {`import * as user from "./user.js";
 
 console.log(user.name);
@@ -530,7 +817,14 @@ console.log(user.greet);`}
                 importing any specific value.
             </p>
 
-            <pre>
+            <pre
+                     style={{
+                background:"#111",
+                padding:"14px",
+                borderRadius:"12px",
+                borderLeft:"6px solid rgb(13 200 13)"
+            }}
+            >
 {`import "./setup.js";`}
             </pre>
 
@@ -546,7 +840,14 @@ console.log(user.greet);`}
                 modules, although the exact syntax depends on the environment.
             </p>
 
-            <pre>
+            <pre
+                     style={{
+                background:"#111",
+                padding:"14px",
+                borderRadius:"12px",
+                borderLeft:"6px solid rgb(13 200 13)"
+            }}
+            >
 {`import data from "./data.json";`}
             </pre>
 
@@ -556,7 +857,14 @@ console.log(user.greet);`}
                 Modules are also used by packages installed from npm.
             </p>
 
-            <pre>
+            <pre
+                     style={{
+                background:"#111",
+                padding:"14px",
+                borderRadius:"12px",
+                borderLeft:"6px solid rgb(13 200 13)"
+            }}
+            >
 {`import express from "express";`}
             </pre>
 
@@ -567,7 +875,14 @@ console.log(user.greet);`}
 
             <h2>Relative vs Package Imports</h2>
 
-            <pre>
+            <pre
+                     style={{
+                background:"#111",
+                padding:"14px",
+                borderRadius:"12px",
+                borderLeft:"6px solid rgb(13 200 13)"
+            }}
+            >
 {`// Relative module
 
 import { add } from "./math.js";
@@ -585,7 +900,14 @@ import express from "express";`}
                 <code>export</code>.
             </p>
 
-            <pre>
+            <pre
+                     style={{
+                background:"#111",
+                padding:"14px",
+                borderRadius:"12px",
+                borderLeft:"6px solid rgb(13 200 13)"
+            }}
+            >
 {`// math.js
 
 export function add(a, b) {
@@ -593,7 +915,14 @@ export function add(a, b) {
 }`}
             </pre>
 
-            <pre>
+            <pre
+                     style={{
+                background:"#111",
+                padding:"14px",
+                borderRadius:"12px",
+                borderLeft:"6px solid rgb(13 200 13)"
+            }}
+            >
 {`// app.js
 
 import { add } from "./math.js";
@@ -608,7 +937,14 @@ console.log(add(10, 20));`}
                 <code>require()</code> and <code>module.exports</code>.
             </p>
 
-            <pre>
+            <pre
+                     style={{
+                background:"#111",
+                padding:"14px",
+                borderRadius:"12px",
+                borderLeft:"6px solid rgb(13 200 13)"
+            }}
+            >
 {`// math.js
 
 function add(a, b) {
@@ -620,7 +956,14 @@ module.exports = {
 };`}
             </pre>
 
-            <pre>
+            <pre
+                     style={{
+                background:"#111",
+                padding:"14px",
+                borderRadius:"12px",
+                borderLeft:"6px solid rgb(13 200 13)"
+            }}
+            >
 {`// app.js
 
 const { add } = require("./math.js");
@@ -630,31 +973,94 @@ console.log(add(10, 20));`}
 
             <h2>ES Modules vs CommonJS</h2>
 
-            <table>
+            <table
+            style={{
+                borderCollapse:"collapse",
+                width:"100%",
+                padding:"14px",
+                border:"1px solid #444"
+            }}
+            >
                 <tbody>
                     <tr>
-                        <th>ES Modules</th>
-                        <th>CommonJS</th>
+                        <th
+                        style={{
+                            border:"1px solid #444",
+                            padding:"14px",
+                            background:"#111"
+                        }}
+                        >ES Modules</th>
+                        <th
+                          style={{
+                            border:"1px solid #444",
+                            padding:"14px",
+                            background:"#111"
+                        }}
+                        >CommonJS</th>
                     </tr>
 
                     <tr>
-                        <td>import</td>
-                        <td>require()</td>
+                        <td
+                        style={{
+                            padding:"14px",
+                            border:"1px solid #444"
+                        }}
+                        >import</td>
+                        <td
+                          style={{
+                            padding:"14px",
+                            border:"1px solid #444"
+                        }}
+                        >require()</td>
                     </tr>
 
                     <tr>
-                        <td>export</td>
-                        <td>module.exports</td>
+                        <td
+                          style={{
+                            border:"1px solid #444",
+                            padding:"14px",
+                            background:"#111"
+                        }}
+                        >export</td>
+                        <td
+                          style={{
+                            border:"1px solid #444",
+                            padding:"14px",
+                            background:"#111"
+                        }}
+                        >module.exports</td>
                     </tr>
 
                     <tr>
-                        <td>export default</td>
-                        <td>module.exports</td>
+                        <td
+                          style={{
+                            padding:"14px",
+                            border:"1px solid #444"
+                        }}
+                        >export default</td>
+                        <td
+                          style={{
+                            padding:"14px",
+                            border:"1px solid #444"
+                        }}
+                        >module.exports</td>
                     </tr>
 
                     <tr>
-                        <td>Modern JavaScript standard</td>
-                        <td>Older Node.js module system</td>
+                        <td
+                          style={{
+                            border:"1px solid #444",
+                            padding:"14px",
+                            background:"#111"
+                        }}
+                        >Modern JavaScript standard</td>
+                        <td
+                          style={{
+                            border:"1px solid #444",
+                            padding:"14px",
+                            background:"#111"
+                        }}
+                        >Older Node.js module system</td>
                     </tr>
                 </tbody>
             </table>
@@ -667,7 +1073,14 @@ console.log(add(10, 20));`}
                 in separate files.
             </p>
 
-            <pre>
+            <pre
+                     style={{
+                background:"#111",
+                padding:"14px",
+                borderRadius:"12px",
+                borderLeft:"6px solid rgb(13 200 13)"
+            }}
+            >
 {`// Button.jsx
 
 export default function Button() {
@@ -675,7 +1088,14 @@ export default function Button() {
 }`}
             </pre>
 
-            <pre>
+            <pre
+                     style={{
+                background:"#111",
+                padding:"14px",
+                borderRadius:"12px",
+                borderLeft:"6px solid rgb(13 200 13)"
+            }}
+            >
 {`// App.jsx
 
 import Button from "./Button";
@@ -696,7 +1116,14 @@ export default function App() {
                 utility module.
             </p>
 
-            <pre>
+            <pre
+                     style={{
+                background:"#111",
+                padding:"14px",
+                borderRadius:"12px",
+                borderLeft:"6px solid rgb(13 200 13)"
+            }}
+            >
 {`// utils.js
 
 export function capitalize(text) {
@@ -708,7 +1135,14 @@ export function double(number) {
 }`}
             </pre>
 
-            <pre>
+            <pre
+                     style={{
+                background:"#111",
+                padding:"14px",
+                borderRadius:"12px",
+                borderLeft:"6px solid rgb(13 200 13)"
+            }}
+            >
 {`// app.js
 
 import { capitalize, double } from "./utils.js";
@@ -733,7 +1167,14 @@ console.log(double(10));`}
 
             <h3>Forgetting the Export</h3>
 
-            <pre>
+            <pre
+                         style={{
+                background:"#111",
+                padding:"14px",
+                borderRadius:"12px",
+                borderLeft:"6px solid rgb(13 200 13)"
+            }}
+            >
 {`// math.js
 
 function add(a, b) {
@@ -748,7 +1189,14 @@ function add(a, b) {
 
             <h3>Wrong Import Name</h3>
 
-            <pre>
+            <pre
+                     style={{
+                background:"#111",
+                padding:"14px",
+                borderRadius:"12px",
+                borderLeft:"6px solid rgb(13 200 13)"
+            }}
+            >
 {`export const username = "Asmit";
 
 import { name } from "./user.js";`}
@@ -761,7 +1209,14 @@ import { name } from "./user.js";`}
 
             <h3>Wrong File Path</h3>
 
-            <pre>
+            <pre
+                     style={{
+                background:"#111",
+                padding:"14px",
+                borderRadius:"12px",
+                borderLeft:"6px solid rgb(13 200 13)"
+            }}
+            >
 {`import { add } from "./math.js";`}
             </pre>
 
@@ -771,7 +1226,14 @@ import { name } from "./user.js";`}
 
             <h3>Confusing Default and Named Exports</h3>
 
-            <pre>
+            <pre
+                     style={{
+                background:"#111",
+                padding:"14px",
+                borderRadius:"12px",
+                borderLeft:"6px solid rgb(13 200 13)"
+            }}
+            >
 {`// Named export
 
 export const name = "Asmit";
@@ -785,7 +1247,14 @@ import { name } from "./user.js";`}
                 Named exports use curly braces when imported.
             </p>
 
-            <pre>
+            <pre
+                     style={{
+                background:"#111",
+                padding:"14px",
+                borderRadius:"12px",
+                borderLeft:"6px solid rgb(13 200 13)"
+            }}
+            >
 {`// Default export
 
 export default function greet() {
@@ -807,7 +1276,14 @@ import greet from "./greet.js";`}
                 Here is a small project using multiple modules.
             </p>
 
-            <pre>
+            <pre
+                     style={{
+                background:"#111",
+                padding:"14px",
+                borderRadius:"12px",
+                borderLeft:"6px solid rgb(13 200 13)"
+            }}
+            >
 {`project/
 │
 ├── app.js
@@ -815,7 +1291,14 @@ import greet from "./greet.js";`}
 └── user.js`}
             </pre>
 
-            <pre>
+            <pre
+                     style={{
+                background:"#111",
+                padding:"14px",
+                borderRadius:"12px",
+                borderLeft:"6px solid rgb(13 200 13)"
+            }}
+            >
 {`// math.js
 
 export function add(a, b) {
@@ -827,7 +1310,14 @@ export function subtract(a, b) {
 }`}
             </pre>
 
-            <pre>
+            <pre
+                     style={{
+                background:"#111",
+                padding:"14px",
+                borderRadius:"12px",
+                borderLeft:"6px solid rgb(13 200 13)"
+            }}
+            >
 {`// user.js
 
 export const name = "Asmit";
@@ -837,7 +1327,14 @@ export function greet() {
 }`}
             </pre>
 
-            <pre>
+            <pre
+                     style={{
+                background:"#111",
+                padding:"14px",
+                borderRadius:"12px",
+                borderLeft:"6px solid rgb(13 200 13)"
+            }}
+            >
 {`// app.js
 
 import { add, subtract } from "./math.js";
