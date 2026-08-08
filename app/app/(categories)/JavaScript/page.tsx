@@ -33,7 +33,7 @@ export default function JavaScriptHome() {
           <li><Link href="/JavaScript/Promises" style={{color:"white"}}>Promises</Link></li>
           <li><Link href="/JavaScript/Async_Await" style={{color:"white"}}>Async_Await</Link></li>
           <li><Link href="/JavaScript/modules" style={{color:"white"}}>modules</Link></li>
-          <li>Error Handling</li>
+          <li><Link href="/JavaScript/Error_Handling" style={{color:"white"}}>Error Handling</Link></li>
         </ul>
 
         <h2>Why Learn JavaScript?</h2>
