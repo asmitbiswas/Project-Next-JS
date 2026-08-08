@@ -8,10 +8,10 @@ export default function ReactLayout({ children }: { children: React.ReactNode })
         color: "#fff",
         minHeight: "100vh",
         padding: "40px",
+        fontSize:"16px"
       }}
     >
       <Sidebar />
-
       <div
         style={{
           maxWidth: "900px",

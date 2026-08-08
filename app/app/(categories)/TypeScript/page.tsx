@@ -29,7 +29,14 @@ export default function TypeScript() {
 
             <h2>TypeScript Example</h2>
 
-            <pre>
+            <pre
+            style={{
+                background:"#111",
+                padding:"14px",
+                borderLeft:"6px solid rgb( 13 200 13 )",
+                borderRadius:"12px"
+            }}
+            >
 {`let username: string = "Asmit";
 let age: number = 13;
 
