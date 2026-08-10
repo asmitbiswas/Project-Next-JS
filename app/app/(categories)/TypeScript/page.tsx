@@ -93,7 +93,7 @@ let username: string = "Asmit";`}
                 <li><Link href="/TypeScript/TypeA" style={{color:"white"}}>Type Alias</Link></li>
                 <li><Link href="/TypeScript/Fn" style={{color:"white"}}>Functions</Link></li>
                 <li><Link href="/TypeScript/Obj" style={{color:"white"}}>Objects</Link></li>
-                <li>Arrays</li>
+                <li><Link href="/TypeScript/Arr" style={{color:"white"}}>Arrays</Link></li>
                 <li>Generics</li>
                 <li>Enums</li>
                 <li>Classes</li>
