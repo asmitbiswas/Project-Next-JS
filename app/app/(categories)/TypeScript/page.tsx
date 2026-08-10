@@ -98,7 +98,7 @@ let username: string = "Asmit";`}
                 <li><Link href="/TypeScript/Enums" style={{color:"white"}}>Enums</Link></li>
                 <li><Link href="/TypeScript/cl" style={{color:"white"}}>Classes</Link></li>
                 <li><Link href="/TypeScript/module" style={{color:"white"}}>Modules</Link></li>
-                <li>Utility Types</li>
+                <li><Link href="/TypeScript/UT" style={{color:"white"}}>Utility Types</Link></li>
                 <li>Advanced Types</li>
             </ul>
 
