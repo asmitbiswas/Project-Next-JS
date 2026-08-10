@@ -149,7 +149,7 @@ server.listen(3000);`}</code>
             <ol>
                 <li><Link href="/Node.js/basics" style={{color:"white"}}>Node.js basics</Link></li>
                 <li><Link href="/Node.js/Modules" style={{color:"white"}}>Modules</Link></li>
-                <li>npm</li>
+                <li><Link href="/Node.js/NPM" style={{color:"white"}}>npm</Link></li>
                 <li>File system</li>
                 <li>HTTP</li>
                 <li>Asynchronous programming</li>
