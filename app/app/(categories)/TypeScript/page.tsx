@@ -96,7 +96,7 @@ let username: string = "Asmit";`}
                 <li><Link href="/TypeScript/Arr" style={{color:"white"}}>Arrays</Link></li>
                 <li><Link href="/TypeScript/Gen" style={{color:"white"}}>Generics</Link></li>
                 <li><Link href="/TypeScript/Enums" style={{color:"white"}}>Enums</Link></li>
-                <li>Classes</li>
+                <li><Link href="/TypeScript/cl" style={{color:"white"}}>Classes</Link></li>
                 <li>Modules</li>
                 <li>Utility Types</li>
                 <li>Advanced Types</li>
