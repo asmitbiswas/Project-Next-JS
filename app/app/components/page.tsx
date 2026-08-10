@@ -27,6 +27,7 @@ export default function Sidebar() {
 
       <nav>
         <Link href="/Node"> Node.js</Link>
+        <Link href="/Go">Go-lang</Link>
         <Link href="/Express"> Express</Link>
       </nav>
 
