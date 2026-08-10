@@ -99,7 +99,7 @@ let username: string = "Asmit";`}
                 <li><Link href="/TypeScript/cl" style={{color:"white"}}>Classes</Link></li>
                 <li><Link href="/TypeScript/module" style={{color:"white"}}>Modules</Link></li>
                 <li><Link href="/TypeScript/UT" style={{color:"white"}}>Utility Types</Link></li>
-                <li>Advanced Types</li>
+                <li><Link href="/TypeScript/At" style={{color:"white"}}>Advanced Types</Link></li>
             </ul>
 
             <h2>Getting Started</h2>
