@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function NodeJS() {
     const codeStyle = {
         backgroundColor: "#111",
@@ -145,7 +147,7 @@ server.listen(3000);`}</code>
             <h2>Node.js Roadmap</h2>
 
             <ol>
-                <li>Node.js basics</li>
+                <li><Link href="/Node.js/basics">Node.js basics</Link></li>
                 <li>Modules</li>
                 <li>npm</li>
                 <li>File system</li>
