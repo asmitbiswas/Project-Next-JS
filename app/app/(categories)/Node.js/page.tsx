@@ -151,7 +151,7 @@ server.listen(3000);`}</code>
                 <li><Link href="/Node.js/Modules" style={{color:"white"}}>Modules</Link></li>
                 <li><Link href="/Node.js/NPM" style={{color:"white"}}>npm</Link></li>
                 <li><Link href="/Node.js/FS" style={{color:"white"}}>File system</Link></li>
-                <li>HTTP</li>
+                <li><Link href='/Node.js/HTTP' style={{color:"white"}}>HTTP</Link></li>
                 <li>Asynchronous programming</li>
                 <li>Express.js</li>
                 <li>REST APIs</li>
