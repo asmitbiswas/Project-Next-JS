@@ -147,8 +147,8 @@ server.listen(3000);`}</code>
             <h2>Node.js Roadmap</h2>
 
             <ol>
-                <li><Link href="/Node.js/basics">Node.js basics</Link></li>
-                <li>Modules</li>
+                <li><Link href="/Node.js/basics" style={{color:"white"}}>Node.js basics</Link></li>
+                <li><Link href="/Node.js/Modules" style={{color:"white"}}>Modules</Link></li>
                 <li>npm</li>
                 <li>File system</li>
                 <li>HTTP</li>
