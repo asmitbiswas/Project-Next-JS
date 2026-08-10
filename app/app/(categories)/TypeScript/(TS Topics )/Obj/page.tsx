@@ -16,7 +16,15 @@ export default function Objects() {
                 You can explicitly define the structure and types of an object.
             </p>
 
-            <pre>
+            <pre
+            style={{
+                background:"#111",
+                borderRadius:"12px",
+                padding:"14px",
+                borderLeft:"6px solid rgb(13 200 13)",
+                overflowX:"auto"
+            }}
+            >
                 <code>{`let user: {
     name: string;
     age: number;
@@ -32,7 +40,15 @@ export default function Objects() {
                 You can access an object's properties using dot notation.
             </p>
 
-            <pre>
+            <pre
+               style={{
+                background:"#111",
+                borderRadius:"12px",
+                padding:"14px",
+                borderLeft:"6px solid rgb(13 200 13)",
+                overflowX:"auto"
+            }}
+            >
                 <code>{`let user = {
     name: "Asmit",
     age: 13
@@ -49,7 +65,15 @@ console.log(user.age);`}</code>
                 matches the property's type.
             </p>
 
-            <pre>
+            <pre
+               style={{
+                background:"#111",
+                borderRadius:"12px",
+                padding:"14px",
+                borderLeft:"6px solid rgb(13 200 13)",
+                overflowX:"auto"
+            }}
+            >
                 <code>{`let user: {
     name: string;
     age: number;
@@ -68,7 +92,15 @@ user.age = 14;`}</code>
                 Add <code>?</code> to make an object property optional.
             </p>
 
-            <pre>
+            <pre
+               style={{
+                background:"#111",
+                borderRadius:"12px",
+                padding:"14px",
+                borderLeft:"6px solid rgb(13 200 13)",
+                overflowX:"auto"
+            }}
+            >
                 <code>{`let user: {
     name: string;
     age: number;
@@ -86,7 +118,15 @@ user.age = 14;`}</code>
                 being changed after the object is created.
             </p>
 
-            <pre>
+            <pre
+               style={{
+                background:"#111",
+                borderRadius:"12px",
+                padding:"14px",
+                borderLeft:"6px solid rgb(13 200 13)",
+                overflowX:"auto"
+            }}
+            >
                 <code>{`let user: {
     readonly id: number;
     name: string;
@@ -106,7 +146,15 @@ user.name = "Alex";
                 Objects can contain other objects as their properties.
             </p>
 
-            <pre>
+            <pre
+               style={{
+                background:"#111",
+                borderRadius:"12px",
+                padding:"14px",
+                borderLeft:"6px solid rgb(13 200 13)",
+                overflowX:"auto"
+            }}
+            >
                 <code>{`let user: {
     name: string;
     address: {
@@ -130,7 +178,15 @@ console.log(user.address.city);`}</code>
                 Objects can contain functions, which are called methods.
             </p>
 
-            <pre>
+            <pre
+               style={{
+                background:"#111",
+                borderRadius:"12px",
+                padding:"14px",
+                borderLeft:"6px solid rgb(13 200 13)",
+                overflowX:"auto"
+            }}
+            >
                 <code>{`let user = {
     name: "Asmit",
 
@@ -149,7 +205,15 @@ user.greet();`}</code>
                 and make the type reusable.
             </p>
 
-            <pre>
+            <pre
+               style={{
+                background:"#111",
+                borderRadius:"12px",
+                padding:"14px",
+                borderLeft:"6px solid rgb(13 200 13)",
+                overflowX:"auto"
+            }}
+            >
                 <code>{`type User = {
     name: string;
     age: number;
@@ -167,7 +231,15 @@ let user: User = {
                 Interfaces can also be used to define the structure of objects.
             </p>
 
-            <pre>
+            <pre
+               style={{
+                background:"#111",
+                borderRadius:"12px",
+                padding:"14px",
+                borderLeft:"6px solid rgb(13 200 13)",
+                overflowX:"auto"
+            }}
+            >
                 <code>{`interface Product {
     name: string;
     price: number;
