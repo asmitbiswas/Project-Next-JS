@@ -16,7 +16,15 @@ export default function Functions() {
                 A function can be created using the <code>function</code> keyword.
             </p>
 
-            <pre>
+            <pre
+            style={{
+                background:"#111",
+                padding:"14px",
+                borderRadius:"12px",
+                borderLeft:"6px solid rgb( 13 200 13 )",
+                overflowX:"auto"
+            }}
+            >
                 <code>{`function greet() {
     console.log("Hello, Asmit!");
 }
@@ -31,7 +39,15 @@ greet();`}</code>
                 specify their types using type annotations.
             </p>
 
-            <pre>
+            <pre
+              style={{
+                background:"#111",
+                padding:"14px",
+                borderRadius:"12px",
+                borderLeft:"6px solid rgb( 13 200 13 )",
+                overflowX:"auto"
+            }}
+            >
                 <code>{`function greet(name: string) {
     console.log("Hello " + name);
 }
@@ -45,7 +61,15 @@ greet("Asmit");`}</code>
                 You can specify the type of value that a function should return.
             </p>
 
-            <pre>
+            <pre
+              style={{
+                background:"#111",
+                padding:"14px",
+                borderRadius:"12px",
+                borderLeft:"6px solid rgb( 13 200 13 )",
+                overflowX:"auto"
+            }}
+            >
                 <code>{`function add(a: number, b: number): number {
     return a + b;
 }
@@ -61,7 +85,15 @@ console.log(result);`}</code>
                 Use <code>void</code> when a function does not return a value.
             </p>
 
-            <pre>
+            <pre
+              style={{
+                background:"#111",
+                padding:"14px",
+                borderRadius:"12px",
+                borderLeft:"6px solid rgb( 13 200 13 )",
+                overflowX:"auto"
+            }}
+            >
                 <code>{`function logMessage(message: string): void {
     console.log(message);
 }
@@ -75,7 +107,15 @@ logMessage("Hello TypeScript!");`}</code>
                 Add <code>?</code> to make a parameter optional.
             </p>
 
-            <pre>
+            <pre
+              style={{
+                background:"#111",
+                padding:"14px",
+                borderRadius:"12px",
+                borderLeft:"6px solid rgb( 13 200 13 )",
+                overflowX:"auto"
+            }}
+            >
                 <code>{`function greet(name?: string): void {
     if (name) {
         console.log("Hello " + name);
@@ -95,7 +135,15 @@ greet("Asmit");`}</code>
                 value is provided.
             </p>
 
-            <pre>
+            <pre
+              style={{
+                background:"#111",
+                padding:"14px",
+                borderRadius:"12px",
+                borderLeft:"6px solid rgb( 13 200 13 )",
+                overflowX:"auto"
+            }}
+            >
                 <code>{`function greet(name: string = "Guest"): string {
     return "Hello " + name;
 }
@@ -110,7 +158,15 @@ console.log(greet("Asmit"));`}</code>
                 Arrow functions provide a shorter syntax for writing functions.
             </p>
 
-            <pre>
+            <pre
+              style={{
+                background:"#111",
+                padding:"14px",
+                borderRadius:"12px",
+                borderLeft:"6px solid rgb( 13 200 13 )",
+                overflowX:"auto"
+            }}
+            >
                 <code>{`const add = (a: number, b: number): number => {
     return a + b;
 };
@@ -124,7 +180,15 @@ console.log(add(5, 10));`}</code>
                 You can create a type that describes the structure of a function.
             </p>
 
-            <pre>
+            <pre
+              style={{
+                background:"#111",
+                padding:"14px",
+                borderRadius:"12px",
+                borderLeft:"6px solid rgb( 13 200 13 )",
+                overflowX:"auto"
+            }}
+            >
                 <code>{`type MathFunction = (a: number, b: number) => number;
 
 const multiply: MathFunction = (a, b) => {
@@ -141,7 +205,15 @@ console.log(multiply(5, 4));`}</code>
                 arguments of a specific type.
             </p>
 
-            <pre>
+            <pre
+              style={{
+                background:"#111",
+                padding:"14px",
+                borderRadius:"12px",
+                borderLeft:"6px solid rgb( 13 200 13 )",
+                overflowX:"auto"
+            }}
+            >
                 <code>{`function sum(...numbers: number[]): number {
     return numbers.reduce((total, num) => total + num, 0);
 }
