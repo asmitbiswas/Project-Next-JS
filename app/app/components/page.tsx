@@ -26,7 +26,7 @@ export default function Sidebar() {
       <h3>Backend</h3>
 
       <nav>
-        <Link href="/Node"> Node.js</Link>
+        <Link href="/Node.js"> Node.js</Link>
         <Link href="/Go">Go-lang</Link>
         <Link href="/Express"> Express</Link>
       </nav>
