@@ -17,7 +17,15 @@ export default function Arrays() {
                 <code>[]</code>.
             </p>
 
-            <pre>
+            <pre
+            style={{
+                background:"#111",
+                padding:"14px",
+                borderRadius:"12px",
+                borderLeft:"6px solid rgb( 13 200 13 )",
+                overflowX:"auto"
+            }}
+            >
                 <code>{`let fruits: string[] = [
     "Apple",
     "Banana",
@@ -37,7 +45,15 @@ let scores: number[] = [
                 TypeScript also provides a generic syntax for defining arrays.
             </p>
 
-            <pre>
+            <pre
+             style={{
+                background:"#111",
+                padding:"14px",
+                borderRadius:"12px",
+                borderLeft:"6px solid rgb( 13 200 13 )",
+                overflowX:"auto"
+            }}
+            >
                 <code>{`let names: Array<string> = [
     "Asmit",
     "Alex",
@@ -58,7 +74,15 @@ let numbers: Array<number> = [
                 indexes start from <code>0</code>.
             </p>
 
-            <pre>
+            <pre
+             style={{
+                background:"#111",
+                padding:"14px",
+                borderRadius:"12px",
+                borderLeft:"6px solid rgb( 13 200 13 )",
+                overflowX:"auto"
+            }}
+            >
                 <code>{`let fruits: string[] = [
     "Apple",
     "Banana",
@@ -75,7 +99,15 @@ console.log(fruits[1]);`}</code>
                 You can change an element by assigning a new value to its index.
             </p>
 
-            <pre>
+            <pre
+             style={{
+                background:"#111",
+                padding:"14px",
+                borderRadius:"12px",
+                borderLeft:"6px solid rgb( 13 200 13 )",
+                overflowX:"auto"
+            }}
+            >
                 <code>{`let fruits: string[] = [
     "Apple",
     "Banana",
@@ -94,7 +126,15 @@ console.log(fruits);`}</code>
                 the end of an array.
             </p>
 
-            <pre>
+            <pre
+             style={{
+                background:"#111",
+                padding:"14px",
+                borderRadius:"12px",
+                borderLeft:"6px solid rgb( 13 200 13 )",
+                overflowX:"auto"
+            }}
+            >
                 <code>{`let fruits: string[] = [
     "Apple",
     "Banana"
@@ -112,7 +152,15 @@ console.log(fruits);`}</code>
                 an array.
             </p>
 
-            <pre>
+            <pre
+             style={{
+                background:"#111",
+                padding:"14px",
+                borderRadius:"12px",
+                borderLeft:"6px solid rgb( 13 200 13 )",
+                overflowX:"auto"
+            }}
+            >
                 <code>{`let fruits: string[] = [
     "Apple",
     "Banana",
@@ -131,7 +179,15 @@ console.log(fruits);`}</code>
                 are in an array.
             </p>
 
-            <pre>
+            <pre
+             style={{
+                background:"#111",
+                padding:"14px",
+                borderRadius:"12px",
+                borderLeft:"6px solid rgb( 13 200 13 )",
+                overflowX:"auto"
+            }}
+            >
                 <code>{`let fruits: string[] = [
     "Apple",
     "Banana",
@@ -147,7 +203,15 @@ console.log(fruits.length);`}</code>
                 A readonly array cannot be modified after it is created.
             </p>
 
-            <pre>
+            <pre
+             style={{
+                background:"#111",
+                padding:"14px",
+                borderRadius:"12px",
+                borderLeft:"6px solid rgb( 13 200 13 )",
+                overflowX:"auto"
+            }}
+            >
                 <code>{`const fruits: readonly string[] = [
     "Apple",
     "Banana",
@@ -165,7 +229,15 @@ console.log(fruits.length);`}</code>
                 different types of values.
             </p>
 
-            <pre>
+            <pre
+             style={{
+                background:"#111",
+                padding:"14px",
+                borderRadius:"12px",
+                borderLeft:"6px solid rgb( 13 200 13 )",
+                overflowX:"auto"
+            }}
+            >
                 <code>{`let values: (string | number)[] = [
     "Asmit",
     13,
@@ -181,7 +253,15 @@ console.log(fruits.length);`}</code>
                 with every element in an array.
             </p>
 
-            <pre>
+            <pre
+             style={{
+                background:"#111",
+                padding:"14px",
+                borderRadius:"12px",
+                borderLeft:"6px solid rgb( 13 200 13 )",
+                overflowX:"auto"
+            }}
+            >
                 <code>{`let fruits: string[] = [
     "Apple",
     "Banana",
