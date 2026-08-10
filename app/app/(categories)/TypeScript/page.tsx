@@ -109,7 +109,14 @@ let username: string = "Asmit";`}
                 in environments that execute JavaScript.
             </p>
 
-            <pre>
+            <pre
+                 style={{
+                background:"#111",
+                padding:"14px",
+                borderLeft:"6px solid rgb( 13 200 13 )",
+                borderRadius:"12px"
+            }}
+            >
 {`npm install -g typescript`}
             </pre>
 
