@@ -163,7 +163,22 @@ export default function NodeLayout({
                         padding: "48px",
                     }}
                 >
+                     <Link
+                        href="/"
+                        style={{
+                            display: "block",
+                            color: "#888",
+                            textDecoration: "none",
+                            fontSize: "14px",
+                            marginBottom: "20px",
+                            paddingBottom: "16px",
+                            borderBottom: "1px solid #252525",
+                        }}
+                    >
+                        ← DevVault Home
+                    </Link>
                     {children}
+                    
                 </main>
             </div>
         </div>
