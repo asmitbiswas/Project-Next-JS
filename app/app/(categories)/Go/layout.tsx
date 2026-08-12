@@ -6,95 +6,135 @@ export default function GoLayout({
     children: React.ReactNode;
 }) {
     return (
-        <div className="min-h-screen">
+        <div
+            style={{
+                minHeight: "100vh",
+                background: "#050505",
+                color: "#fff",
+            }}
+        >
+            <header
+                style={{
+                    height: "64px",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "space-between",
+                    padding: "0 32px",
+                    borderBottom: "1px solid #252525",
+                    background: "#080808",
+                }}
+            >
+                <Link
+                    href="/Go"
+                    style={{
+                        color: "#fff",
+                        textDecoration: "none",
+                        fontSize: "24px",
+                        fontWeight: 700,
+                    }}
+                >
+                    Go
+                </Link>
 
-            <header className="border-b">
-                <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5">
-
-                    <Link
-                        href="/Go"
-                        className="text-2xl font-bold"
-                    >
-                        Go
-                    </Link>
-
-                    <nav className="flex gap-5 text-sm">
-                        <Link href="/Go">Home</Link>
-                        <Link href="/Go/basics">Basics</Link>
-                        <Link href="/Go/variables">Variables</Link>
-                        <Link href="/Go/functions">Functions</Link>
-                        <Link href="/Go/arrays">Arrays</Link>
-                        <Link href="/Go/structs">Structs</Link>
-                        <Link href="/Go/interfaces">Interfaces</Link>
-                        <Link href="/Go/concurrency">Concurrency</Link>
-                        <Link href="/Go/http">HTTP</Link>
-                    </nav>
-
-                </div>
+                <nav
+                    style={{
+                        display: "flex",
+                        gap: "20px",
+                    }}
+                >
+                    {[
+                        ["Home", "/Go"],
+                        ["Basics", "/Go/basics"],
+                        ["Variables", "/Go/variables"],
+                        ["Functions", "/Go/functions"],
+                        ["Arrays", "/Go/arrays"],
+                        ["Structs", "/Go/structs"],
+                        ["Interfaces", "/Go/interfaces"],
+                        ["Concurrency", "/Go/concurrency"],
+                        ["HTTP", "/Go/http"],
+                    ].map(([name, href]) => (
+                        <Link
+                            key={href}
+                            href={href}
+                            style={{
+                                color: "#aaa",
+                                textDecoration: "none",
+                                fontSize: "14px",
+                            }}
+                        >
+                            {name}
+                        </Link>
+                    ))}
+                </nav>
             </header>
 
-            <div className="mx-auto flex max-w-7xl">
-
-                <aside className="hidden w-56 shrink-0 border-r p-6 md:block">
-                    <p className="mb-4 text-sm font-semibold">
+            <div
+                style={{
+                    display: "flex",
+                    minHeight: "calc(100vh - 64px)",
+                }}
+            >
+                <aside
+                    style={{
+                        width: "230px",
+                        flexShrink: 0,
+                        display: "flex",
+                        flexDirection: "column",
+                        gap: "14px",
+                        padding: "28px 22px",
+                        borderRight: "1px solid #252525",
+                        background: "#080808",
+                    }}
+                >
+                    <h3
+                        style={{
+                            margin: "0 0 8px",
+                            fontSize: "13px",
+                            letterSpacing: "1.5px",
+                            color: "#666",
+                        }}
+                    >
                         GO
-                    </p>
+                    </h3>
 
-                    <div className="flex flex-col gap-3 text-sm">
-
-                        <Link href="/Go">
-                            Overview
+                    {[
+                        ["Overview", "/Go"],
+                        ["Basics", "/Go/basics"],
+                        ["Variables & Types", "/Go/variables"],
+                        ["Functions", "/Go/functions"],
+                        ["Arrays & Slices", "/Go/arrays"],
+                        ["Structs", "/Go/structs"],
+                        ["Interfaces", "/Go/interfaces"],
+                        ["Error Handling", "/Go/errors"],
+                        ["Goroutines & Channels", "/Go/concurrency"],
+                        ["HTTP", "/Go/http"],
+                        ["Databases", "/Go/database"],
+                    ].map(([name, href]) => (
+                        <Link
+                            key={href}
+                            href={href}
+                            style={{
+                                color: "#aaa",
+                                textDecoration: "none",
+                                fontSize: "14px",
+                            }}
+                        >
+                            {name}
                         </Link>
-
-                        <Link href="/Go/basics">
-                            Basics
-                        </Link>
-
-                        <Link href="/Go/variables">
-                            Variables & Types
-                        </Link>
-
-                        <Link href="/Go/functions">
-                            Functions
-                        </Link>
-
-                        <Link href="/Go/arrays">
-                            Arrays & Slices
-                        </Link>
-
-                        <Link href="/Go/structs">
-                            Structs
-                        </Link>
-
-                        <Link href="/Go/interfaces">
-                            Interfaces
-                        </Link>
-
-                        <Link href="/Go/errors">
-                            Error Handling
-                        </Link>
-
-                        <Link href="/Go/concurrency">
-                            Goroutines & Channels
-                        </Link>
-
-                        <Link href="/Go/http">
-                            HTTP
-                        </Link>
-
-                        <Link href="/Go/database">
-                            Databases
-                        </Link>
-
-                    </div>
+                    ))}
                 </aside>
 
-                <main className="min-w-0 flex-1 px-6 py-10">
+                <main
+                    style={{
+                        flex: 1,
+                        minWidth: 0,
+                        maxWidth: "1100px",
+                        padding: "48px",
+                    }}
+                >
                     {children}
                 </main>
-
             </div>
-
         </div>
     );
 }
