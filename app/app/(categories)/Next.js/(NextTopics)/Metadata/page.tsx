@@ -1,4 +1,4 @@
-import Sidebar from "@/app/components/page";
+import Sidebar from "@/app/components/SideBar";
 
 export default function Metadata() {
   return (

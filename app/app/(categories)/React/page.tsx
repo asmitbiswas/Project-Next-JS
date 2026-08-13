@@ -1,4 +1,4 @@
-import Sidebar from "@/app/components/page";
+import Sidebar from "@/app/components/SideBar";
 import Link from "next/link";
 
 export default function React() {

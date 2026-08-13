@@ -1,10 +1,11 @@
+import Sidebar from "@/app/components/SideBar";
 import Link from "next/link";
 
 
 export default function TypeScript() {
     return (
         <div>
-
+            
             <h1>TypeScript</h1>
 
             <p>
