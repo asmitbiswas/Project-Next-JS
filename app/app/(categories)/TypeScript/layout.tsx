@@ -1,28 +1,25 @@
 import Link from "next/link";
 
-export default function TypeScriptLayout({
+export default function ReactLayout({
     children,
 }: {
     children: React.ReactNode;
 }) {
     const links = [
-        ["Overview", "/TypeScript"],
-        ["Basic Types", "/TypeScript/Basic_Types"],
-        ["Type Interface", "/TypeScript/TI"],
-        ["Type Annotations", "/TypeScript/TA"],
-        ["Union", "/TypeScript/UA"],
-        ["Type Narrowing", "/TypeScript/Tn"],
-        ["Interfaces", "/TypeScript/Interfaces"],
-        ["Type Alias", "/TypeScript/TypeA"],
-        ["Functions", "/TypeScript/Fn"],
-        ["Objects", "/TypeScript/Obj"],
-        ["Arrays", "/TypeScript/Arr"],
-        ["Generics", "/TypeScript/Gen"],
-        ["Enums", "/TypeScript/Enums"],
-        ["Classes", "/TypeScript/cl"],
-        ["Modules", "/TypeScript/module"],
-        ["Utility Types", "/TypeScript/UT"],
-        ["Advanced Types", "/TypeScript/At"],
+        ["Overview", "/React"],
+        ["Basics", "/React/basics"],
+        ["JSX", "/React/JSX"],
+        ["Components", "/React/components"],
+        ["Props", "/React/props"],
+        ["State", "/React/state"],
+        ["Events", "/React/events"],
+        ["Conditional Rendering", "/React/conditional"],
+        ["Lists & Keys", "/React/lists"],
+        ["Hooks", "/React/hooks"],
+        ["Forms", "/React/forms"],
+        ["Context", "/React/context"],
+        ["Refs", "/React/refs"],
+        ["Performance", "/React/performance"],
     ];
 
     return (
@@ -31,7 +28,7 @@ export default function TypeScriptLayout({
                 minHeight: "100vh",
                 background: "#050505",
                 color: "white",
-                lineHeight:"1.6"
+                lineHeight: "1.6",
             }}
         >
             <header
@@ -49,7 +46,7 @@ export default function TypeScriptLayout({
                 }}
             >
                 <Link
-                    href="/TypeScript"
+                    href="/React"
                     style={{
                         color: "white",
                         textDecoration: "none",
@@ -57,7 +54,7 @@ export default function TypeScriptLayout({
                         fontWeight: 700,
                     }}
                 >
-                    TypeScript
+                    React
                 </Link>
 
                 <nav
@@ -65,7 +62,6 @@ export default function TypeScriptLayout({
                         display: "flex",
                         alignItems: "center",
                         gap: "18px",
-                        // overflowX: "auto",
                         maxWidth: "75%",
                     }}
                 >
@@ -128,7 +124,7 @@ export default function TypeScriptLayout({
                             color: "#666",
                         }}
                     >
-                        TYPESCRIPT
+                        REACT
                     </h3>
 
                     <div
@@ -144,7 +140,7 @@ export default function TypeScriptLayout({
                                 href={href}
                                 style={{
                                     color:
-                                        href === "/TypeScript"
+                                        href === "/React"
                                             ? "white"
                                             : "#aaa",
                                     textDecoration: "none",
