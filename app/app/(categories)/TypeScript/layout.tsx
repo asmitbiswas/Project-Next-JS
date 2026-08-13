@@ -1,25 +1,13 @@
 import Link from "next/link";
 
-export default function ReactLayout({
-    children,
-}: {
-    children: React.ReactNode;
-}) {
-    const links = [
-        ["Overview", "/React"],
-        ["Basics", "/React/basics"],
-        ["JSX", "/React/JSX"],
-        ["Components", "/React/components"],
-        ["Props", "/React/props"],
-        ["State", "/React/state"],
-        ["Events", "/React/events"],
-        ["Conditional Rendering", "/React/conditional"],
-        ["Lists & Keys", "/React/lists"],
-        ["Hooks", "/React/hooks"],
-        ["Forms", "/React/forms"],
-        ["Context", "/React/context"],
-        ["Refs", "/React/refs"],
-        ["Performance", "/React/performance"],
+export default function Home() {
+    const technologies = [
+        ["JavaScript", "/JavaScript"],
+        ["TypeScript", "/TypeScript"],
+        ["React", "/React"],
+        ["Next.js", "/Next-JS"],
+        ["Node.js", "/Node.js"],
+        ["Go", "/Go"],
     ];
 
     return (
@@ -40,13 +28,10 @@ export default function ReactLayout({
                     padding: "0 32px",
                     borderBottom: "1px solid #252525",
                     background: "#080808",
-                    position: "sticky",
-                    top: 0,
-                    zIndex: 10,
                 }}
             >
                 <Link
-                    href="/React"
+                    href="/"
                     style={{
                         color: "white",
                         textDecoration: "none",
@@ -54,117 +39,155 @@ export default function ReactLayout({
                         fontWeight: 700,
                     }}
                 >
-                    React
+                    DevVault
                 </Link>
 
                 <nav
                     style={{
                         display: "flex",
                         alignItems: "center",
-                        gap: "18px",
-                        maxWidth: "75%",
-                    }}
-                >
-                    {links.map(([name, href]) => (
-                        <Link
-                            key={href}
-                            href={href}
-                            style={{
-                                color: "#aaa",
-                                textDecoration: "none",
-                                fontSize: "14px",
-                                whiteSpace: "nowrap",
-                            }}
-                        >
-                            {name}
-                        </Link>
-                    ))}
-                </nav>
-            </header>
-
-            <div
-                style={{
-                    display: "flex",
-                    minHeight: "calc(100vh - 64px)",
-                }}
-            >
-                <aside
-                    style={{
-                        width: "240px",
-                        flexShrink: 0,
-                        padding: "28px 22px",
-                        borderRight: "1px solid #252525",
-                        background: "#080808",
-                        position: "sticky",
-                        top: "64px",
-                        height: "calc(100vh - 64px)",
-                        overflowY: "auto",
+                        gap: "20px",
                     }}
                 >
                     <Link
                         href="/"
                         style={{
-                            display: "block",
-                            color: "#888",
+                            color: "white",
                             textDecoration: "none",
                             fontSize: "14px",
-                            marginBottom: "20px",
-                            paddingBottom: "16px",
-                            borderBottom: "1px solid #252525",
                         }}
                     >
-                        ← DevVault Home
+                        Home
                     </Link>
+                </nav>
+            </header>
 
-                    <h3
+            <main
+                style={{
+                    maxWidth: "1100px",
+                    margin: "0 auto",
+                    padding: "80px 48px",
+                }}
+            >
+                <section>
+                    <p
                         style={{
-                            margin: "0 0 18px",
-                            fontSize: "13px",
-                            letterSpacing: "1.5px",
                             color: "#666",
+                            fontSize: "13px",
+                            letterSpacing: "2px",
+                            marginBottom: "12px",
                         }}
                     >
-                        REACT
-                    </h3>
+                        DEVELOPER KNOWLEDGE BASE
+                    </p>
+
+                    <h1
+                        style={{
+                            fontSize: "52px",
+                            lineHeight: "1.1",
+                            margin: "0 0 20px",
+                        }}
+                    >
+                        Welcome to DevVault.
+                    </h1>
+
+                    <p
+                        style={{
+                            color: "#aaa",
+                            fontSize: "18px",
+                            maxWidth: "700px",
+                            lineHeight: "1.8",
+                        }}
+                    >
+                        A personal vault for learning programming,
+                        development, frameworks, and everything in
+                        between.
+                    </p>
+                </section>
+
+                <section style={{ marginTop: "70px" }}>
+                    <h2
+                        style={{
+                            fontSize: "26px",
+                            marginBottom: "24px",
+                        }}
+                    >
+                        Explore
+                    </h2>
 
                     <div
                         style={{
-                            display: "flex",
-                            flexDirection: "column",
-                            gap: "14px",
+                            display: "grid",
+                            gridTemplateColumns:
+                                "repeat(auto-fit, minmax(240px, 1fr))",
+                            gap: "16px",
                         }}
                     >
-                        {links.map(([name, href]) => (
+                        {technologies.map(([name, href]) => (
                             <Link
                                 key={href}
                                 href={href}
                                 style={{
-                                    color:
-                                        href === "/React"
-                                            ? "white"
-                                            : "#aaa",
                                     textDecoration: "none",
-                                    fontSize: "14px",
-                                    lineHeight: "1.5",
+                                    color: "white",
+                                    border: "1px solid #252525",
+                                    borderRadius: "10px",
+                                    padding: "24px",
+                                    background: "#080808",
+                                    transition: "border-color 0.2s",
                                 }}
                             >
-                                {name}
+                                <h3
+                                    style={{
+                                        margin: "0 0 8px",
+                                        fontSize: "20px",
+                                    }}
+                                >
+                                    {name}
+                                </h3>
+
+                                <p
+                                    style={{
+                                        margin: 0,
+                                        color: "#777",
+                                        fontSize: "14px",
+                                    }}
+                                >
+                                    Explore {name} concepts →
+                                </p>
                             </Link>
                         ))}
                     </div>
-                </aside>
+                </section>
 
-                <main
+                <section
                     style={{
-                        flex: 1,
-                        minWidth: 0,
-                        maxWidth: "1100px",
-                        padding: "48px",
+                        marginTop: "70px",
+                        padding: "28px",
+                        border: "1px solid #252525",
+                        borderRadius: "10px",
+                        background: "#080808",
                     }}
                 >
-                    {children}
-                </main>
-            </div>
+                    <h2
+                        style={{
+                            margin: "0 0 10px",
+                            fontSize: "24px",
+                        }}
+                    >
+                        Keep Learning.
+                    </h2>
+
+                    <p
+                        style={{
+                            margin: 0,
+                            color: "#888",
+                        }}
+                    >
+                        Pick a technology and start building.
+                    </p>
+                </section>
+            </main>
         </div>
     );
 }

@@ -11,7 +11,7 @@ export default function NextJSLayout({ children }: { children: React.ReactNode }
         padding: "40px",
       }}
     >
-      <Sidebar />
+      {/* <Sidebar /> */}
 
       <div
         style={{
