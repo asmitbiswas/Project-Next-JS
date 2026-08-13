@@ -1,13 +1,28 @@
 import Link from "next/link";
 
-export default function Home() {
-    const technologies = [
-        ["JavaScript", "/JavaScript"],
-        ["TypeScript", "/TypeScript"],
-        ["React", "/React"],
-        ["Next.js", "/Next-JS"],
-        ["Node.js", "/Node.js"],
-        ["Go", "/Go"],
+export default function TypeScriptLayout({
+    children,
+}: {
+    children: React.ReactNode;
+}) {
+    const links = [
+        ["Overview", "/TypeScript"],
+        ["Basic Types", "/TypeScript/Basic_Types"],
+        ["Type Interface", "/TypeScript/TI"],
+        ["Type Annotations", "/TypeScript/TA"],
+        ["Union", "/TypeScript/UA"],
+        ["Type Narrowing", "/TypeScript/Tn"],
+        ["Interfaces", "/TypeScript/Interfaces"],
+        ["Type Alias", "/TypeScript/TypeA"],
+        ["Functions", "/TypeScript/Fn"],
+        ["Objects", "/TypeScript/Obj"],
+        ["Arrays", "/TypeScript/Arr"],
+        ["Generics", "/TypeScript/Gen"],
+        ["Enums", "/TypeScript/Enums"],
+        ["Classes", "/TypeScript/cl"],
+        ["Modules", "/TypeScript/module"],
+        ["Utility Types", "/TypeScript/UT"],
+        ["Advanced Types", "/TypeScript/At"],
     ];
 
     return (
@@ -22,172 +37,162 @@ export default function Home() {
             <header
                 style={{
                     height: "64px",
+                    boxSizing: "border-box",
                     display: "flex",
                     alignItems: "center",
-                    justifyContent: "space-between",
+                    gap: "30px",
                     padding: "0 32px",
                     borderBottom: "1px solid #252525",
                     background: "#080808",
+                    position: "sticky",
+                    top: 0,
+                    zIndex: 100,
                 }}
             >
                 <Link
-                    href="/"
+                    href="/TypeScript"
                     style={{
+                        flexShrink: 0,
                         color: "white",
                         textDecoration: "none",
                         fontSize: "24px",
                         fontWeight: 700,
                     }}
                 >
-                    DevVault
+                    TypeScript
                 </Link>
 
                 <nav
                     style={{
+                        flex: 1,
+                        minWidth: 0,
                         display: "flex",
                         alignItems: "center",
-                        gap: "20px",
+                        gap: "18px",
+                        overflowX: "auto",
+                        overflowY: "hidden",
+                    }}
+                >
+                    {links.map(([name, href]) => (
+                        <Link
+                            key={href}
+                            href={href}
+                            style={{
+                                flexShrink: 0,
+                                color:
+                                    href === "/TypeScript"
+                                        ? "white"
+                                        : "#aaa",
+                                textDecoration: "none",
+                                fontSize: "14px",
+                                whiteSpace: "nowrap",
+                            }}
+                        >
+                            {name}
+                        </Link>
+                    ))}
+                </nav>
+            </header>
+
+            <div
+                style={{
+                    display: "flex",
+                    minHeight: "calc(100vh - 64px)",
+                }}
+            >
+                <aside
+                    style={{
+                        width: "240px",
+                        boxSizing: "border-box",
+                        flexShrink: 0,
+                        padding: "28px 22px",
+                        borderRight: "1px solid #252525",
+                        background: "#080808",
+                        position: "sticky",
+                        top: "64px",
+                        height: "calc(100vh - 64px)",
+                        overflowY: "auto",
+                        overflowX: "hidden",
                     }}
                 >
                     <Link
                         href="/"
                         style={{
-                            color: "white",
+                            display: "block",
+                            color: "#888",
                             textDecoration: "none",
                             fontSize: "14px",
+                            marginBottom: "20px",
+                            paddingBottom: "16px",
+                            borderBottom: "1px solid #252525",
                         }}
                     >
-                        Home
+                        ← DevVault Home
                     </Link>
-                </nav>
-            </header>
 
-            <main
-                style={{
-                    maxWidth: "1100px",
-                    margin: "0 auto",
-                    padding: "80px 48px",
-                }}
-            >
-                <section>
-                    <p
+                    <h3
                         style={{
-                            color: "#666",
+                            margin: "0 0 18px",
                             fontSize: "13px",
-                            letterSpacing: "2px",
-                            marginBottom: "12px",
+                            letterSpacing: "1.5px",
+                            color: "#666",
                         }}
                     >
-                        DEVELOPER KNOWLEDGE BASE
-                    </p>
-
-                    <h1
-                        style={{
-                            fontSize: "52px",
-                            lineHeight: "1.1",
-                            margin: "0 0 20px",
-                        }}
-                    >
-                        Welcome to DevVault.
-                    </h1>
-
-                    <p
-                        style={{
-                            color: "#aaa",
-                            fontSize: "18px",
-                            maxWidth: "700px",
-                            lineHeight: "1.8",
-                        }}
-                    >
-                        A personal vault for learning programming,
-                        development, frameworks, and everything in
-                        between.
-                    </p>
-                </section>
-
-                <section style={{ marginTop: "70px" }}>
-                    <h2
-                        style={{
-                            fontSize: "26px",
-                            marginBottom: "24px",
-                        }}
-                    >
-                        Explore
-                    </h2>
+                        TYPESCRIPT
+                    </h3>
 
                     <div
                         style={{
-                            display: "grid",
-                            gridTemplateColumns:
-                                "repeat(auto-fit, minmax(240px, 1fr))",
-                            gap: "16px",
+                            display: "flex",
+                            flexDirection: "column",
+                            gap: "6px",
                         }}
                     >
-                        {technologies.map(([name, href]) => (
+                        {links.map(([name, href]) => (
                             <Link
                                 key={href}
                                 href={href}
                                 style={{
+                                    display: "block",
+                                    padding: "7px 10px",
+                                    borderRadius: "6px",
+                                    color:
+                                        href === "/TypeScript"
+                                            ? "white"
+                                            : "#aaa",
+                                    background:
+                                        href === "/TypeScript"
+                                            ? "#151515"
+                                            : "transparent",
                                     textDecoration: "none",
-                                    color: "white",
-                                    border: "1px solid #252525",
-                                    borderRadius: "10px",
-                                    padding: "24px",
-                                    background: "#080808",
-                                    transition: "border-color 0.2s",
+                                    fontSize: "14px",
+                                    lineHeight: "1.5",
                                 }}
                             >
-                                <h3
-                                    style={{
-                                        margin: "0 0 8px",
-                                        fontSize: "20px",
-                                    }}
-                                >
-                                    {name}
-                                </h3>
-
-                                <p
-                                    style={{
-                                        margin: 0,
-                                        color: "#777",
-                                        fontSize: "14px",
-                                    }}
-                                >
-                                    Explore {name} concepts →
-                                </p>
+                                {name}
                             </Link>
                         ))}
                     </div>
-                </section>
+                </aside>
 
-                <section
+                <main
                     style={{
-                        marginTop: "70px",
-                        padding: "28px",
-                        border: "1px solid #252525",
-                        borderRadius: "10px",
-                        background: "#080808",
+                        flex: 1,
+                        minWidth: 0,
+                        boxSizing: "border-box",
+                        padding: "48px",
                     }}
                 >
-                    <h2
+                    <div
                         style={{
-                            margin: "0 0 10px",
-                            fontSize: "24px",
+                            width: "100%",
+                            maxWidth: "1100px",
                         }}
                     >
-                        Keep Learning.
-                    </h2>
-
-                    <p
-                        style={{
-                            margin: 0,
-                            color: "#888",
-                        }}
-                    >
-                        Pick a technology and start building.
-                    </p>
-                </section>
-            </main>
+                        {children}
+                    </div>
+                </main>
+            </div>
         </div>
     );
 }

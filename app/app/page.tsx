@@ -1,15 +1,8 @@
+
+
 import Link from "next/link";
 
 export default function Home() {
-    const technologies = [
-        ["JavaScript", "/JavaScript"],
-        ["TypeScript", "/TypeScript"],
-        ["React", "/React"],
-        ["Next.js", "/Next-JS"],
-        ["Node.js", "/Node.js"],
-        ["Go", "/Go"],
-    ];
-
     return (
         <div
             style={{
@@ -24,7 +17,6 @@ export default function Home() {
                     height: "64px",
                     display: "flex",
                     alignItems: "center",
-                    justifyContent: "space-between",
                     padding: "0 32px",
                     borderBottom: "1px solid #252525",
                     background: "#080808",
@@ -41,41 +33,22 @@ export default function Home() {
                 >
                     DevVault
                 </Link>
-
-                <nav
-                    style={{
-                        display: "flex",
-                        alignItems: "center",
-                        gap: "20px",
-                    }}
-                >
-                    <Link
-                        href="/"
-                        style={{
-                            color: "white",
-                            textDecoration: "none",
-                            fontSize: "14px",
-                        }}
-                    >
-                        Home
-                    </Link>
-                </nav>
             </header>
 
             <main
                 style={{
                     maxWidth: "1100px",
                     margin: "0 auto",
-                    padding: "80px 48px",
+                    padding: "70px 48px",
                 }}
             >
                 <section>
                     <p
                         style={{
+                            margin: "0 0 10px",
                             color: "#666",
                             fontSize: "13px",
                             letterSpacing: "2px",
-                            marginBottom: "12px",
                         }}
                     >
                         DEVELOPER KNOWLEDGE BASE
@@ -83,36 +56,35 @@ export default function Home() {
 
                     <h1
                         style={{
-                            fontSize: "52px",
+                            margin: "0 0 18px",
+                            fontSize: "48px",
                             lineHeight: "1.1",
-                            margin: "0 0 20px",
                         }}
                     >
-                        Welcome to DevVault.
+                        DevVault
                     </h1>
 
                     <p
                         style={{
-                            color: "#aaa",
-                            fontSize: "18px",
+                            margin: 0,
                             maxWidth: "700px",
-                            lineHeight: "1.8",
+                            color: "#aaa",
+                            fontSize: "17px",
                         }}
                     >
-                        A personal vault for learning programming,
-                        development, frameworks, and everything in
-                        between.
+                        Your personal vault for programming, development,
+                        frameworks, and everything you're learning.
                     </p>
                 </section>
 
-                <section style={{ marginTop: "70px" }}>
+                <section style={{ marginTop: "60px" }}>
                     <h2
                         style={{
+                            margin: "0 0 24px",
                             fontSize: "26px",
-                            marginBottom: "24px",
                         }}
                     >
-                        Explore
+                        Technologies
                     </h2>
 
                     <div
@@ -123,69 +95,126 @@ export default function Home() {
                             gap: "16px",
                         }}
                     >
-                        {technologies.map(([name, href]) => (
-                            <Link
-                                key={href}
-                                href={href}
-                                style={{
-                                    textDecoration: "none",
-                                    color: "white",
-                                    border: "1px solid #252525",
-                                    borderRadius: "10px",
-                                    padding: "24px",
-                                    background: "#080808",
-                                    transition: "border-color 0.2s",
-                                }}
-                            >
-                                <h3
-                                    style={{
-                                        margin: "0 0 8px",
-                                        fontSize: "20px",
-                                    }}
-                                >
-                                    {name}
-                                </h3>
+                        <Link
+                            href="/JavaScript"
+                            style={{
+                                textDecoration: "none",
+                                color: "white",
+                                background: "#080808",
+                                border: "1px solid #252525",
+                                borderRadius: "10px",
+                                padding: "24px",
+                            }}
+                        >
+                            <h3 style={{ margin: "0 0 8px" }}>
+                                JavaScript
+                            </h3>
+                            <p style={{ margin: 0, color: "#777" }}>
+                                Learn JavaScript fundamentals and advanced
+                                concepts.
+                            </p>
+                        </Link>
 
-                                <p
-                                    style={{
-                                        margin: 0,
-                                        color: "#777",
-                                        fontSize: "14px",
-                                    }}
-                                >
-                                    Explore {name} concepts →
-                                </p>
-                            </Link>
-                        ))}
+                        <Link
+                            href="/TypeScript"
+                            style={{
+                                textDecoration: "none",
+                                color: "white",
+                                background: "#080808",
+                                border: "1px solid #252525",
+                                borderRadius: "10px",
+                                padding: "24px",
+                            }}
+                        >
+                            <h3 style={{ margin: "0 0 8px" }}>
+                                TypeScript
+                            </h3>
+                            <p style={{ margin: 0, color: "#777" }}>
+                                Learn types, interfaces, generics, utility
+                                types, and more.
+                            </p>
+                        </Link>
+
+                        <Link
+                            href="/React"
+                            style={{
+                                textDecoration: "none",
+                                color: "white",
+                                background: "#080808",
+                                border: "1px solid #252525",
+                                borderRadius: "10px",
+                                padding: "24px",
+                            }}
+                        >
+                            <h3 style={{ margin: "0 0 8px" }}>
+                                React
+                            </h3>
+                            <p style={{ margin: 0, color: "#777" }}>
+                                Build modern interfaces with components,
+                                props, state, and hooks.
+                            </p>
+                        </Link>
+
+                        <Link
+                            href="/Next-JS"
+                            style={{
+                                textDecoration: "none",
+                                color: "white",
+                                background: "#080808",
+                                border: "1px solid #252525",
+                                borderRadius: "10px",
+                                padding: "24px",
+                            }}
+                        >
+                            <h3 style={{ margin: "0 0 8px" }}>
+                                Next.js
+                            </h3>
+                            <p style={{ margin: 0, color: "#777" }}>
+                                Learn routing, layouts, server components,
+                                APIs, and deployment.
+                            </p>
+                        </Link>
+
+                        <Link
+                            href="/Node.js"
+                            style={{
+                                textDecoration: "none",
+                                color: "white",
+                                background: "#080808",
+                                border: "1px solid #252525",
+                                borderRadius: "10px",
+                                padding: "24px",
+                            }}
+                        >
+                            <h3 style={{ margin: "0 0 8px" }}>
+                                Node.js
+                            </h3>
+                            <p style={{ margin: 0, color: "#777" }}>
+                                Learn Node.js, modules, npm, HTTP, Express,
+                                REST APIs, and databases.
+                            </p>
+                        </Link>
+
+                        <Link
+                            href="/Go"
+                            style={{
+                                textDecoration: "none",
+                                color: "white",
+                                background: "#080808",
+                                border: "1px solid #252525",
+                                borderRadius: "10px",
+                                padding: "24px",
+                            }}
+                        >
+                            <h3 style={{ margin: "0 0 8px" }}>
+                                Go
+                            </h3>
+                            <p style={{ margin: 0, color: "#777" }}>
+                                Learn the Go programming language and backend
+                                development.
+                            </p>
+                        </Link>
                     </div>
-                </section>
-
-                <section
-                    style={{
-                        marginTop: "70px",
-                        padding: "28px",
-                        border: "1px solid #252525",
-                        borderRadius: "10px",
-                        background: "#080808",
-                    }}
-                >
-                    <h2
-                        style={{
-                            margin: "0 0 10px",
-                            fontSize: "24px",
-                        }}
-                    >
-                        Keep Learning.
-                    </h2>
-
-                    <p
-                        style={{
-                            margin: 0,
-                            color: "#888",
-                        }}
-                    >
-                        Pick a technology and start building.
-                    </p>
                 </section>
             </main>
         </div>

@@ -1,10 +1,10 @@
-import Sidebar from "@/app/components/SideBar";
+// import Sidebar from "@/app/components/SideBar";
 
 
 export default function IntroductionToReact() {
   return (
     <div >
-      <Sidebar />
+      {/* <Sidebar /> */}
 
       <div >
         <h1>Introduction to React</h1>

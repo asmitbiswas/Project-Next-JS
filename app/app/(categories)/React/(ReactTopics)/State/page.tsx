@@ -3,7 +3,7 @@ import Sidebar from "@/app/components/SideBar";
 export default function State() {
     return (
         <div>
-            <Sidebar />
+            {/* <Sidebar /> */}
 
             <div>
                 <h1>State</h1>
@@ -30,6 +30,7 @@ export default function State() {
                         padding: "18px",
                         borderRadius: "8px",
                         overflowX: "auto",
+                        borderLeft:"6px solid rgb(13 200 13)"
                     }}>
                     {`import { useState } from "react";
 

@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function TypeScript() {
     return (
         <div>
-            
+
             <h1>TypeScript</h1>
 
             <p>
@@ -34,14 +34,14 @@ export default function TypeScript() {
             <h2>TypeScript Example</h2>
 
             <pre
-            style={{
-                background:"#111",
-                padding:"14px",
-                borderLeft:"6px solid rgb( 13 200 13 )",
-                borderRadius:"12px"
-            }}
+                style={{
+                    background: "#111",
+                    padding: "14px",
+                    borderLeft: "6px solid rgb( 13 200 13 )",
+                    borderRadius: "12px"
+                }}
             >
-{`let username: string = "Asmit";
+                {`let username: string = "Asmit";
 let age: number = 13;
 
 console.log(username);
@@ -57,27 +57,27 @@ console.log(age);`}
             </p>
 
             <pre
-              style={{
-                background:"#111",
-                padding:"14px",
-                borderLeft:"6px solid rgb( 13 200 13 )",
-                borderRadius:"12px"
-            }}
+                style={{
+                    background: "#111",
+                    padding: "14px",
+                    borderLeft: "6px solid rgb( 13 200 13 )",
+                    borderRadius: "12px"
+                }}
             >
-{`// JavaScript
+                {`// JavaScript
 
 let username = "Asmit";`}
             </pre>
 
             <pre
-              style={{
-                background:"#111",
-                padding:"14px",
-                borderLeft:"6px solid rgb( 13 200 13 )",
-                borderRadius:"12px"
-            }}
+                style={{
+                    background: "#111",
+                    padding: "14px",
+                    borderLeft: "6px solid rgb( 13 200 13 )",
+                    borderRadius: "12px"
+                }}
             >
-{`// TypeScript
+                {`// TypeScript
 
 let username: string = "Asmit";`}
             </pre>
@@ -85,22 +85,22 @@ let username: string = "Asmit";`}
             <h2>What You Will Learn</h2>
 
             <ul>
-                <li><Link href="/TypeScript/Basic_Types" style={{color:"white"}}>Basic_Types</Link></li>
-                <li><Link href="/TypeScript/TI"style={{color:"white"}}>Type interface</Link></li>
-                <li><Link href="/TypeScript/TA"style={{color:"white"}}>Type Annotations</Link></li>
-                <li><Link href="/TypeScript/UA"style={{color:"white"}}>Union</Link></li>
-                <li><Link href="/TypeScript/Tn" style={{color:"white"}}>Type Narrowing</Link></li>
-                <li><Link href="/TypeScript/Interfaces" style={{color:"white"}}>Interfaces</Link></li>
-                <li><Link href="/TypeScript/TypeA" style={{color:"white"}}>Type Alias</Link></li>
-                <li><Link href="/TypeScript/Fn" style={{color:"white"}}>Functions</Link></li>
-                <li><Link href="/TypeScript/Obj" style={{color:"white"}}>Objects</Link></li>
-                <li><Link href="/TypeScript/Arr" style={{color:"white"}}>Arrays</Link></li>
-                <li><Link href="/TypeScript/Gen" style={{color:"white"}}>Generics</Link></li>
-                <li><Link href="/TypeScript/Enums" style={{color:"white"}}>Enums</Link></li>
-                <li><Link href="/TypeScript/cl" style={{color:"white"}}>Classes</Link></li>
-                <li><Link href="/TypeScript/module" style={{color:"white"}}>Modules</Link></li>
-                <li><Link href="/TypeScript/UT" style={{color:"white"}}>Utility Types</Link></li>
-                <li><Link href="/TypeScript/At" style={{color:"white"}}>Advanced Types</Link></li>
+                <li>Basic_Types</li>
+                <li>Type interface</li>
+                <li>Type Annotations</li>
+                <li>Union</li>
+                <li>Type Narrowing</li>
+                <li>Interfaces</li>
+                <li>Type Alias</li>
+                <li>Functions</li>
+                <li>Objects</li>
+                <li>Arrays</li>
+                <li>Generics</li>
+                <li>Enums</li>
+                <li>Classes</li>
+                <li>Modules</li>
+                <li>Utility Types</li>
+                <li>Advanced Types</li>
             </ul>
 
             <h2>Getting Started</h2>
@@ -111,14 +111,14 @@ let username: string = "Asmit";`}
             </p>
 
             <pre
-                 style={{
-                background:"#111",
-                padding:"14px",
-                borderLeft:"6px solid rgb( 13 200 13 )",
-                borderRadius:"12px"
-            }}
+                style={{
+                    background: "#111",
+                    padding: "14px",
+                    borderLeft: "6px solid rgb( 13 200 13 )",
+                    borderRadius: "12px"
+                }}
             >
-{`npm install -g typescript`}
+                {`npm install -g typescript`}
             </pre>
 
             <p>
@@ -126,27 +126,27 @@ let username: string = "Asmit";`}
             </p>
 
             <pre
-              style={{
-                background:"#111",
-                padding:"14px",
-                borderLeft:"6px solid rgb( 13 200 13 )",
-                borderRadius:"12px"
-            }}
+                style={{
+                    background: "#111",
+                    padding: "14px",
+                    borderLeft: "6px solid rgb( 13 200 13 )",
+                    borderRadius: "12px"
+                }}
             >
-{`tsc --version`}
+                {`tsc --version`}
             </pre>
 
             <h2>Your First TypeScript Program</h2>
 
             <pre
-              style={{
-                background:"#111",
-                padding:"14px",
-                borderLeft:"6px solid rgb( 13 200 13 )",
-                borderRadius:"12px"
-            }}
+                style={{
+                    background: "#111",
+                    padding: "14px",
+                    borderLeft: "6px solid rgb( 13 200 13 )",
+                    borderRadius: "12px"
+                }}
             >
-{`function greet(name: string): string {
+                {`function greet(name: string): string {
     return "Hello, " + name;
 }
 

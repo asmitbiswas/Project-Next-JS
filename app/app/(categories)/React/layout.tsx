@@ -5,23 +5,6 @@ export default function ReactLayout({
 }: {
     children: React.ReactNode;
 }) {
-    const links = [
-        ["Overview", "/React"],
-        ["Basics", "/React/basics"],
-        ["JSX", "/React/JSX"],
-        ["Components", "/React/components"],
-        ["Props", "/React/props"],
-        ["State", "/React/state"],
-        ["Events", "/React/events"],
-        ["Conditional Rendering", "/React/conditional"],
-        ["Lists & Keys", "/React/lists"],
-        ["Hooks", "/React/hooks"],
-        ["Forms", "/React/forms"],
-        ["Context", "/React/context"],
-        ["Refs", "/React/refs"],
-        ["Performance", "/React/performance"],
-    ];
-
     return (
         <div
             style={{
@@ -42,7 +25,7 @@ export default function ReactLayout({
                     background: "#080808",
                     position: "sticky",
                     top: 0,
-                    zIndex: 10,
+                    zIndex: 100,
                 }}
             >
                 <Link
@@ -63,22 +46,64 @@ export default function ReactLayout({
                         alignItems: "center",
                         gap: "18px",
                         maxWidth: "75%",
+                        overflowX: "auto",
                     }}
                 >
-                    {links.map(([name, href]) => (
-                        <Link
-                            key={href}
-                            href={href}
-                            style={{
-                                color: "#aaa",
-                                textDecoration: "none",
-                                fontSize: "14px",
-                                whiteSpace: "nowrap",
-                            }}
-                        >
-                            {name}
-                        </Link>
-                    ))}
+                    <Link href="/React" style={{ color: "white", textDecoration: "none", fontSize: "14px", whiteSpace: "nowrap" }}>
+                        Overview
+                    </Link>
+
+                    <Link href="/React/Basics" style={{ color: "#aaa", textDecoration: "none", fontSize: "14px", whiteSpace: "nowrap" }}>
+                        Basics
+                    </Link>
+
+                    <Link href="/React/JSX" style={{ color: "#aaa", textDecoration: "none", fontSize: "14px", whiteSpace: "nowrap" }}>
+                        JSX
+                    </Link>
+
+                    <Link href="/React/Components" style={{ color: "#aaa", textDecoration: "none", fontSize: "14px", whiteSpace: "nowrap" }}>
+                        Components
+                    </Link>
+
+                    <Link href="/React/Props" style={{ color: "#aaa", textDecoration: "none", fontSize: "14px", whiteSpace: "nowrap" }}>
+                        Props
+                    </Link>
+
+                    <Link href="/React/State" style={{ color: "#aaa", textDecoration: "none", fontSize: "14px", whiteSpace: "nowrap" }}>
+                        State
+                    </Link>
+
+                    <Link href="/React/Events" style={{ color: "#aaa", textDecoration: "none", fontSize: "14px", whiteSpace: "nowrap" }}>
+                        Events
+                    </Link>
+
+                    <Link href="/React/Conditional" style={{ color: "#aaa", textDecoration: "none", fontSize: "14px", whiteSpace: "nowrap" }}>
+                        Conditional Rendering
+                    </Link>
+
+                    <Link href="/React/Lists" style={{ color: "#aaa", textDecoration: "none", fontSize: "14px", whiteSpace: "nowrap" }}>
+                        Lists & Keys
+                    </Link>
+
+                    <Link href="/React/Hooks" style={{ color: "#aaa", textDecoration: "none", fontSize: "14px", whiteSpace: "nowrap" }}>
+                        Hooks
+                    </Link>
+
+                    <Link href="/React/Forms" style={{ color: "#aaa", textDecoration: "none", fontSize: "14px", whiteSpace: "nowrap" }}>
+                        Forms
+                    </Link>
+
+                    <Link href="/React/Context" style={{ color: "#aaa", textDecoration: "none", fontSize: "14px", whiteSpace: "nowrap" }}>
+                        Context
+                    </Link>
+
+                    <Link href="/React/Refs" style={{ color: "#aaa", textDecoration: "none", fontSize: "14px", whiteSpace: "nowrap" }}>
+                        Refs
+                    </Link>
+
+                    <Link href="/React/Performance" style={{ color: "#aaa", textDecoration: "none", fontSize: "14px", whiteSpace: "nowrap" }}>
+                        Performance
+                    </Link>
                 </nav>
             </header>
 
@@ -131,26 +156,64 @@ export default function ReactLayout({
                         style={{
                             display: "flex",
                             flexDirection: "column",
-                            gap: "14px",
+                            gap: "6px",
                         }}
                     >
-                        {links.map(([name, href]) => (
-                            <Link
-                                key={href}
-                                href={href}
-                                style={{
-                                    color:
-                                        href === "/React"
-                                            ? "white"
-                                            : "#aaa",
-                                    textDecoration: "none",
-                                    fontSize: "14px",
-                                    lineHeight: "1.5",
-                                }}
-                            >
-                                {name}
-                            </Link>
-                        ))}
+                        <Link href="/React" style={{ color: "white", textDecoration: "none", fontSize: "14px", padding: "7px 10px", borderRadius: "6px", background: "#151515" }}>
+                            Overview
+                        </Link>
+
+                        <Link href="/React/Introduction_to_React" style={{ color: "#aaa", textDecoration: "none", fontSize: "14px", padding: "7px 10px" }}>
+                            Basics
+                        </Link>
+
+                        <Link href="/React/JSX" style={{ color: "#aaa", textDecoration: "none", fontSize: "14px", padding: "7px 10px" }}>
+                            JSX
+                        </Link>
+
+                        <Link href="/React/Componentss" style={{ color: "#aaa", textDecoration: "none", fontSize: "14px", padding: "7px 10px" }}>
+                            Components
+                        </Link>
+
+                        <Link href="/React/Props" style={{ color: "#aaa", textDecoration: "none", fontSize: "14px", padding: "7px 10px" }}>
+                            Props
+                        </Link>
+
+                        <Link href="/React/State" style={{ color: "#aaa", textDecoration: "none", fontSize: "14px", padding: "7px 10px" }}>
+                            State
+                        </Link>
+
+                        <Link href="/React/Events" style={{ color: "#aaa", textDecoration: "none", fontSize: "14px", padding: "7px 10px" }}>
+                            Events
+                        </Link>
+
+                        <Link href="/React/Conditional" style={{ color: "#aaa", textDecoration: "none", fontSize: "14px", padding: "7px 10px" }}>
+                            Conditional Rendering
+                        </Link>
+
+                        <Link href="/React/Lists" style={{ color: "#aaa", textDecoration: "none", fontSize: "14px", padding: "7px 10px" }}>
+                            Lists & Keys
+                        </Link>
+
+                        <Link href="/React/Hooks" style={{ color: "#aaa", textDecoration: "none", fontSize: "14px", padding: "7px 10px" }}>
+                            Hooks
+                        </Link>
+
+                        <Link href="/React/Forms" style={{ color: "#aaa", textDecoration: "none", fontSize: "14px", padding: "7px 10px" }}>
+                            Forms
+                        </Link>
+
+                        <Link href="/React/Context" style={{ color: "#aaa", textDecoration: "none", fontSize: "14px", padding: "7px 10px" }}>
+                            Context
+                        </Link>
+
+                        <Link href="/React/Refs" style={{ color: "#aaa", textDecoration: "none", fontSize: "14px", padding: "7px 10px" }}>
+                            Refs
+                        </Link>
+
+                        <Link href="/React/Performance" style={{ color: "#aaa", textDecoration: "none", fontSize: "14px", padding: "7px 10px" }}>
+                            Performance
+                        </Link>
                     </div>
                 </aside>
 
@@ -158,7 +221,6 @@ export default function ReactLayout({
                     style={{
                         flex: 1,
                         minWidth: 0,
-                        maxWidth: "1100px",
                         padding: "48px",
                     }}
                 >

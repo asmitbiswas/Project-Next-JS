@@ -1,9 +1,9 @@
-import Sidebar from "@/app/components/SideBar";
+// import Sidebar from "@/app/components/SideBar";
 
 export default function JSX() {
   return (
     <div>
-      <Sidebar />
+      {/* <Sidebar /> */}
 
       <div>
         <h1>JSX</h1>

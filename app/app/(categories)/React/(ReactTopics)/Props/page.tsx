@@ -3,7 +3,7 @@ import Sidebar from "@/app/components/SideBar";
 export default function Props() {
   return (
     <div>
-      <Sidebar />
+      {/* <Sidebar /> */}
 
       <div>
         <h1>Props</h1>

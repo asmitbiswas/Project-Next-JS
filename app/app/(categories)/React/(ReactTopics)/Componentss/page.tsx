@@ -1,9 +1,9 @@
-import Sidebar from "@/app/components/SideBar";
+// import Sidebar from "@/app/components/SideBar";
 
 export default function Components() {
   return (
     <div>
-      <Sidebar />
+      {/* <Sidebar /> */}
 
       <div>
         <h1 style={{ fontSize: "42px", marginBottom: "20px" }}>
