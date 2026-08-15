@@ -73,7 +73,7 @@ export default function Home() {
                         }}
                     >
                         Your personal vault for programming, development,
-                        frameworks, and everything you're learning.
+                        frameapp/public/logo.icoworks, and everything you're learning.
                     </p>
                 </section>
 
