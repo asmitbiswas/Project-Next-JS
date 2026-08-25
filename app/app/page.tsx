@@ -156,7 +156,7 @@ export default function Home() {
                         </Link>
 
                         <Link
-                            href="/Next-JS"
+                            href="/Next.js"
                             style={{
                                 textDecoration: "none",
                                 color: "white",
