@@ -1,4 +1,5 @@
-export default function GoArrays() {
+
+export default function GoArraysSlices() {
   const codeStyle = {
     backgroundColor: "#111",
     padding: "14px",
@@ -25,7 +26,7 @@ export default function GoArrays() {
           marginBottom: "10px",
         }}
       >
-        Arrays
+        Arrays & Slices
       </h1>
 
       <p
@@ -35,20 +36,20 @@ export default function GoArrays() {
           marginBottom: "40px",
         }}
       >
-        Learn how to store multiple values of the same type using arrays in Go.
+        Learn how Go stores collections of values using arrays and slices.
       </p>
 
-      <h2>What is an Array?</h2>
+      <h2>Arrays</h2>
 
       <p style={{ color: "#bbb" }}>
-        An array is a collection of a fixed number of values of the same
-        type. Each value is stored at a numbered position called an index.
+        An array is a collection of a fixed number of values. Every element
+        in an array must have the same type.
       </p>
 
       <h2 style={{ marginTop: "40px" }}>Creating an Array</h2>
 
       <p style={{ color: "#bbb" }}>
-        You can create an array by specifying its length and type.
+        The size of an array is written inside square brackets.
       </p>
 
       <pre style={codeStyle}>
@@ -56,24 +57,19 @@ export default function GoArrays() {
       </pre>
 
       <p style={{ color: "#bbb", marginTop: "20px" }}>
-        The array above can store exactly 5 integer values.
+        This creates an array that can contain exactly 5 integers.
       </p>
 
       <h2 style={{ marginTop: "40px" }}>Initializing an Array</h2>
-
-      <p style={{ color: "#bbb" }}>
-        You can initialize an array with values when you create it.
-      </p>
 
       <pre style={codeStyle}>
 {`numbers := [5]int{10, 20, 30, 40, 50}`}
       </pre>
 
-      <h2 style={{ marginTop: "40px" }}>Array Index</h2>
+      <h2 style={{ marginTop: "40px" }}>Accessing Elements</h2>
 
       <p style={{ color: "#bbb" }}>
-        Array indexes start at <code>0</code>. The first element is at index
-        0, the second at index 1, and so on.
+        Array indexes start at 0.
       </p>
 
       <pre style={codeStyle}>
@@ -83,11 +79,7 @@ fmt.Println(numbers[0])
 fmt.Println(numbers[2])`}
       </pre>
 
-      <h2 style={{ marginTop: "40px" }}>Changing Array Values</h2>
-
-      <p style={{ color: "#bbb" }}>
-        You can change an element by accessing its index.
-      </p>
+      <h2 style={{ marginTop: "40px" }}>Changing Elements</h2>
 
       <pre style={codeStyle}>
 {`numbers := [3]int{10, 20, 30}
@@ -100,8 +92,7 @@ fmt.Println(numbers)`}
       <h2 style={{ marginTop: "40px" }}>Array Length</h2>
 
       <p style={{ color: "#bbb" }}>
-        The <code>len()</code> function returns the number of elements in
-        an array.
+        Use <code>len()</code> to find the number of elements in an array.
       </p>
 
       <pre style={codeStyle}>
@@ -110,33 +101,65 @@ fmt.Println(numbers)`}
 fmt.Println(len(numbers))`}
       </pre>
 
-      <h2 style={{ marginTop: "40px" }}>Looping Through an Array</h2>
+      <h2 style={{ marginTop: "50px" }}>Slices</h2>
 
       <p style={{ color: "#bbb" }}>
-        You can use a <code>for</code> loop to go through every element.
+        A slice is a flexible and dynamically sized collection. Unlike an
+        array, a slice does not have a fixed length.
+      </p>
+
+      <h2 style={{ marginTop: "40px" }}>Creating a Slice</h2>
+
+      <pre style={codeStyle}>
+{`numbers := []int{10, 20, 30, 40}
+
+fmt.Println(numbers)`}
+      </pre>
+
+      <h2 style={{ marginTop: "40px" }}>Adding Elements</h2>
+
+      <p style={{ color: "#bbb" }}>
+        The <code>append()</code> function adds elements to a slice.
       </p>
 
       <pre style={codeStyle}>
-{`numbers := [5]int{10, 20, 30, 40, 50}
+{`numbers := []int{10, 20, 30}
 
-for i := 0; i < len(numbers); i++ {
-    fmt.Println(numbers[i])
-}`}
+numbers = append(numbers, 40)
+
+fmt.Println(numbers)`}
       </pre>
 
-      <h2 style={{ marginTop: "40px" }}>Arrays with Strings</h2>
+      <h2 style={{ marginTop: "40px" }}>Slicing a Slice</h2>
 
       <p style={{ color: "#bbb" }}>
-        Arrays can store any single type, including strings.
+        You can create a smaller slice from another slice using a range of
+        indexes.
       </p>
 
       <pre style={codeStyle}>
-{`languages := [3]string{"Go", "TypeScript", "JavaScript"}
+{`numbers := []int{10, 20, 30, 40, 50}
 
-fmt.Println(languages[0])`}
+part := numbers[1:4]
+
+fmt.Println(part)`}
       </pre>
 
-      <h2 style={{ marginTop: "40px" }}>Key Points</h2>
+      <h2 style={{ marginTop: "40px" }}>Length and Capacity</h2>
+
+      <p style={{ color: "#bbb" }}>
+        <code>len()</code> returns the number of elements in a slice, while
+        <code> cap()</code> returns its capacity.
+      </p>
+
+      <pre style={codeStyle}>
+{`numbers := []int{10, 20, 30}
+
+fmt.Println(len(numbers))
+fmt.Println(cap(numbers))`}
+      </pre>
+
+      <h2 style={{ marginTop: "40px" }}>Arrays vs Slices</h2>
 
       <ul
         style={{
@@ -145,10 +168,10 @@ fmt.Println(languages[0])`}
         }}
       >
         <li>Arrays have a fixed length.</li>
-        <li>All elements must have the same type.</li>
-        <li>Array indexes start at 0.</li>
-        <li>Use len() to get the array length.</li>
-        <li>Arrays can store numbers, strings, booleans, and more.</li>
+        <li>Slices can grow and shrink.</li>
+        <li>Arrays use a fixed size in their type.</li>
+        <li>Slices are more commonly used for collections in Go.</li>
+        <li>Use append() to add elements to a slice.</li>
       </ul>
     </div>
   );
