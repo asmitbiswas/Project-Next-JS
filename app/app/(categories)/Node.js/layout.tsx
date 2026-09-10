@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export default function NextJSLayout({
+export default function NodeJSLayout({
     children,
 }: {
     children: React.ReactNode;
@@ -30,7 +30,7 @@ export default function NextJSLayout({
                 }}
             >
                 <Link
-                    href="/Next-JS"
+                    href="/Node.js"
                     style={{
                         flexShrink: 0,
                         color: "white",
@@ -39,7 +39,7 @@ export default function NextJSLayout({
                         fontWeight: 700,
                     }}
                 >
-                    Next.js
+                    Node.js
                 </Link>
 
                 <nav
@@ -50,63 +50,50 @@ export default function NextJSLayout({
                         alignItems: "center",
                         gap: "18px",
                         overflowX: "auto",
-                        overflowY: "hidden",
                     }}
                 >
-                    <Link href="/Next-JS" style={{ color: "white", textDecoration: "none", fontSize: "14px", whiteSpace: "nowrap" }}>
+                    <Link href="/Node.js" style={{ color: "white", textDecoration: "none", fontSize: "14px", whiteSpace: "nowrap" }}>
                         Overview
                     </Link>
 
-                    <Link href="/Next-JS/Introduction" style={{ color: "#aaa", textDecoration: "none", fontSize: "14px", whiteSpace: "nowrap" }}>
-                        Introduction
+                    <Link href="/Node.js/basics" style={{ color: "#aaa", textDecoration: "none", fontSize: "14px", whiteSpace: "nowrap" }}>
+                        Node.js Basics
                     </Link>
 
-                    <Link href="/Next-JS/App_Router" style={{ color: "#aaa", textDecoration: "none", fontSize: "14px", whiteSpace: "nowrap" }}>
-                        App Router
+                    <Link href="/Node.js/Modules" style={{ color: "#aaa", textDecoration: "none", fontSize: "14px", whiteSpace: "nowrap" }}>
+                        Modules
                     </Link>
 
-                    <Link href="/Next-JS/Pages_Router" style={{ color: "#aaa", textDecoration: "none", fontSize: "14px", whiteSpace: "nowrap" }}>
-                        Pages Router
+                    <Link href="/Node.js/NPM" style={{ color: "#aaa", textDecoration: "none", fontSize: "14px", whiteSpace: "nowrap" }}>
+                        npm
                     </Link>
 
-                    <Link href="/Next-JS/Routing" style={{ color: "#aaa", textDecoration: "none", fontSize: "14px", whiteSpace: "nowrap" }}>
-                        Routing
+                    <Link href="/Node.js/FS" style={{ color: "#aaa", textDecoration: "none", fontSize: "14px", whiteSpace: "nowrap" }}>
+                        File System
                     </Link>
 
-                    <Link href="/Next-JS/Layouts" style={{ color: "#aaa", textDecoration: "none", fontSize: "14px", whiteSpace: "nowrap" }}>
-                        Layouts
+                    <Link href="/Node.js/HTTP" style={{ color: "#aaa", textDecoration: "none", fontSize: "14px", whiteSpace: "nowrap" }}>
+                        HTTP
                     </Link>
 
-                    <Link href="/Next-JS/Server_Components" style={{ color: "#aaa", textDecoration: "none", fontSize: "14px", whiteSpace: "nowrap" }}>
-                        Server Components
+                    <Link href="/Node.js/ASYNC" style={{ color: "#aaa", textDecoration: "none", fontSize: "14px", whiteSpace: "nowrap" }}>
+                        Async
                     </Link>
 
-                    <Link href="/Next-JS/Client_Components" style={{ color: "#aaa", textDecoration: "none", fontSize: "14px", whiteSpace: "nowrap" }}>
-                        Client Components
+                    <Link href="/Node.js/EXJ" style={{ color: "#aaa", textDecoration: "none", fontSize: "14px", whiteSpace: "nowrap" }}>
+                        Express.js
                     </Link>
 
-                    <Link href="/Next-JS/Data_Fetching" style={{ color: "#aaa", textDecoration: "none", fontSize: "14px", whiteSpace: "nowrap" }}>
-                        Data Fetching
+                    <Link href="/Node.js/RA" style={{ color: "#aaa", textDecoration: "none", fontSize: "14px", whiteSpace: "nowrap" }}>
+                        REST APIs
                     </Link>
 
-                    <Link href="/Next-JS/API" style={{ color: "#aaa", textDecoration: "none", fontSize: "14px", whiteSpace: "nowrap" }}>
-                        API
+                    <Link href="/Node.js/DB" style={{ color: "#aaa", textDecoration: "none", fontSize: "14px", whiteSpace: "nowrap" }}>
+                        Databases
                     </Link>
 
-                    <Link href="/Next-JS/Loading" style={{ color: "#aaa", textDecoration: "none", fontSize: "14px", whiteSpace: "nowrap" }}>
-                        Loading
-                    </Link>
-
-                    <Link href="/Next-JS/Error_Handling" style={{ color: "#aaa", textDecoration: "none", fontSize: "14px", whiteSpace: "nowrap" }}>
-                        Error Handling
-                    </Link>
-
-                    <Link href="/Next-JS/Metadata" style={{ color: "#aaa", textDecoration: "none", fontSize: "14px", whiteSpace: "nowrap" }}>
-                        Metadata
-                    </Link>
-
-                    <Link href="/Next-JS/Deployment" style={{ color: "#aaa", textDecoration: "none", fontSize: "14px", whiteSpace: "nowrap" }}>
-                        Deployment
+                    <Link href="/Node.js/Authentication" style={{ color: "#aaa", textDecoration: "none", fontSize: "14px", whiteSpace: "nowrap" }}>
+                        Authentication
                     </Link>
                 </nav>
             </header>
@@ -129,7 +116,6 @@ export default function NextJSLayout({
                         top: "64px",
                         height: "calc(100vh - 64px)",
                         overflowY: "auto",
-                        overflowX: "hidden",
                     }}
                 >
                     <Link
@@ -155,7 +141,7 @@ export default function NextJSLayout({
                             color: "#666",
                         }}
                     >
-                        NEXT.JS
+                        NODE.JS
                     </h3>
 
                     <div
@@ -165,60 +151,58 @@ export default function NextJSLayout({
                             gap: "6px",
                         }}
                     >
-                        <Link href="/Next-JS" style={{ color: "white", textDecoration: "none", fontSize: "14px", padding: "7px 10px", borderRadius: "6px", background: "#151515" }}>
+                        <Link
+                            href="/Node.js"
+                            style={{
+                                color: "white",
+                                textDecoration: "none",
+                                fontSize: "14px",
+                                padding: "7px 10px",
+                                borderRadius: "6px",
+                                background: "#151515",
+                            }}
+                        >
                             Overview
                         </Link>
 
-                        <Link href="/Next-JS/Introduction" style={{ color: "#aaa", textDecoration: "none", fontSize: "14px", padding: "7px 10px" }}>
-                            Introduction
+                        <Link href="/Node.js/basics" style={{ color: "#aaa", textDecoration: "none", fontSize: "14px", padding: "7px 10px" }}>
+                            Node.js Basics
                         </Link>
 
-                        <Link href="/Next-JS/App_Router" style={{ color: "#aaa", textDecoration: "none", fontSize: "14px", padding: "7px 10px" }}>
-                            App Router
+                        <Link href="/Node.js/Modules" style={{ color: "#aaa", textDecoration: "none", fontSize: "14px", padding: "7px 10px" }}>
+                            Modules
                         </Link>
 
-                        <Link href="/Next-JS/Pages_Router" style={{ color: "#aaa", textDecoration: "none", fontSize: "14px", padding: "7px 10px" }}>
-                            Pages Router
+                        <Link href="/Node.js/NPM" style={{ color: "#aaa", textDecoration: "none", fontSize: "14px", padding: "7px 10px" }}>
+                            npm
                         </Link>
 
-                        <Link href="/Next-JS/Routing" style={{ color: "#aaa", textDecoration: "none", fontSize: "14px", padding: "7px 10px" }}>
-                            Routing
+                        <Link href="/Node.js/FS" style={{ color: "#aaa", textDecoration: "none", fontSize: "14px", padding: "7px 10px" }}>
+                            File System
                         </Link>
 
-                        <Link href="/Next-JS/Layouts" style={{ color: "#aaa", textDecoration: "none", fontSize: "14px", padding: "7px 10px" }}>
-                            Layouts
+                        <Link href="/Node.js/HTTP" style={{ color: "#aaa", textDecoration: "none", fontSize: "14px", padding: "7px 10px" }}>
+                            HTTP
                         </Link>
 
-                        <Link href="/Next-JS/Server_Components" style={{ color: "#aaa", textDecoration: "none", fontSize: "14px", padding: "7px 10px" }}>
-                            Server Components
+                        <Link href="/Node.js/ASYNC" style={{ color: "#aaa", textDecoration: "none", fontSize: "14px", padding: "7px 10px" }}>
+                            Asynchronous Programming
                         </Link>
 
-                        <Link href="/Next-JS/Client_Components" style={{ color: "#aaa", textDecoration: "none", fontSize: "14px", padding: "7px 10px" }}>
-                            Client Components
+                        <Link href="/Node.js/EXJ" style={{ color: "#aaa", textDecoration: "none", fontSize: "14px", padding: "7px 10px" }}>
+                            Express.js
                         </Link>
 
-                        <Link href="/Next-JS/Data_Fetching" style={{ color: "#aaa", textDecoration: "none", fontSize: "14px", padding: "7px 10px" }}>
-                            Data Fetching
+                        <Link href="/Node.js/RA" style={{ color: "#aaa", textDecoration: "none", fontSize: "14px", padding: "7px 10px" }}>
+                            REST APIs
                         </Link>
 
-                        <Link href="/Next-JS/API" style={{ color: "#aaa", textDecoration: "none", fontSize: "14px", padding: "7px 10px" }}>
-                            API
+                        <Link href="/Node.js/DB" style={{ color: "#aaa", textDecoration: "none", fontSize: "14px", padding: "7px 10px" }}>
+                            Databases
                         </Link>
 
-                        <Link href="/Next-JS/Loading" style={{ color: "#aaa", textDecoration: "none", fontSize: "14px", padding: "7px 10px" }}>
-                            Loading
-                        </Link>
-
-                        <Link href="/Next-JS/Error_Handling" style={{ color: "#aaa", textDecoration: "none", fontSize: "14px", padding: "7px 10px" }}>
-                            Error Handling
-                        </Link>
-
-                        <Link href="/Next-JS/Metadata" style={{ color: "#aaa", textDecoration: "none", fontSize: "14px", padding: "7px 10px" }}>
-                            Metadata
-                        </Link>
-
-                        <Link href="/Next-JS/Deployment" style={{ color: "#aaa", textDecoration: "none", fontSize: "14px", padding: "7px 10px" }}>
-                            Deployment
+                        <Link href="/Node.js/Authentication" style={{ color: "#aaa", textDecoration: "none", fontSize: "14px", padding: "7px 10px" }}>
+                            Authentication
                         </Link>
                     </div>
                 </aside>
