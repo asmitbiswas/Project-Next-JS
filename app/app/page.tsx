@@ -214,6 +214,21 @@ export default function Home() {
                                 development.
                             </p>
                         </Link>
+                        <Link href="/PostgreSQL" 
+                        style={{
+                                textDecoration: "none",
+                                color: "white",
+                                background: "#080808",
+                                border: "1px solid #252525",
+                                borderRadius: "10px",
+                                padding: "24px",
+                            }}>
+                       <h3 style={{ margin: "0 0 8px" }}>
+                            PostgreSQL
+                            </h3>
+                            <p style={{ margin: 0, color: "#777" }}>Learn SQL. :)</p>
+
+                        </Link>
                     </div>
                 </section>
             </main>
