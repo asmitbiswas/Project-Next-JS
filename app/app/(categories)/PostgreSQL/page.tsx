@@ -1,4 +1,13 @@
 export default function SQLPage() {
+      const codeStyle = {
+    backgroundColor: "#111",
+    padding: "14px",
+    borderRadius: "12px",
+    borderLeft: "6px solid rgb(13 200 13)",
+    overflowX: "auto" as const,
+    fontSize: "14px",
+    lineHeight: "1.8",
+  };
     return (
         <main>
             <h1>SQL</h1>
@@ -29,7 +38,7 @@ export default function SQLPage() {
 
             <h2>Basic SQL Example</h2>
 
-            <pre>
+            <pre style={codeStyle}>
                 <code>{`SELECT * FROM users;`}</code>
             </pre>
 
