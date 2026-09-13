@@ -1,5 +1,3 @@
-import { code } from "motion/react-client";
-
 export default function GoVariablesTypes() {
   const codeStyle = {
         backgroundColor: "#111",
