@@ -214,7 +214,7 @@ export default function Home() {
                                 development.
                             </p>
                         </Link>
-                        <Link href="/PostgreSQL" 
+                        <Link href="/SQL" 
                         style={{
                                 textDecoration: "none",
                                 color: "white",
