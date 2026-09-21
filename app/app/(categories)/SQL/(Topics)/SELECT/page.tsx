@@ -1,4 +1,13 @@
 export default function SelectPage() {
+         const codeStyle = {
+    backgroundColor: "#111",
+    padding: "14px",
+    borderRadius: "12px",
+    borderLeft: "6px solid rgb(13 200 13)",
+    overflowX: "auto" as const,
+    fontSize: "14px",
+    lineHeight: "1.8",
+  };
     return (
         <div>
             <h1>SQL SELECT</h1>
@@ -10,7 +19,7 @@ export default function SelectPage() {
 
             <h2>Basic Syntax</h2>
 
-            <pre>
+            <pre style={codeStyle}>
                 <code>{`SELECT column1, column2
 FROM table_name;`}</code>
             </pre>
@@ -20,7 +29,7 @@ FROM table_name;`}</code>
                 symbol.
             </p>
 
-            <pre>
+            <pre style={codeStyle}>
                 <code>{`SELECT *
 FROM users;`}</code>
             </pre>
@@ -32,7 +41,7 @@ FROM users;`}</code>
                 after <code>SELECT</code>.
             </p>
 
-            <pre>
+            <pre style={codeStyle}>
                 <code>{`SELECT name, email
 FROM users;`}</code>
             </pre>
@@ -44,7 +53,7 @@ FROM users;`}</code>
                 query.
             </p>
 
-            <pre>
+            <pre style={codeStyle}>
                 <code>{`SELECT name, email
 FROM users
 WHERE age > 18;`}</code>
@@ -56,7 +65,7 @@ WHERE age > 18;`}</code>
                 The <code>ORDER BY</code> clause sorts the returned data.
             </p>
 
-            <pre>
+            <pre style={codeStyle}>
                 <code>{`SELECT name, age
 FROM users
 ORDER BY age DESC;`}</code>
@@ -74,7 +83,7 @@ ORDER BY age DESC;`}</code>
                 the result.
             </p>
 
-            <pre>
+            <pre style={codeStyle}>
                 <code>{`SELECT DISTINCT city
 FROM users;`}</code>
             </pre>
@@ -86,7 +95,7 @@ FROM users;`}</code>
                 returned.
             </p>
 
-            <pre>
+            <pre style={codeStyle}>
                 <code>{`SELECT *
 FROM users
 LIMIT 5;`}</code>
@@ -99,7 +108,7 @@ LIMIT 5;`}</code>
                 <code>OR</code>.
             </p>
 
-            <pre>
+            <pre style={codeStyle}>
                 <code>{`SELECT *
 FROM users
 WHERE age > 18 AND city = 'Kolkata';`}</code>
