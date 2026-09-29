@@ -229,6 +229,24 @@ export default function Home() {
                             <p style={{ margin: 0, color: "#777" }}>Learn SQL. :)</p>
 
                         </Link>
+                        <Link href="/MongoDB"
+                         style={{
+                                textDecoration: "none",
+                                color: "white",
+                                background: "#080808",
+                                border: "1px solid #252525",
+                                borderRadius: "10px",
+                                padding: "24px",
+                            }}>
+                        
+                            <h3 style={{ margin: "0 0 8px" }}>
+                                MongoDB
+                                <p style={{ margin: 0, color: "#777" }}>
+                                    MongoDB is a NoSQL database that stores data in flexible, JSON-like documents. It is commonly used in modern web applications because it is fast, scalable, and works well with JavaScript and Node.js.
+
+                                </p>
+                            </h3>
+                        </Link>
                     </div>
                 </section>
             </main>
