@@ -137,7 +137,7 @@ db.users.insertOne({
                     }}
                 >
                     <Link
-                        href="/MongoDB/Basics"
+                        href="/MongoDB"
                         style={{
                             color: "white",
                             backgroundColor: "#111",
@@ -151,7 +151,7 @@ db.users.insertOne({
                     </Link>
 
                     <Link
-                        href="/MongoDB/CRUD"
+                        href="/MongoDB"
                         style={{
                             color: "white",
                             backgroundColor: "#111",
