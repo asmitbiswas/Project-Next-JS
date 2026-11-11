@@ -1,213 +1,351 @@
+
 "use client";
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
-const lines = [
-  "[ BOOTING DEVVAULT v2.1 ]",
-  "",
-  "██████████ 100%",
-  "",
-  "[ OK ] Checking filesystem",
-  "[ OK ] Initializing kernel",
-  "[ OK ] Starting React runtime",
-  "[ OK ] Loading Next.js",
-  "[ OK ] Connecting database",
-  "[FAIL] Resolving requested route",
-  "",
-  "----------------------------------------",
-  " ERROR 404",
-  " Requested page could not be found.",
-  " System remains operational.",
-  "----------------------------------------",
-  "",
-  "root@devvault:~$",
+const logs = [
+  "Initializing DevVault recovery protocol...",
+  "Scanning requested route... DONE",
+  "Searching page database... DONE",
+  "Checking route integrity... FAILED",
+  "Attempting resource recovery...",
+  "Rebuilding navigation structure...",
+  "Recovery protocol interrupted.",
 ];
 
 export default function NotFound() {
-  const [displayed, setDisplayed] = useState<string[]>([]);
-  const [lineIndex, setLineIndex] = useState(0);
-  const [text, setText] = useState("");
-  const [started, setStarted] = useState(false);
+  const [progress, setProgress] = useState(0);
+  const [logIndex, setLogIndex] = useState(0);
 
   useEffect(() => {
-    const timer = setTimeout(() => {
-      setStarted(true);
-    }, 1000);
+    const progressTimer = setInterval(() => {
+      setProgress((prev) => {
+        if (prev >= 99) return 0;
+        return prev + 1;
+      });
+    }, 180);
 
-    return () => clearTimeout(timer);
+    const logTimer = setInterval(() => {
+      setLogIndex((prev) => (prev + 1) % logs.length);
+    }, 2500);
+
+    return () => {
+      clearInterval(progressTimer);
+      clearInterval(logTimer);
+    };
   }, []);
 
-  useEffect(() => {
-    if (!started) return;
-    if (lineIndex >= lines.length) return;
-
-    const current = lines[lineIndex];
-
-    if (text.length < current.length) {
-      const timer = setTimeout(() => {
-        setText(current.slice(0, text.length + 1));
-      }, 35);
-
-      return () => clearTimeout(timer);
-    }
-
-    const timer = setTimeout(() => {
-      setDisplayed((prev) => [...prev, current]);
-      setText("");
-      setLineIndex((prev) => prev + 1);
-    }, 250);
-
-    return () => clearTimeout(timer);
-  }, [started, text, lineIndex]);
-
   return (
-    <>
-      <style jsx>{`
-        * {
-          box-sizing: border-box;
-        }
+    <main style={styles.container}>
+      <video
+        autoPlay
+        muted
+        loop
+        playsInline
+        style={styles.video}
+      >
+        <source src="/anime-fight.mp4" type="video/mp4" />
+      </video>
 
-        body {
-          margin: 0;
-        }
+      <div style={styles.overlay} />
 
-        .page {
-          min-height: 100vh;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          background: #000;
-          padding: 20px;
-          font-family: Consolas, Monaco, monospace;
-        }
+      <div style={styles.topBar}>
+        <Link href="/" style={styles.logo}>
+          DEV<span style={{ color: "#18dc54" }}>VAULT</span>
+        </Link>
 
-        .terminal {
-          width: 850px;
-          max-width: 100%;
-          background: #0d1117;
-          border: 1px solid #00ff66;
-          border-radius: 12px;
-          overflow: hidden;
-          box-shadow: 0 0 30px rgba(0, 255, 102, 0.3);
-        }
+        <div style={styles.status}>
+          <span style={styles.dot} />
+          SYSTEM FAILURE DETECTED
+        </div>
+      </div>
 
-        .header {
-          display: flex;
-          align-items: center;
-          gap: 8px;
-          padding: 14px;
-          background: #161b22;
-          border-bottom: 1px solid #222;
-        }
-
-        .dot {
-          width: 12px;
-          height: 12px;
-          border-radius: 50%;
-        }
-
-        .red {
-          background: #ff5f56;
-        }
-
-        .yellow {
-          background: #ffbd2e;
-        }
-
-        .green {
-          background: #27c93f;
-        }
-
-        .title {
-          margin-left: 12px;
-          color: #888;
-          font-size: 14px;
-        }
-
-        .body {
-          padding: 24px;
-          color: #00ff66;
-          font-size: 18px;
-          line-height: 1.8;
-          text-shadow: 0 0 8px #00ff66;
-          min-height: 340px;
-        }
-
-        .error {
-          color: #ff4d4d;
-        }
-
-        .cursor {
-          animation: blink 0.8s infinite;
-        }
-
-        @keyframes blink {
-          50% {
-            opacity: 0;
-          }
-        }
-
-        .button {
-          display: inline-block;
-          margin-top: 20px;
-          padding: 12px 24px;
-          color: #00ff66;
-          border: 1px solid #00ff66;
-          text-decoration: none;
-          transition: 0.3s;
-        }
-
-        .button:hover {
-          background: #00ff66;
-          color: #000;
-        }
-      `}</style>
-
-      <main className="page">
-        <div className="terminal">
-          <div className="header">
-            <span className="dot red"></span>
-            <span className="dot yellow"></span>
-            <span className="dot green"></span>
-            <span className="title">root@devvault:~/404</span>
+      <section style={styles.content}>
+        <div style={styles.terminal}>
+          <div style={styles.terminalHeader}>
+            <div style={styles.terminalTitle}>
+              <span style={styles.terminalDot} />
+              DEVVAULT // RECOVERY TERMINAL
+            </div>
+            <span style={styles.live}>LIVE</span>
           </div>
 
-          <div className="body">
-            {!started && (
-              <div>
-                <span className="cursor">█</span>
-              </div>
-            )}
+          <div style={styles.terminalBody}>
+            <p style={styles.command}>
+              root@devvault:~$ ./recover_route.sh
+            </p>
 
-            {displayed.map((line, i) => (
-              <div
-                key={i}
-                className={line.includes("ERROR") ? "error" : ""}
-              >
-                {line === "" ? <br /> : line}
-              </div>
+            {logs.slice(0, logIndex + 1).map((log, index) => (
+              <p key={index} style={styles.log}>
+                <span style={styles.prefix}>[{index + 1}]</span>{" "}
+                {log}
+              </p>
             ))}
 
-            {started && lineIndex < lines.length && (
-              <div
-                className={
-                  lines[lineIndex].includes("ERROR") ? "error" : ""
-                }
-              >
-                {text}
-                <span className="cursor">█</span>
-              </div>
-            )}
+            <p style={styles.current}>
+              {">"} {logs[logIndex]}
+              <span style={styles.cursor}>_</span>
+            </p>
 
-            {started && lineIndex >= lines.length && (
-              <Link href="/" className="button">
-                Return Home
-              </Link>
-            )}
+            <div style={styles.progressInfo}>
+              <span>RECOVERY PROGRESS</span>
+              <span>{progress}%</span>
+            </div>
+
+            <div style={styles.progressTrack}>
+              <div
+                style={{
+                  ...styles.progressBar,
+                  width: `${progress}%`,
+                }}
+              />
+            </div>
           </div>
+
+          <div style={styles.error}>
+            <h1>404</h1>
+            <h2>ROUTE NOT FOUND</h2>
+            <p>
+              The requested resource has disappeared
+              into the void.
+            </p>
+          </div>
+
+          <Link href="/" style={styles.button}>
+            <span>←</span> RETURN TO DEVVAULT
+          </Link>
         </div>
-      </main>
-    </>
+      </section>
+
+      <footer style={styles.footer}>
+        DEVVAULT SYSTEMS © 2026
+        <span>404 // LOST IN THE DIGITAL VOID</span>
+      </footer>
+
+      <style jsx>{`
+        @keyframes blink {
+          50% { opacity: 0; }
+        }
+
+        @keyframes glitch {
+          0%, 100% { transform: translate(0); }
+          20% { transform: translate(-2px, 1px); }
+          40% { transform: translate(2px, -1px); }
+          60% { transform: translate(-1px, -1px); }
+          80% { transform: translate(1px, 2px); }
+        }
+
+        @keyframes pulse {
+          50% { opacity: 0.4; }
+        }
+
+        h1 {
+          animation: glitch 3s infinite;
+        }
+
+        a:hover {
+          background: #18dc54 !important;
+          color: black !important;
+          box-shadow: 0 0 25px #18dc5470;
+        }
+      `}</style>
+    </main>
   );
 }
+
+const styles: { [key: string]: React.CSSProperties } = {
+  container: {
+    minHeight: "100vh",
+    background: "#030403",
+    color: "white",
+    position: "relative",
+    overflow: "hidden",
+    fontFamily: "monospace",
+    display: "flex",
+    flexDirection: "column",
+  },
+
+  video: {
+    position: "fixed",
+    inset: 0,
+    width: "100%",
+    height: "100%",
+    objectFit: "cover",
+    zIndex: 0,
+  },
+
+  overlay: {
+    position: "fixed",
+    inset: 0,
+    background: "rgba(0,0,0,0.76)",
+    backdropFilter: "blur(2px)",
+    zIndex: 1,
+  },
+
+  topBar: {
+    position: "relative",
+    zIndex: 2,
+    display: "flex",
+    justifyContent: "space-between",
+    alignItems: "center",
+    padding: "25px 6%",
+    borderBottom: "1px solid #ffffff18",
+  },
+
+  logo: {
+    fontSize: "22px",
+    fontWeight: 900,
+    color: "white",
+    textDecoration: "none",
+    letterSpacing: "2px",
+  },
+
+  status: {
+    fontSize: "10px",
+    color: "#ff5555",
+    letterSpacing: "1px",
+  },
+
+  dot: {
+    display: "inline-block",
+    width: "7px",
+    height: "7px",
+    background: "#ff3333",
+    borderRadius: "50%",
+    marginRight: "8px",
+    animation: "pulse 1s infinite",
+  },
+
+  content: {
+    position: "relative",
+    zIndex: 2,
+    flex: 1,
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    padding: "35px 20px",
+  },
+
+  terminal: {
+    width: "100%",
+    maxWidth: "600px",
+    background: "rgba(5, 9, 6, 0.94)",
+    border: "1px solid #18dc5450",
+    borderRadius: "14px",
+    boxShadow: "0 0 70px #000, 0 0 30px #18dc5415",
+    overflow: "hidden",
+  },
+
+  terminalHeader: {
+    padding: "16px 20px",
+    background: "#101710",
+    borderBottom: "1px solid #18dc5430",
+    display: "flex",
+    justifyContent: "space-between",
+  },
+
+  terminalTitle: {
+    color: "#18dc54",
+    fontSize: "11px",
+    letterSpacing: "1px",
+  },
+
+  terminalDot: {
+    display: "inline-block",
+    width: "8px",
+    height: "8px",
+    background: "#18dc54",
+    borderRadius: "50%",
+    marginRight: "9px",
+  },
+
+  live: {
+    color: "#18dc54",
+    fontSize: "10px",
+  },
+
+  terminalBody: {
+    padding: "22px 25px 10px",
+    fontSize: "12px",
+    lineHeight: 1.9,
+  },
+
+  command: {
+    color: "#18dc54",
+    marginBottom: "18px",
+  },
+
+  log: {
+    color: "#999",
+    margin: "5px 0",
+  },
+
+  prefix: {
+    color: "#18dc54",
+  },
+
+  current: {
+    color: "#18dc54",
+    marginTop: "15px",
+  },
+
+  cursor: {
+    animation: "blink 1s infinite",
+  },
+
+  progressInfo: {
+    display: "flex",
+    justifyContent: "space-between",
+    color: "#18dc54",
+    marginTop: "25px",
+    fontSize: "10px",
+  },
+
+  progressTrack: {
+    width: "100%",
+    height: "5px",
+    background: "#202820",
+    borderRadius: "10px",
+    overflow: "hidden",
+    marginTop: "10px",
+  },
+
+  progressBar: {
+    height: "100%",
+    background: "#18dc54",
+    boxShadow: "0 0 12px #18dc54",
+    transition: "width 0.2s linear",
+  },
+
+  error: {
+    textAlign: "center",
+    padding: "10px 20px 20px",
+  },
+
+  button: {
+    display: "block",
+    width: "fit-content",
+    margin: "0 auto 30px",
+    padding: "13px 25px",
+    border: "1px solid #18dc54",
+    borderRadius: "7px",
+    color: "#18dc54",
+    textDecoration: "none",
+    fontSize: "11px",
+    letterSpacing: "1px",
+    transition: "0.3s",
+  },
+
+  footer: {
+    position: "relative",
+    zIndex: 2,
+    padding: "20px 6%",
+    display: "flex",
+    justifyContent: "space-between",
+    gap: "10px",
+    color: "#777",
+    fontSize: "9px",
+    borderTop: "1px solid #ffffff18",
+  },
+};
